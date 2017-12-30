@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "EncryptiorWalletSetup", "EncryptiorWalletSetup\EncryptiorWalletSetup.vdproj", "{AA119D83-E728-43C4-B7ED-E176E33AB1EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encryptior", "Encryptior\Encryptior.csproj", "{C16986EA-BB65-4FBE-9BB8-C44D5BFC1624}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Mono|Any CPU = Mono|Any CPU
+		Mono|x86 = Mono|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA119D83-E728-43C4-B7ED-E176E33AB1EA}.Debug|Any CPU.ActiveCfg = Debug
+		{AA119D83-E728-43C4-B7ED-E176E33AB1EA}.Debug|x86.ActiveCfg = Debug
+		{AA119D83-E728-43C4-B7ED-E176E33AB1EA}.Mono|Any CPU.ActiveCfg = Release
+		{AA119D83-E728-43C4-B7ED-E176E33AB1EA}.Mono|x86.ActiveCfg = Release
+		{AA119D83-E728-43C4-B7ED-E176E33AB1EA}.Release|Any CPU.ActiveCfg = Release
+		{AA119D83-E728-43C4-B7ED-E176E33AB1EA}.Release|x86.ActiveCfg = Release
+		{C16986EA-BB65-4FBE-9BB8-C44D5BFC1624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C16986EA-BB65-4FBE-9BB8-C44D5BFC1624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C16986EA-BB65-4FBE-9BB8-C44D5BFC1624}.Debug|x86.ActiveCfg = Debug|x86
+		{C16986EA-BB65-4FBE-9BB8-C44D5BFC1624}.Debug|x86.Build.0 = Debug|x86
+		{C16986EA-BB65-4FBE-9BB8-C44D5BFC1624}.Mono|Any CPU.ActiveCfg = Mono|Any CPU
+		{C16986EA-BB65-4FBE-9BB8-C44D5BFC1624}.Mono|Any CPU.Build.0 = Mono|Any CPU
+		{C16986EA-BB65-4FBE-9BB8-C44D5BFC1624}.Mono|x86.ActiveCfg = Mono|x86
+		{C16986EA-BB65-4FBE-9BB8-C44D5BFC1624}.Mono|x86.Build.0 = Mono|x86
+		{C16986EA-BB65-4FBE-9BB8-C44D5BFC1624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C16986EA-BB65-4FBE-9BB8-C44D5BFC1624}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C16986EA-BB65-4FBE-9BB8-C44D5BFC1624}.Release|x86.ActiveCfg = Release|x86
+		{C16986EA-BB65-4FBE-9BB8-C44D5BFC1624}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
