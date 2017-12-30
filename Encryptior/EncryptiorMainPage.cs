@@ -217,7 +217,9 @@ namespace Encryptior
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            MessageBox.Show("This version is using Ropsten test network to make and confirm payments. Any indicated funds are therefore not real, and wallets made in the pre-alpha version should not be used later for real world payments.\n\nAlso, it is most likely riddled with bugs...", "Important Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            AboutBox about = new AboutBox();
+            about.ShowDialog();
+            //MessageBox.Show("This version is using Ropsten test network to make and confirm payments. Any indicated funds are therefore not real, and wallets made in the pre-alpha version should not be used later for real world payments.\n\nAlso, it is most likely riddled with bugs...", "Important Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void timerRefresh_Tick(object sender, EventArgs e)
@@ -263,7 +265,7 @@ namespace Encryptior
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://icons8.com/");
+
         }
 
         private void button2_Click(object sender, EventArgs e)

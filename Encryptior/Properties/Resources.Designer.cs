@@ -39,7 +39,7 @@ namespace Encryptior.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Encrypter.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Encryptior.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -66,6 +66,16 @@ namespace Encryptior.Properties {
         internal static System.Drawing.Bitmap _25 {
             get {
                 object obj = ResourceManager.GetObject("_25", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EncryptiorTheProtector200 {
+            get {
+                object obj = ResourceManager.GetObject("EncryptiorTheProtector200", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -156,6 +166,16 @@ namespace Encryptior.Properties {
         internal static System.Drawing.Bitmap icons8_Delete_File_32px {
             get {
                 object obj = ResourceManager.GetObject("icons8_Delete_File_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_Import_46px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_Import_46px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

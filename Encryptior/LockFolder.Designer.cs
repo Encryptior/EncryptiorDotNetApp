@@ -116,7 +116,7 @@
             this.textBoxProjectName.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxProjectName.Name = "textBoxProjectName";
             this.textBoxProjectName.Size = new System.Drawing.Size(430, 31);
-            this.textBoxProjectName.TabIndex = 35;
+            this.textBoxProjectName.TabIndex = 0;
             this.textBoxProjectName.Text = "New Encrypted File";
             // 
             // saveFileDialog
@@ -241,7 +241,7 @@
             this.buttonOpenFiles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOpenFiles.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonOpenFiles.ForeColor = System.Drawing.Color.Black;
-            this.buttonOpenFiles.Image = global::Encryptior.Properties.Resources.icons8_Add_32px;
+            this.buttonOpenFiles.Image = ((System.Drawing.Image)(resources.GetObject("buttonOpenFiles.Image")));
             this.buttonOpenFiles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonOpenFiles.Location = new System.Drawing.Point(4, 2);
             this.buttonOpenFiles.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
@@ -264,7 +264,7 @@
             this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDelete.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDelete.ForeColor = System.Drawing.Color.Black;
-            this.buttonDelete.Image = global::Encryptior.Properties.Resources.icons8_Delete_32px;
+            this.buttonDelete.Image = ((System.Drawing.Image)(resources.GetObject("buttonDelete.Image")));
             this.buttonDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonDelete.Location = new System.Drawing.Point(101, 2);
             this.buttonDelete.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
@@ -299,7 +299,7 @@
             this.buttonLock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLock.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLock.ForeColor = System.Drawing.Color.Black;
-            this.buttonLock.Image = global::Encryptior.Properties.Resources.icons8_Lock_2_32px;
+            this.buttonLock.Image = ((System.Drawing.Image)(resources.GetObject("buttonLock.Image")));
             this.buttonLock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonLock.Location = new System.Drawing.Point(231, 2);
             this.buttonLock.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
@@ -314,7 +314,7 @@
             // pictureBoxLoading
             // 
             this.pictureBoxLoading.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBoxLoading.Image = global::Encryptior.Properties.Resources._25;
+            this.pictureBoxLoading.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLoading.Image")));
             this.pictureBoxLoading.Location = new System.Drawing.Point(390, 7);
             this.pictureBoxLoading.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBoxLoading.Name = "pictureBoxLoading";

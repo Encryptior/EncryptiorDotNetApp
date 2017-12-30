@@ -33,6 +33,8 @@ namespace Encryptior
         public LockFolder()
         {
             InitializeComponent();
+            this.ActiveControl = textBoxProjectName;
+            textBoxProjectName.SelectAll();
         }
 
         private void buttonLock_Click(object sender, EventArgs e)
