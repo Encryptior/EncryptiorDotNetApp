@@ -62,7 +62,7 @@ namespace Encryptior
                 labelCost.Text = encryptedFile.CostUSD.ToString() + "$";
                 linkLabelOwner.Text = encryptedFile.Owner;
                 Identicon icon = new Identicon(linkLabelOwner.Text, 8);
-                pictureBoxIdenticonOwner.Image = icon.GetBitmap(24);
+                pictureBoxIdenticonOwner.Image = icon.GetBitmap(32);
                 if (encryptedFile.TransactionHash != null)
                 {
                     flowLayoutPanelTStatus.Visible = true;

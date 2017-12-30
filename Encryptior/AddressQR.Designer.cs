@@ -50,14 +50,15 @@
             this.labelAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
             this.labelAddress.Location = new System.Drawing.Point(12, 9);
             this.labelAddress.Name = "labelAddress";
-            this.labelAddress.Size = new System.Drawing.Size(315, 20);
+            this.labelAddress.Size = new System.Drawing.Size(245, 15);
             this.labelAddress.TabIndex = 15;
             this.labelAddress.Text = "0xNopeNotForTheTestVersionAccounts";
             this.labelAddress.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // AddressQR
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(337, 252);
             this.Controls.Add(this.labelAddress);

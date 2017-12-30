@@ -82,12 +82,13 @@
             // 
             // textBoxCost
             // 
+            this.textBoxCost.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.textBoxCost.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCost.ForeColor = System.Drawing.Color.Black;
-            this.textBoxCost.Location = new System.Drawing.Point(85, 5);
-            this.textBoxCost.Margin = new System.Windows.Forms.Padding(5);
+            this.textBoxCost.Location = new System.Drawing.Point(85, 14);
+            this.textBoxCost.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.textBoxCost.Name = "textBoxCost";
-            this.textBoxCost.Size = new System.Drawing.Size(137, 31);
+            this.textBoxCost.Size = new System.Drawing.Size(129, 31);
             this.textBoxCost.TabIndex = 28;
             this.textBoxCost.Text = "10.00";
             this.textBoxCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -98,7 +99,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
-            this.label10.Location = new System.Drawing.Point(4, 10);
+            this.label10.Location = new System.Drawing.Point(4, 18);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(72, 23);
@@ -113,9 +114,9 @@
             this.textBoxProjectName.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxProjectName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
             this.textBoxProjectName.Location = new System.Drawing.Point(72, 4);
-            this.textBoxProjectName.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxProjectName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxProjectName.Name = "textBoxProjectName";
-            this.textBoxProjectName.Size = new System.Drawing.Size(430, 31);
+            this.textBoxProjectName.Size = new System.Drawing.Size(404, 31);
             this.textBoxProjectName.TabIndex = 0;
             this.textBoxProjectName.Text = "New Encrypted File";
             // 
@@ -145,9 +146,10 @@
             this.listViewFiles.FullRowSelect = true;
             this.listViewFiles.GridLines = true;
             this.listViewFiles.LargeImageList = this.imageList1;
-            this.listViewFiles.Location = new System.Drawing.Point(3, 253);
+            this.listViewFiles.Location = new System.Drawing.Point(2, 279);
+            this.listViewFiles.Margin = new System.Windows.Forms.Padding(2);
             this.listViewFiles.Name = "listViewFiles";
-            this.listViewFiles.Size = new System.Drawing.Size(976, 497);
+            this.listViewFiles.Size = new System.Drawing.Size(916, 484);
             this.listViewFiles.SmallImageList = this.imageList1;
             this.listViewFiles.TabIndex = 37;
             this.listViewFiles.UseCompatibleStateImageBehavior = false;
@@ -158,7 +160,7 @@
             // fileName
             // 
             this.fileName.Text = "Name";
-            this.fileName.Width = 506;
+            this.fileName.Width = 187;
             // 
             // dateModified
             // 
@@ -168,7 +170,7 @@
             // size
             // 
             this.size.Text = "Size";
-            this.size.Width = 261;
+            this.size.Width = 66;
             // 
             // status
             // 
@@ -208,15 +210,16 @@
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel4, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(982, 753);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(920, 765);
             this.tableLayoutPanel1.TabIndex = 41;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
@@ -225,13 +228,15 @@
             this.flowLayoutPanel1.Controls.Add(this.buttonOpenFiles);
             this.flowLayoutPanel1.Controls.Add(this.buttonDelete);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 203);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(2, 217);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(976, 44);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(916, 58);
             this.flowLayoutPanel1.TabIndex = 38;
             // 
             // buttonOpenFiles
             // 
+            this.buttonOpenFiles.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.buttonOpenFiles.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonOpenFiles.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonOpenFiles.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
@@ -246,7 +251,7 @@
             this.buttonOpenFiles.Location = new System.Drawing.Point(4, 2);
             this.buttonOpenFiles.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.buttonOpenFiles.Name = "buttonOpenFiles";
-            this.buttonOpenFiles.Size = new System.Drawing.Size(89, 40);
+            this.buttonOpenFiles.Size = new System.Drawing.Size(100, 55);
             this.buttonOpenFiles.TabIndex = 30;
             this.buttonOpenFiles.Text = "Add";
             this.buttonOpenFiles.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -255,6 +260,7 @@
             // 
             // buttonDelete
             // 
+            this.buttonDelete.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.buttonDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonDelete.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
@@ -266,10 +272,10 @@
             this.buttonDelete.ForeColor = System.Drawing.Color.Black;
             this.buttonDelete.Image = ((System.Drawing.Image)(resources.GetObject("buttonDelete.Image")));
             this.buttonDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonDelete.Location = new System.Drawing.Point(101, 2);
+            this.buttonDelete.Location = new System.Drawing.Point(112, 2);
             this.buttonDelete.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(121, 40);
+            this.buttonDelete.Size = new System.Drawing.Size(119, 55);
             this.buttonDelete.TabIndex = 31;
             this.buttonDelete.Text = "Remove";
             this.buttonDelete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -283,13 +289,15 @@
             this.flowLayoutPanel2.Controls.Add(this.buttonLock);
             this.flowLayoutPanel2.Controls.Add(this.pictureBoxLoading);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 153);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(2, 155);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(976, 44);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(916, 58);
             this.flowLayoutPanel2.TabIndex = 39;
             // 
             // buttonLock
             // 
+            this.buttonLock.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.buttonLock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonLock.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonLock.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
@@ -301,10 +309,10 @@
             this.buttonLock.ForeColor = System.Drawing.Color.Black;
             this.buttonLock.Image = ((System.Drawing.Image)(resources.GetObject("buttonLock.Image")));
             this.buttonLock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonLock.Location = new System.Drawing.Point(231, 2);
+            this.buttonLock.Location = new System.Drawing.Point(223, 2);
             this.buttonLock.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.buttonLock.Name = "buttonLock";
-            this.buttonLock.Size = new System.Drawing.Size(150, 40);
+            this.buttonLock.Size = new System.Drawing.Size(156, 55);
             this.buttonLock.TabIndex = 29;
             this.buttonLock.Text = "Lock && Save";
             this.buttonLock.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -315,10 +323,10 @@
             // 
             this.pictureBoxLoading.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBoxLoading.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLoading.Image")));
-            this.pictureBoxLoading.Location = new System.Drawing.Point(390, 7);
-            this.pictureBoxLoading.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBoxLoading.Location = new System.Drawing.Point(388, 14);
+            this.pictureBoxLoading.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.pictureBoxLoading.Name = "pictureBoxLoading";
-            this.pictureBoxLoading.Size = new System.Drawing.Size(29, 30);
+            this.pictureBoxLoading.Size = new System.Drawing.Size(28, 30);
             this.pictureBoxLoading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBoxLoading.TabIndex = 32;
             this.pictureBoxLoading.TabStop = false;
@@ -329,14 +337,15 @@
             this.flowLayoutPanel3.Controls.Add(this.label1);
             this.flowLayoutPanel3.Controls.Add(this.textBoxProjectName);
             this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 53);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(2, 53);
+            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(976, 44);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(916, 47);
             this.flowLayoutPanel3.TabIndex = 40;
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
@@ -354,16 +363,19 @@
             this.flowLayoutPanel4.Controls.Add(this.checkBoxSingleUser);
             this.flowLayoutPanel4.Controls.Add(this.textBoxSingleUser);
             this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(3, 103);
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(2, 104);
+            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(976, 44);
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(916, 47);
             this.flowLayoutPanel4.TabIndex = 41;
             // 
             // checkBox1
             // 
+            this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(3, 3);
+            this.checkBox1.Location = new System.Drawing.Point(2, 3);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(157, 27);
             this.checkBox1.TabIndex = 41;
@@ -373,9 +385,11 @@
             // 
             // checkBoxSingleUser
             // 
+            this.checkBoxSingleUser.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.checkBoxSingleUser.AutoSize = true;
             this.checkBoxSingleUser.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxSingleUser.Location = new System.Drawing.Point(166, 3);
+            this.checkBoxSingleUser.Location = new System.Drawing.Point(163, 3);
+            this.checkBoxSingleUser.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxSingleUser.Name = "checkBoxSingleUser";
             this.checkBoxSingleUser.Size = new System.Drawing.Size(150, 27);
             this.checkBoxSingleUser.TabIndex = 42;
@@ -389,10 +403,10 @@
             this.textBoxSingleUser.BackColor = System.Drawing.Color.White;
             this.textBoxSingleUser.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxSingleUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
-            this.textBoxSingleUser.Location = new System.Drawing.Point(323, 4);
-            this.textBoxSingleUser.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxSingleUser.Location = new System.Drawing.Point(319, 4);
+            this.textBoxSingleUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxSingleUser.Name = "textBoxSingleUser";
-            this.textBoxSingleUser.Size = new System.Drawing.Size(430, 25);
+            this.textBoxSingleUser.Size = new System.Drawing.Size(404, 25);
             this.textBoxSingleUser.TabIndex = 43;
             this.textBoxSingleUser.Text = "0x...";
             this.textBoxSingleUser.Visible = false;
@@ -404,14 +418,14 @@
             // 
             // LockFolder
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(982, 753);
+            this.ClientSize = new System.Drawing.Size(920, 765);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.MinimumSize = new System.Drawing.Size(790, 47);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimumSize = new System.Drawing.Size(740, 47);
             this.Name = "LockFolder";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Lock Folder";

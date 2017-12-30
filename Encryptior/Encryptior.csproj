@@ -73,7 +73,7 @@
     <OutputPath>bin\x86\Mono\</OutputPath>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Resources\mainIcon.ico</ApplicationIcon>
+    <ApplicationIcon>mainIcon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
@@ -353,6 +353,7 @@
     <None Include="Resources\icons8_Refresh_32px.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="mainIcon.ico" />
     <Content Include="Resources\mainIcon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

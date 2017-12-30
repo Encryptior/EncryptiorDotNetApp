@@ -49,47 +49,49 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.txtPassword.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(240, 62);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPassword.Location = new System.Drawing.Point(272, 85);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(363, 28);
+            this.txtPassword.Size = new System.Drawing.Size(453, 28);
             this.txtPassword.TabIndex = 2;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelAddress
             // 
-            this.labelAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelAddress.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelAddress.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
-            this.labelAddress.Location = new System.Drawing.Point(130, 30);
+            this.labelAddress.Location = new System.Drawing.Point(272, 45);
+            this.labelAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelAddress.Name = "labelAddress";
-            this.labelAddress.Size = new System.Drawing.Size(435, 20);
+            this.labelAddress.Size = new System.Drawing.Size(406, 25);
             this.labelAddress.TabIndex = 6;
             this.labelAddress.Text = "0xABCD1234ef98";
             this.labelAddress.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtRepeat
             // 
-            this.txtRepeat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRepeat.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.txtRepeat.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRepeat.Location = new System.Drawing.Point(240, 94);
-            this.txtRepeat.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRepeat.Location = new System.Drawing.Point(272, 125);
+            this.txtRepeat.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtRepeat.Name = "txtRepeat";
             this.txtRepeat.PasswordChar = '*';
-            this.txtRepeat.Size = new System.Drawing.Size(363, 28);
+            this.txtRepeat.Size = new System.Drawing.Size(453, 28);
             this.txtRepeat.TabIndex = 8;
             this.txtRepeat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
-            this.label3.Location = new System.Drawing.Point(149, 64);
+            this.label3.Location = new System.Drawing.Point(158, 87);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 23);
             this.label3.TabIndex = 9;
@@ -97,11 +99,12 @@
             // 
             // label4
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
-            this.label4.Location = new System.Drawing.Point(158, 96);
+            this.label4.Location = new System.Drawing.Point(170, 127);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 23);
             this.label4.TabIndex = 10;
@@ -109,14 +112,14 @@
             // 
             // buttonOK
             // 
-            this.buttonOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonOK.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.buttonOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOK.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonOK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
-            this.buttonOK.Location = new System.Drawing.Point(500, 176);
-            this.buttonOK.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonOK.Location = new System.Drawing.Point(597, 211);
+            this.buttonOK.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(100, 40);
+            this.buttonOK.Size = new System.Drawing.Size(125, 50);
             this.buttonOK.TabIndex = 12;
             this.buttonOK.Text = "OK";
             this.buttonOK.UseVisualStyleBackColor = true;
@@ -124,15 +127,15 @@
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonCancel.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.buttonCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
             this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCancel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCancel.ForeColor = System.Drawing.Color.White;
-            this.buttonCancel.Location = new System.Drawing.Point(392, 176);
-            this.buttonCancel.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonCancel.Location = new System.Drawing.Point(462, 211);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(100, 40);
+            this.buttonCancel.Size = new System.Drawing.Size(125, 50);
             this.buttonCancel.TabIndex = 13;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = false;
@@ -144,8 +147,8 @@
             this.labelWarningText.AutoSize = true;
             this.labelWarningText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelWarningText.ForeColor = System.Drawing.Color.Red;
-            this.labelWarningText.Location = new System.Drawing.Point(13, 151);
-            this.labelWarningText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelWarningText.Location = new System.Drawing.Point(16, 187);
+            this.labelWarningText.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.labelWarningText.Name = "labelWarningText";
             this.labelWarningText.Size = new System.Drawing.Size(358, 69);
             this.labelWarningText.TabIndex = 14;
@@ -159,12 +162,13 @@
             // 
             // labelinfo
             // 
-            this.labelinfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelinfo.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelinfo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelinfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
-            this.labelinfo.Location = new System.Drawing.Point(303, 139);
+            this.labelinfo.Location = new System.Drawing.Point(351, 165);
+            this.labelinfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelinfo.Name = "labelinfo";
-            this.labelinfo.Size = new System.Drawing.Size(300, 30);
+            this.labelinfo.Size = new System.Drawing.Size(375, 38);
             this.labelinfo.TabIndex = 15;
             this.labelinfo.Text = "Wait a bit, wallet is being encrypted...";
             this.labelinfo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -182,7 +186,8 @@
             this.labelWarning.AutoSize = true;
             this.labelWarning.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelWarning.ForeColor = System.Drawing.Color.Red;
-            this.labelWarning.Location = new System.Drawing.Point(12, 123);
+            this.labelWarning.Location = new System.Drawing.Point(15, 152);
+            this.labelWarning.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelWarning.Name = "labelWarning";
             this.labelWarning.Size = new System.Drawing.Size(33, 28);
             this.labelWarning.TabIndex = 17;
@@ -190,14 +195,16 @@
             // 
             // buttonRefresh
             // 
+            this.buttonRefresh.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.buttonRefresh.FlatAppearance.BorderSize = 0;
             this.buttonRefresh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.AliceBlue;
             this.buttonRefresh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.buttonRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonRefresh.Image = global::Encryptior.Properties.Resources.icons8_Refresh_32px;
-            this.buttonRefresh.Location = new System.Drawing.Point(571, 23);
+            this.buttonRefresh.Location = new System.Drawing.Point(679, 38);
+            this.buttonRefresh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonRefresh.Name = "buttonRefresh";
-            this.buttonRefresh.Size = new System.Drawing.Size(32, 32);
+            this.buttonRefresh.Size = new System.Drawing.Size(40, 40);
             this.buttonRefresh.TabIndex = 18;
             this.buttonRefresh.UseVisualStyleBackColor = true;
             this.buttonRefresh.Click += new System.EventHandler(this.buttonRefresh_Click);
@@ -205,22 +212,22 @@
             // pictureBoxIdenticon
             // 
             this.pictureBoxIdenticon.Image = global::Encryptior.Properties.Resources.icons8_Wallet_64px;
-            this.pictureBoxIdenticon.Location = new System.Drawing.Point(15, 14);
-            this.pictureBoxIdenticon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBoxIdenticon.Location = new System.Drawing.Point(19, 18);
+            this.pictureBoxIdenticon.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pictureBoxIdenticon.Name = "pictureBoxIdenticon";
-            this.pictureBoxIdenticon.Size = new System.Drawing.Size(120, 120);
+            this.pictureBoxIdenticon.Size = new System.Drawing.Size(150, 150);
             this.pictureBoxIdenticon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBoxIdenticon.TabIndex = 16;
             this.pictureBoxIdenticon.TabStop = false;
             // 
             // FirstPassword
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(616, 229);
+            this.ClientSize = new System.Drawing.Size(742, 284);
             this.Controls.Add(this.buttonRefresh);
             this.Controls.Add(this.labelWarning);
-            this.Controls.Add(this.pictureBoxIdenticon);
             this.Controls.Add(this.labelinfo);
             this.Controls.Add(this.labelWarningText);
             this.Controls.Add(this.buttonCancel);
@@ -230,10 +237,11 @@
             this.Controls.Add(this.txtRepeat);
             this.Controls.Add(this.labelAddress);
             this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.pictureBoxIdenticon);
             this.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.MaximizeBox = false;
             this.Name = "FirstPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
