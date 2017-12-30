@@ -20,9 +20,9 @@ I know...
 
 ## Pre-Built packages
 
-You can add your own installer project. There is a 
+You can add your own installer project. There is a pre-built version available here : [https://www.encryptior.com/#downloads](https://www.encryptior.com/#downloads)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details
+This project is licensed under the MIT License - see the [licence.txt](licence.txt) file for details
 
