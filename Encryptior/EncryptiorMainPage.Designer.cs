@@ -60,7 +60,6 @@ namespace Encryptior
             this.buttonChangeWallet = new System.Windows.Forms.Button();
             this.buttonOpenEncrypted = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.timerRefresh = new System.Windows.Forms.Timer(this.components);
             this.readBalance = new System.ComponentModel.BackgroundWorker();
             this.tableLayoutPanel2.SuspendLayout();
@@ -142,7 +141,6 @@ namespace Encryptior
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel1, 0, 5);
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.linkLabel1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.linkLabel2, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -462,27 +460,13 @@ namespace Encryptior
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Red;
-            this.linkLabel1.Location = new System.Drawing.Point(798, 0);
+            this.linkLabel1.Location = new System.Drawing.Point(771, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(144, 20);
+            this.linkLabel1.Size = new System.Drawing.Size(171, 20);
             this.linkLabel1.TabIndex = 18;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Pre-Alpha (readme)!";
+            this.linkLabel1.Text = "Alpha - TestNet (About)!";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel2.LinkColor = System.Drawing.Color.Silver;
-            this.linkLabel2.Location = new System.Drawing.Point(801, 20);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(141, 20);
-            this.linkLabel2.TabIndex = 22;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Free icons by Icons8";
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // timerRefresh
             // 
@@ -545,7 +529,6 @@ namespace Encryptior
         private Button buttonFaucet;
         private Button buttonTransactions;
         private Button buttonTransfer;
-        private LinkLabel linkLabel2;
         private Button buttonQR;
         private FlowLayoutPanel flowLayoutPanel1;
         private Button buttonCopy;
