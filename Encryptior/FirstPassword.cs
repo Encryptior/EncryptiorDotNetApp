@@ -25,7 +25,7 @@ namespace Encryptior
             InitializeComponent();
             labelAddress.Text = ecKey.GetPublicAddress();
             Identicon identicon = new Identicon(labelAddress.Text, 8);
-            pictureBoxIdenticon.Image = identicon.GetBitmap(100);
+            pictureBoxIdenticon.Image = identicon.GetBitmap(128);
         }
 
 
@@ -85,7 +85,7 @@ namespace Encryptior
             ecKey = Nethereum.Signer.EthECKey.GenerateKey();
             labelAddress.Text = ecKey.GetPublicAddress();
             Identicon identicon = new Identicon(labelAddress.Text, 8);
-            pictureBoxIdenticon.Image = identicon.GetBitmap(100);
+            pictureBoxIdenticon.Image = identicon.GetBitmap(128);
         }
     }
 }

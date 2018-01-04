@@ -60,7 +60,7 @@ namespace Encryptior
         private void textBoxAddress_TextChanged(object sender, EventArgs e)
         {
             Identicon identicon = new Identicon(textBoxAddress.Text, 8);
-            pictureBoxIdenticon.Image = identicon.GetBitmap(32);
+            pictureBoxIdenticon.Image = identicon.GetBitmap(128);
         }
 
         private void button1_Click(object sender, EventArgs e)

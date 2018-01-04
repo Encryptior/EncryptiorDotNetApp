@@ -86,5 +86,6 @@ namespace Encryptior
                 buttonConfirm.Enabled = true;
             }
         }
+
     }
 }
