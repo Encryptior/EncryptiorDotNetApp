@@ -27,7 +27,7 @@ namespace Encryptior
             InitializeComponent();
             labelAddress.Text = address;
             Identicon identicon = new Identicon(address, 8);
-            pictureBoxIdenticon.Image = identicon.GetBitmap(100);
+            pictureBoxIdenticon.Image = identicon.GetBitmap(128);
         }
 
 
@@ -82,6 +82,11 @@ namespace Encryptior
                 e.SuppressKeyPress = true;
                 buttonOK.PerformClick();
             }
+        }
+
+        private void PasswordForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

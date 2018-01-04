@@ -36,7 +36,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.linkLabelTransHash = new System.Windows.Forms.LinkLabel();
-            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.linkLabelTransStatus = new System.Windows.Forms.LinkLabel();
             this.pictureBoxLoadingTransaction = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -77,8 +76,8 @@
             this.buttonOpenFiles = new System.Windows.Forms.Button();
             this.backgroundDecompressor = new System.ComponentModel.BackgroundWorker();
             this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel4.SuspendLayout();
-            this.flowLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoadingTransaction)).BeginInit();
             this.groupBoxFileDetails.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -97,6 +96,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnzipStatus)).BeginInit();
             this.groupBoxUnzipped.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel4
@@ -110,7 +110,7 @@
             this.tableLayoutPanel4.Controls.Add(this.label7, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.label8, 0, 2);
             this.tableLayoutPanel4.Controls.Add(this.linkLabelTransHash, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.flowLayoutPanel4, 1, 2);
+            this.tableLayoutPanel4.Controls.Add(this.panel1, 1, 2);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 21);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -184,23 +184,13 @@
             this.linkLabelTransHash.Text = "0xabc123....";
             this.linkLabelTransHash.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelTransHash_LinkClicked);
             // 
-            // flowLayoutPanel4
-            // 
-            this.flowLayoutPanel4.Controls.Add(this.linkLabelTransStatus);
-            this.flowLayoutPanel4.Controls.Add(this.pictureBoxLoadingTransaction);
-            this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(100, 88);
-            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(621, 36);
-            this.flowLayoutPanel4.TabIndex = 44;
-            // 
             // linkLabelTransStatus
             // 
             this.linkLabelTransStatus.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.linkLabelTransStatus.AutoSize = true;
             this.linkLabelTransStatus.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabelTransStatus.LinkColor = System.Drawing.Color.Black;
-            this.linkLabelTransStatus.Location = new System.Drawing.Point(3, 8);
+            this.linkLabelTransStatus.Location = new System.Drawing.Point(1, 9);
             this.linkLabelTransStatus.Name = "linkLabelTransStatus";
             this.linkLabelTransStatus.Size = new System.Drawing.Size(79, 17);
             this.linkLabelTransStatus.TabIndex = 43;
@@ -212,8 +202,8 @@
             // 
             this.pictureBoxLoadingTransaction.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBoxLoadingTransaction.Image = global::Encryptior.Properties.Resources._25;
-            this.pictureBoxLoadingTransaction.Location = new System.Drawing.Point(89, 4);
-            this.pictureBoxLoadingTransaction.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxLoadingTransaction.Location = new System.Drawing.Point(87, 4);
+            this.pictureBoxLoadingTransaction.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxLoadingTransaction.Name = "pictureBoxLoadingTransaction";
             this.pictureBoxLoadingTransaction.Size = new System.Drawing.Size(26, 26);
             this.pictureBoxLoadingTransaction.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -242,7 +232,7 @@
             this.textBoxPass.Location = new System.Drawing.Point(105, 17);
             this.textBoxPass.Name = "textBoxPass";
             this.textBoxPass.ReadOnly = true;
-            this.textBoxPass.Size = new System.Drawing.Size(396, 25);
+            this.textBoxPass.Size = new System.Drawing.Size(395, 25);
             this.textBoxPass.TabIndex = 28;
             this.textBoxPass.Text = "pass";
             // 
@@ -350,7 +340,7 @@
             // 
             this.pictureBoxIdenticonOwner.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBoxIdenticonOwner.Location = new System.Drawing.Point(9, 4);
-            this.pictureBoxIdenticonOwner.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxIdenticonOwner.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxIdenticonOwner.Name = "pictureBoxIdenticonOwner";
             this.pictureBoxIdenticonOwner.Size = new System.Drawing.Size(32, 32);
             this.pictureBoxIdenticonOwner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -455,7 +445,7 @@
             // 
             this.pictureBoxLoading.Image = global::Encryptior.Properties.Resources._25;
             this.pictureBoxLoading.Location = new System.Drawing.Point(4, 4);
-            this.pictureBoxLoading.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxLoading.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxLoading.Name = "pictureBoxLoading";
             this.pictureBoxLoading.Size = new System.Drawing.Size(26, 26);
             this.pictureBoxLoading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -492,7 +482,7 @@
             // 
             this.pictureBox1.Image = global::Encryptior.Properties.Resources._25;
             this.pictureBox1.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(26, 26);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -562,7 +552,7 @@
             this.tableLayoutPanel8.ColumnCount = 3;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 216F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 217F));
             this.tableLayoutPanel8.Controls.Add(this.label9, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.textBoxPass, 1, 0);
             this.tableLayoutPanel8.Controls.Add(this.buttonUnlockFile, 2, 0);
@@ -588,7 +578,7 @@
             this.buttonUnlockFile.ForeColor = System.Drawing.Color.Black;
             this.buttonUnlockFile.Image = global::Encryptior.Properties.Resources.icons8_Unlock_2_32px_1;
             this.buttonUnlockFile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonUnlockFile.Location = new System.Drawing.Point(508, 9);
+            this.buttonUnlockFile.Location = new System.Drawing.Point(507, 9);
             this.buttonUnlockFile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonUnlockFile.Name = "buttonUnlockFile";
             this.buttonUnlockFile.Size = new System.Drawing.Size(96, 40);
@@ -613,7 +603,7 @@
             // 
             this.pictureBoxUnzipStatus.Image = global::Encryptior.Properties.Resources._25;
             this.pictureBoxUnzipStatus.Location = new System.Drawing.Point(4, 4);
-            this.pictureBoxUnzipStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxUnzipStatus.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxUnzipStatus.Name = "pictureBoxUnzipStatus";
             this.pictureBoxUnzipStatus.Size = new System.Drawing.Size(26, 26);
             this.pictureBoxUnzipStatus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -653,7 +643,7 @@
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 21);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 73F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 74F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(722, 66);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
@@ -671,7 +661,7 @@
             this.buttonOpenFiles.ForeColor = System.Drawing.Color.Black;
             this.buttonOpenFiles.Image = global::Encryptior.Properties.Resources.icons8_Open_32px;
             this.buttonOpenFiles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonOpenFiles.Location = new System.Drawing.Point(4, 17);
+            this.buttonOpenFiles.Location = new System.Drawing.Point(4, 18);
             this.buttonOpenFiles.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonOpenFiles.Name = "buttonOpenFiles";
             this.buttonOpenFiles.Size = new System.Drawing.Size(137, 40);
@@ -688,6 +678,16 @@
             this.backgroundDecompressor.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundDecompressor_ProgressChanged);
             this.backgroundDecompressor.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundDecompressor_RunWorkerCompleted);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.linkLabelTransStatus);
+            this.panel1.Controls.Add(this.pictureBoxLoadingTransaction);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(100, 88);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(621, 36);
+            this.panel1.TabIndex = 44;
+            // 
             // DecrypterPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -701,8 +701,6 @@
             this.Text = "Decypher";
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
-            this.flowLayoutPanel4.ResumeLayout(false);
-            this.flowLayoutPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoadingTransaction)).EndInit();
             this.groupBoxFileDetails.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -729,6 +727,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnzipStatus)).EndInit();
             this.groupBoxUnzipped.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -761,7 +761,6 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.GroupBox groupBoxPassword;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
         private System.ComponentModel.BackgroundWorker backgroundDecompressor;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelUnzip;
@@ -781,5 +780,6 @@
         private System.Windows.Forms.Label labelCost;
         private System.Windows.Forms.Button buttonBuy;
         private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -42,11 +42,10 @@
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
-            this.label3.Location = new System.Drawing.Point(138, 71);
+            this.label3.Location = new System.Drawing.Point(177, 45);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 23);
@@ -55,36 +54,36 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(242, 68);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtPassword.Location = new System.Drawing.Point(181, 73);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(5);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(404, 29);
+            this.txtPassword.Size = new System.Drawing.Size(460, 29);
             this.txtPassword.TabIndex = 10;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown_1);
             // 
             // labelAddress
             // 
-            this.labelAddress.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelAddress.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
-            this.labelAddress.Location = new System.Drawing.Point(154, 34);
+            this.labelAddress.Location = new System.Drawing.Point(177, 18);
             this.labelAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelAddress.Name = "labelAddress";
-            this.labelAddress.Size = new System.Drawing.Size(494, 25);
+            this.labelAddress.Size = new System.Drawing.Size(477, 25);
             this.labelAddress.TabIndex = 14;
             this.labelAddress.Text = "0xABCD1234ef98";
-            this.labelAddress.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelAddress.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelinfo
             // 
-            this.labelinfo.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelinfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.labelinfo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelinfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
-            this.labelinfo.Location = new System.Drawing.Point(244, 122);
+            this.labelinfo.Location = new System.Drawing.Point(236, 107);
             this.labelinfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelinfo.Name = "labelinfo";
             this.labelinfo.Size = new System.Drawing.Size(405, 29);
@@ -95,14 +94,14 @@
             // 
             // buttonOK
             // 
-            this.buttonOK.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.buttonOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonOK.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonOK.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonOK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
-            this.buttonOK.Location = new System.Drawing.Point(522, 156);
-            this.buttonOK.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.buttonOK.Location = new System.Drawing.Point(516, 141);
+            this.buttonOK.Margin = new System.Windows.Forms.Padding(5);
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(125, 50);
+            this.buttonOK.Size = new System.Drawing.Size(125, 40);
             this.buttonOK.TabIndex = 17;
             this.buttonOK.Text = "OK";
             this.buttonOK.UseVisualStyleBackColor = true;
@@ -119,22 +118,22 @@
             this.pictureBoxIdenticon.Location = new System.Drawing.Point(19, 18);
             this.pictureBoxIdenticon.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pictureBoxIdenticon.Name = "pictureBoxIdenticon";
-            this.pictureBoxIdenticon.Size = new System.Drawing.Size(120, 120);
+            this.pictureBoxIdenticon.Size = new System.Drawing.Size(150, 150);
             this.pictureBoxIdenticon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBoxIdenticon.TabIndex = 19;
             this.pictureBoxIdenticon.TabStop = false;
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.buttonCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
             this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCancel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCancel.ForeColor = System.Drawing.Color.White;
-            this.buttonCancel.Location = new System.Drawing.Point(388, 156);
-            this.buttonCancel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.buttonCancel.Location = new System.Drawing.Point(381, 141);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(5);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(125, 50);
+            this.buttonCancel.Size = new System.Drawing.Size(125, 40);
             this.buttonCancel.TabIndex = 20;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = false;
@@ -145,7 +144,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(664, 222);
+            this.ClientSize = new System.Drawing.Size(655, 195);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.pictureBoxIdenticon);
             this.Controls.Add(this.buttonOK);
@@ -155,11 +154,12 @@
             this.Controls.Add(this.txtPassword);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.Name = "PasswordForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Wallet Unlock";
+            this.Load += new System.EventHandler(this.PasswordForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIdenticon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -43,14 +43,17 @@
             // 
             // listView1
             // 
+            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Wallet});
             this.listView1.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.LargeImageList = this.imageListIdenticons;
-            this.listView1.Location = new System.Drawing.Point(12, 116);
+            this.listView1.Location = new System.Drawing.Point(15, 145);
+            this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(473, 210);
+            this.listView1.Size = new System.Drawing.Size(578, 262);
             this.listView1.SmallImageList = this.imageListIdenticons;
             this.listView1.TabIndex = 11;
             this.listView1.UseCompatibleStateImageBehavior = false;
@@ -60,7 +63,7 @@
             // Wallet
             // 
             this.Wallet.Text = "Wallet";
-            this.Wallet.Width = 440;
+            this.Wallet.Width = 546;
             // 
             // imageListIdenticons
             // 
@@ -72,12 +75,12 @@
             // 
             this.buttonConfirm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonConfirm.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonConfirm.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonConfirm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
-            this.buttonConfirm.Location = new System.Drawing.Point(381, 342);
-            this.buttonConfirm.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonConfirm.Location = new System.Drawing.Point(468, 423);
+            this.buttonConfirm.Margin = new System.Windows.Forms.Padding(5);
             this.buttonConfirm.Name = "buttonConfirm";
-            this.buttonConfirm.Size = new System.Drawing.Size(100, 40);
+            this.buttonConfirm.Size = new System.Drawing.Size(125, 40);
             this.buttonConfirm.TabIndex = 34;
             this.buttonConfirm.Text = "Confirm";
             this.buttonConfirm.UseVisualStyleBackColor = true;
@@ -92,12 +95,12 @@
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(273, 342);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(333, 423);
+            this.button1.Margin = new System.Windows.Forms.Padding(5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 40);
+            this.button1.Size = new System.Drawing.Size(125, 40);
             this.button1.TabIndex = 36;
             this.button1.Text = "Cancel";
             this.button1.UseVisualStyleBackColor = false;
@@ -116,10 +119,10 @@
             this.buttonCreateWallet.ForeColor = System.Drawing.Color.Black;
             this.buttonCreateWallet.Image = global::Encryptior.Properties.Resources.icons8_Wallet_64px;
             this.buttonCreateWallet.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonCreateWallet.Location = new System.Drawing.Point(12, 11);
-            this.buttonCreateWallet.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonCreateWallet.Location = new System.Drawing.Point(15, 14);
+            this.buttonCreateWallet.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.buttonCreateWallet.Name = "buttonCreateWallet";
-            this.buttonCreateWallet.Size = new System.Drawing.Size(150, 100);
+            this.buttonCreateWallet.Size = new System.Drawing.Size(188, 125);
             this.buttonCreateWallet.TabIndex = 23;
             this.buttonCreateWallet.Text = "Add New Account";
             this.buttonCreateWallet.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -139,10 +142,10 @@
             this.buttonImport.ForeColor = System.Drawing.Color.Black;
             this.buttonImport.Image = global::Encryptior.Properties.Resources.icons8_Import_64px;
             this.buttonImport.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonImport.Location = new System.Drawing.Point(168, 11);
-            this.buttonImport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonImport.Location = new System.Drawing.Point(210, 14);
+            this.buttonImport.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.buttonImport.Name = "buttonImport";
-            this.buttonImport.Size = new System.Drawing.Size(150, 100);
+            this.buttonImport.Size = new System.Drawing.Size(188, 125);
             this.buttonImport.TabIndex = 24;
             this.buttonImport.Text = "Import Existing";
             this.buttonImport.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -151,7 +154,7 @@
             // 
             // buttonOpenFiles
             // 
-            this.buttonOpenFiles.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.buttonOpenFiles.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonOpenFiles.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonOpenFiles.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonOpenFiles.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
@@ -163,10 +166,10 @@
             this.buttonOpenFiles.ForeColor = System.Drawing.Color.Black;
             this.buttonOpenFiles.Image = global::Encryptior.Properties.Resources.icons8_Open_32px;
             this.buttonOpenFiles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonOpenFiles.Location = new System.Drawing.Point(12, 344);
-            this.buttonOpenFiles.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonOpenFiles.Location = new System.Drawing.Point(15, 411);
+            this.buttonOpenFiles.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.buttonOpenFiles.Name = "buttonOpenFiles";
-            this.buttonOpenFiles.Size = new System.Drawing.Size(132, 40);
+            this.buttonOpenFiles.Size = new System.Drawing.Size(165, 50);
             this.buttonOpenFiles.TabIndex = 38;
             this.buttonOpenFiles.Text = "Open Folder";
             this.buttonOpenFiles.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -175,10 +178,10 @@
             // 
             // ChooseWallet
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(496, 395);
+            this.ClientSize = new System.Drawing.Size(608, 477);
             this.Controls.Add(this.buttonOpenFiles);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonConfirm);
@@ -187,6 +190,7 @@
             this.Controls.Add(this.listView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "ChooseWallet";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

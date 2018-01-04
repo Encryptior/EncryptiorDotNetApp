@@ -89,7 +89,7 @@ namespace Encryptior
             this.labelUsd.Location = new System.Drawing.Point(4, 199);
             this.labelUsd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelUsd.Name = "labelUsd";
-            this.labelUsd.Size = new System.Drawing.Size(777, 51);
+            this.labelUsd.Size = new System.Drawing.Size(720, 51);
             this.labelUsd.TabIndex = 10;
             this.labelUsd.Text = "Hello";
             this.labelUsd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -103,7 +103,7 @@ namespace Encryptior
             this.label3.Location = new System.Drawing.Point(4, 50);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(777, 75);
+            this.label3.Size = new System.Drawing.Size(720, 75);
             this.label3.TabIndex = 1;
             this.label3.Text = "Account Overview";
             this.label3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -126,7 +126,7 @@ namespace Encryptior
             // 
             // openZipDialog
             // 
-            this.openZipDialog.Filter = "Encrypted Zip Files|*.encrypted.zip";
+            this.openZipDialog.Filter = "Encrypted Zip Files|*.zip";
             // 
             // imageListPublicFiles
             // 
@@ -145,7 +145,7 @@ namespace Encryptior
             this.tableLayoutPanel2.Controls.Add(this.linkLabel1, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 6;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
@@ -154,7 +154,7 @@ namespace Encryptior
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 74F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(785, 686);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(728, 701);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // tableLayoutPanel3
@@ -167,11 +167,11 @@ namespace Encryptior
             this.tableLayoutPanel3.Controls.Add(this.flowLayoutPanel1, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 129);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(777, 66);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(720, 66);
             this.tableLayoutPanel3.TabIndex = 20;
             // 
             // flowLayoutPanel1
@@ -181,8 +181,8 @@ namespace Encryptior
             this.flowLayoutPanel1.Controls.Add(this.buttonQR);
             this.flowLayoutPanel1.Controls.Add(this.buttonCopy);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(60, 4);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(32, 4);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(656, 58);
             this.flowLayoutPanel1.TabIndex = 18;
@@ -208,7 +208,7 @@ namespace Encryptior
             // 
             this.pictureBoxIdenticon.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBoxIdenticon.Location = new System.Drawing.Point(485, 7);
-            this.pictureBoxIdenticon.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBoxIdenticon.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBoxIdenticon.Name = "pictureBoxIdenticon";
             this.pictureBoxIdenticon.Size = new System.Drawing.Size(40, 40);
             this.pictureBoxIdenticon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -268,11 +268,11 @@ namespace Encryptior
             this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 254);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(777, 428);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(720, 443);
             this.tableLayoutPanel1.TabIndex = 21;
             // 
             // panel1
@@ -286,10 +286,10 @@ namespace Encryptior
             this.panel1.Controls.Add(this.buttonChangeWallet);
             this.panel1.Controls.Add(this.buttonOpenEncrypted);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(-48, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(-77, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(874, 420);
+            this.panel1.Size = new System.Drawing.Size(874, 435);
             this.panel1.TabIndex = 0;
             // 
             // labelVersion
@@ -469,7 +469,7 @@ namespace Encryptior
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Red;
-            this.linkLabel1.Location = new System.Drawing.Point(610, 2);
+            this.linkLabel1.Location = new System.Drawing.Point(553, 2);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(171, 20);
@@ -494,7 +494,7 @@ namespace Encryptior
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(785, 686);
+            this.ClientSize = new System.Drawing.Size(728, 701);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);

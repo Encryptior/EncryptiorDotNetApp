@@ -62,15 +62,15 @@
             // 
             // buttonConfirm
             // 
-            this.buttonConfirm.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.buttonConfirm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonConfirm.Enabled = false;
             this.buttonConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonConfirm.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonConfirm.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonConfirm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
-            this.buttonConfirm.Location = new System.Drawing.Point(586, 369);
-            this.buttonConfirm.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.buttonConfirm.Location = new System.Drawing.Point(548, 299);
+            this.buttonConfirm.Margin = new System.Windows.Forms.Padding(5);
             this.buttonConfirm.Name = "buttonConfirm";
-            this.buttonConfirm.Size = new System.Drawing.Size(125, 50);
+            this.buttonConfirm.Size = new System.Drawing.Size(125, 40);
             this.buttonConfirm.TabIndex = 33;
             this.buttonConfirm.Text = "Confirm";
             this.buttonConfirm.UseVisualStyleBackColor = true;
@@ -78,15 +78,15 @@
             // 
             // button1
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(451, 369);
-            this.button1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.button1.Location = new System.Drawing.Point(413, 299);
+            this.button1.Margin = new System.Windows.Forms.Padding(5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 50);
+            this.button1.Size = new System.Drawing.Size(125, 40);
             this.button1.TabIndex = 35;
             this.button1.Text = "Cancel";
             this.button1.UseVisualStyleBackColor = false;
@@ -94,11 +94,12 @@
             // 
             // labelAddress
             // 
-            this.labelAddress.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelAddress.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.labelAddress.AutoSize = true;
             this.labelAddress.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAddress.ForeColor = System.Drawing.Color.Black;
-            this.labelAddress.Location = new System.Drawing.Point(142, 11);
+            this.labelAddress.Location = new System.Drawing.Point(173, 9);
             this.labelAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelAddress.Name = "labelAddress";
             this.labelAddress.Size = new System.Drawing.Size(236, 32);
@@ -107,11 +108,12 @@
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
-            this.label1.Location = new System.Drawing.Point(146, 51);
+            this.label1.Location = new System.Drawing.Point(175, 51);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 23);
@@ -120,11 +122,12 @@
             // 
             // labelFilename
             // 
-            this.labelFilename.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelFilename.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.labelFilename.AutoSize = true;
             this.labelFilename.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFilename.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
-            this.labelFilename.Location = new System.Drawing.Point(201, 51);
+            this.labelFilename.Location = new System.Drawing.Point(221, 51);
             this.labelFilename.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelFilename.Name = "labelFilename";
             this.labelFilename.Size = new System.Drawing.Size(223, 23);
@@ -133,11 +136,12 @@
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
-            this.label3.Location = new System.Drawing.Point(146, 101);
+            this.label3.Location = new System.Drawing.Point(173, 86);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 23);
@@ -146,25 +150,27 @@
             // 
             // textBoxFileCostUsd
             // 
-            this.textBoxFileCostUsd.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.textBoxFileCostUsd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxFileCostUsd.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxFileCostUsd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFileCostUsd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
-            this.textBoxFileCostUsd.Location = new System.Drawing.Point(380, 101);
-            this.textBoxFileCostUsd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxFileCostUsd.Location = new System.Drawing.Point(382, 86);
+            this.textBoxFileCostUsd.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxFileCostUsd.Name = "textBoxFileCostUsd";
-            this.textBoxFileCostUsd.Size = new System.Drawing.Size(331, 22);
+            this.textBoxFileCostUsd.Size = new System.Drawing.Size(291, 22);
             this.textBoxFileCostUsd.TabIndex = 41;
             this.textBoxFileCostUsd.Text = "one moment...";
             this.textBoxFileCostUsd.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
-            this.label4.Location = new System.Drawing.Point(145, 146);
+            this.label4.Location = new System.Drawing.Point(173, 123);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(103, 23);
@@ -173,39 +179,42 @@
             // 
             // textBoxFileCostEth
             // 
-            this.textBoxFileCostEth.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.textBoxFileCostEth.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxFileCostEth.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxFileCostEth.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFileCostEth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
-            this.textBoxFileCostEth.Location = new System.Drawing.Point(380, 148);
-            this.textBoxFileCostEth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxFileCostEth.Location = new System.Drawing.Point(383, 123);
+            this.textBoxFileCostEth.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxFileCostEth.Name = "textBoxFileCostEth";
-            this.textBoxFileCostEth.Size = new System.Drawing.Size(331, 22);
+            this.textBoxFileCostEth.Size = new System.Drawing.Size(291, 22);
             this.textBoxFileCostEth.TabIndex = 44;
             this.textBoxFileCostEth.Text = "one moment...";
             this.textBoxFileCostEth.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBoxTransFee
             // 
-            this.textBoxTransFee.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.textBoxTransFee.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxTransFee.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxTransFee.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTransFee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
-            this.textBoxTransFee.Location = new System.Drawing.Point(378, 196);
-            this.textBoxTransFee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxTransFee.Location = new System.Drawing.Point(382, 159);
+            this.textBoxTransFee.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTransFee.Name = "textBoxTransFee";
-            this.textBoxTransFee.Size = new System.Drawing.Size(332, 22);
+            this.textBoxTransFee.Size = new System.Drawing.Size(292, 22);
             this.textBoxTransFee.TabIndex = 47;
             this.textBoxTransFee.Text = "one moment...";
             this.textBoxTransFee.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
-            this.label5.Location = new System.Drawing.Point(146, 195);
+            this.label5.Location = new System.Drawing.Point(173, 159);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(187, 23);
@@ -214,11 +223,12 @@
             // 
             // label6
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(146, 240);
+            this.label6.Location = new System.Drawing.Point(173, 200);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(124, 23);
@@ -227,42 +237,45 @@
             // 
             // textBoxTotalEther
             // 
-            this.textBoxTotalEther.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.textBoxTotalEther.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxTotalEther.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxTotalEther.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTotalEther.ForeColor = System.Drawing.Color.Black;
-            this.textBoxTotalEther.Location = new System.Drawing.Point(296, 235);
-            this.textBoxTotalEther.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxTotalEther.Location = new System.Drawing.Point(299, 196);
+            this.textBoxTotalEther.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTotalEther.Name = "textBoxTotalEther";
-            this.textBoxTotalEther.Size = new System.Drawing.Size(415, 27);
+            this.textBoxTotalEther.Size = new System.Drawing.Size(375, 27);
             this.textBoxTotalEther.TabIndex = 49;
             this.textBoxTotalEther.Text = "one moment...";
             this.textBoxTotalEther.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBoxTotalUsd
             // 
-            this.textBoxTotalUsd.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.textBoxTotalUsd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxTotalUsd.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxTotalUsd.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTotalUsd.ForeColor = System.Drawing.Color.Black;
-            this.textBoxTotalUsd.Location = new System.Drawing.Point(298, 276);
-            this.textBoxTotalUsd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxTotalUsd.Location = new System.Drawing.Point(300, 231);
+            this.textBoxTotalUsd.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTotalUsd.Name = "textBoxTotalUsd";
-            this.textBoxTotalUsd.Size = new System.Drawing.Size(414, 27);
+            this.textBoxTotalUsd.Size = new System.Drawing.Size(374, 27);
             this.textBoxTotalUsd.TabIndex = 50;
             this.textBoxTotalUsd.Text = "one moment...";
             this.textBoxTotalUsd.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBoxCourse
             // 
-            this.textBoxCourse.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.textBoxCourse.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxCourse.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxCourse.Font = new System.Drawing.Font("Segoe UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCourse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
-            this.textBoxCourse.Location = new System.Drawing.Point(296, 324);
-            this.textBoxCourse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxCourse.Location = new System.Drawing.Point(299, 266);
+            this.textBoxCourse.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxCourse.Name = "textBoxCourse";
-            this.textBoxCourse.Size = new System.Drawing.Size(415, 22);
+            this.textBoxCourse.Size = new System.Drawing.Size(375, 22);
             this.textBoxCourse.TabIndex = 51;
             this.textBoxCourse.Text = "one moment...";
             this.textBoxCourse.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -273,7 +286,7 @@
             this.labelExpiredNotification.AutoSize = true;
             this.labelExpiredNotification.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelExpiredNotification.ForeColor = System.Drawing.Color.Red;
-            this.labelExpiredNotification.Location = new System.Drawing.Point(10, 369);
+            this.labelExpiredNotification.Location = new System.Drawing.Point(10, 314);
             this.labelExpiredNotification.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelExpiredNotification.Name = "labelExpiredNotification";
             this.labelExpiredNotification.Size = new System.Drawing.Size(183, 23);
@@ -301,7 +314,7 @@
             this.labelFunds.AutoSize = true;
             this.labelFunds.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFunds.ForeColor = System.Drawing.Color.Black;
-            this.labelFunds.Location = new System.Drawing.Point(9, 324);
+            this.labelFunds.Location = new System.Drawing.Point(9, 286);
             this.labelFunds.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelFunds.Name = "labelFunds";
             this.labelFunds.Size = new System.Drawing.Size(265, 28);
@@ -310,34 +323,37 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox4.BackColor = System.Drawing.Color.RoyalBlue;
-            this.pictureBox4.Location = new System.Drawing.Point(150, 225);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Location = new System.Drawing.Point(174, 186);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(569, 2);
+            this.pictureBox4.Size = new System.Drawing.Size(500, 2);
             this.pictureBox4.TabIndex = 46;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.BackColor = System.Drawing.Color.RoyalBlue;
-            this.pictureBox3.Location = new System.Drawing.Point(148, 176);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Location = new System.Drawing.Point(174, 153);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(569, 2);
+            this.pictureBox3.Size = new System.Drawing.Size(500, 2);
             this.pictureBox3.TabIndex = 43;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.pictureBox2.Location = new System.Drawing.Point(151, 131);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(174, 117);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(569, 2);
+            this.pictureBox2.Size = new System.Drawing.Size(500, 2);
             this.pictureBox2.TabIndex = 40;
             this.pictureBox2.TabStop = false;
             // 
@@ -347,7 +363,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(15, 14);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(120, 120);
+            this.pictureBox1.Size = new System.Drawing.Size(150, 150);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 32;
             this.pictureBox1.TabStop = false;
@@ -357,7 +373,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(727, 435);
+            this.ClientSize = new System.Drawing.Size(687, 353);
             this.Controls.Add(this.labelFunds);
             this.Controls.Add(this.labelExpiredNotification);
             this.Controls.Add(this.textBoxCourse);
@@ -381,7 +397,7 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "TransactionForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

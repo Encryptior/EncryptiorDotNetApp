@@ -86,7 +86,7 @@
             this.textBoxCost.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCost.ForeColor = System.Drawing.Color.Black;
             this.textBoxCost.Location = new System.Drawing.Point(85, 14);
-            this.textBoxCost.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.textBoxCost.Margin = new System.Windows.Forms.Padding(5);
             this.textBoxCost.Name = "textBoxCost";
             this.textBoxCost.Size = new System.Drawing.Size(129, 31);
             this.textBoxCost.TabIndex = 28;
@@ -114,7 +114,7 @@
             this.textBoxProjectName.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxProjectName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
             this.textBoxProjectName.Location = new System.Drawing.Point(72, 4);
-            this.textBoxProjectName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxProjectName.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxProjectName.Name = "textBoxProjectName";
             this.textBoxProjectName.Size = new System.Drawing.Size(404, 31);
             this.textBoxProjectName.TabIndex = 0;
@@ -146,10 +146,10 @@
             this.listViewFiles.FullRowSelect = true;
             this.listViewFiles.GridLines = true;
             this.listViewFiles.LargeImageList = this.imageList1;
-            this.listViewFiles.Location = new System.Drawing.Point(2, 279);
+            this.listViewFiles.Location = new System.Drawing.Point(2, 273);
             this.listViewFiles.Margin = new System.Windows.Forms.Padding(2);
             this.listViewFiles.Name = "listViewFiles";
-            this.listViewFiles.Size = new System.Drawing.Size(916, 484);
+            this.listViewFiles.Size = new System.Drawing.Size(916, 490);
             this.listViewFiles.SmallImageList = this.imageList1;
             this.listViewFiles.TabIndex = 37;
             this.listViewFiles.UseCompatibleStateImageBehavior = false;
@@ -215,9 +215,9 @@
             this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 66F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(920, 765);
             this.tableLayoutPanel1.TabIndex = 41;
@@ -228,10 +228,10 @@
             this.flowLayoutPanel1.Controls.Add(this.buttonOpenFiles);
             this.flowLayoutPanel1.Controls.Add(this.buttonDelete);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(2, 217);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(2, 209);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(916, 58);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(916, 60);
             this.flowLayoutPanel1.TabIndex = 38;
             // 
             // buttonOpenFiles
@@ -289,10 +289,10 @@
             this.flowLayoutPanel2.Controls.Add(this.buttonLock);
             this.flowLayoutPanel2.Controls.Add(this.pictureBoxLoading);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(2, 155);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(2, 143);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(916, 58);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(916, 62);
             this.flowLayoutPanel2.TabIndex = 39;
             // 
             // buttonLock
@@ -324,7 +324,7 @@
             this.pictureBoxLoading.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBoxLoading.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLoading.Image")));
             this.pictureBoxLoading.Location = new System.Drawing.Point(388, 14);
-            this.pictureBoxLoading.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBoxLoading.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBoxLoading.Name = "pictureBoxLoading";
             this.pictureBoxLoading.Size = new System.Drawing.Size(28, 30);
             this.pictureBoxLoading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -366,7 +366,7 @@
             this.flowLayoutPanel4.Location = new System.Drawing.Point(2, 104);
             this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(916, 47);
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(916, 35);
             this.flowLayoutPanel4.TabIndex = 41;
             // 
             // checkBox1
@@ -404,7 +404,7 @@
             this.textBoxSingleUser.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxSingleUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
             this.textBoxSingleUser.Location = new System.Drawing.Point(319, 4);
-            this.textBoxSingleUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxSingleUser.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSingleUser.Name = "textBoxSingleUser";
             this.textBoxSingleUser.Size = new System.Drawing.Size(404, 25);
             this.textBoxSingleUser.TabIndex = 43;
@@ -424,7 +424,7 @@
             this.ClientSize = new System.Drawing.Size(920, 765);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(740, 47);
             this.Name = "LockFolder";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
