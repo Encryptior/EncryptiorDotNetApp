@@ -306,7 +306,7 @@ namespace Encryptior
         {
             using (var client = new WebClient())
             {
-                Process.Start(@"https://www.encryptior.com/" + activeVersion.DownloadLink);
+                Process.Start(activeVersion.DownloadLink);
                 this.Close();
             }
         }
