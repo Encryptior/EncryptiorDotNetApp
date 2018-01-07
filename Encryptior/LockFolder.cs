@@ -37,10 +37,22 @@ namespace Encryptior
             textBoxProjectName.SelectAll();
         }
 
+        private bool IsCostValid(double _cost)
+        {
+            if (_cost >= 0)
+            {
+                return true;
+            } else
+            {
+                return false;
+            }
+        }
+
         private void buttonLock_Click(object sender, EventArgs e)
         {
             double cost;
-            if (double.TryParse(textBoxCost.Text, out cost))
+            cost = 0;
+            if (double.TryParse(textBoxCost.Text, out cost) && IsCostValid(cost))
             {
                 try
                 {
@@ -166,6 +178,7 @@ namespace Encryptior
                 Owner = Program.ActiveAddress,
                 Password = password
             };
+
             Program.apiWorker.NewFile(newFile);
         }
 
@@ -214,7 +227,15 @@ namespace Encryptior
 
         private void textBoxCost_TextChanged(object sender, EventArgs e)
         {
-            textBoxCost.ForeColor = Color.Black;
+            double cost;
+
+            if (double.TryParse(textBoxCost.Text, out cost) && IsCostValid(cost))
+            {               
+                textBoxCost.ForeColor = Color.Black;
+            } else
+            {
+                textBoxCost.ForeColor = Color.Red;
+            }
         }
 
 
