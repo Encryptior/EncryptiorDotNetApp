@@ -20,7 +20,7 @@ namespace Encryptior
             QRCodeGenerator qrGenerator = new QRCodeGenerator();
             QRCodeData qrCodeData = qrGenerator.CreateQrCode(Address, QRCodeGenerator.ECCLevel.Q);
             QRCode qrCode = new QRCode(qrCodeData);
-            Bitmap qrCodeImage = qrCode.GetGraphic(5);
+            Bitmap qrCodeImage = qrCode.GetGraphic(6);
             pictureBox1.Image = qrCodeImage;
         }
     }

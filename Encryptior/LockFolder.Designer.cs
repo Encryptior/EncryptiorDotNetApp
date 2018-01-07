@@ -98,7 +98,7 @@
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(70)))), ((int)(((byte)(139)))));
             this.label10.Location = new System.Drawing.Point(4, 18);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
@@ -112,7 +112,7 @@
             this.textBoxProjectName.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.textBoxProjectName.BackColor = System.Drawing.Color.White;
             this.textBoxProjectName.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxProjectName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
+            this.textBoxProjectName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(70)))), ((int)(((byte)(139)))));
             this.textBoxProjectName.Location = new System.Drawing.Point(72, 4);
             this.textBoxProjectName.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxProjectName.Name = "textBoxProjectName";
@@ -348,7 +348,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(70)))), ((int)(((byte)(139)))));
             this.label1.Location = new System.Drawing.Point(4, 8);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -402,7 +402,7 @@
             this.textBoxSingleUser.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.textBoxSingleUser.BackColor = System.Drawing.Color.White;
             this.textBoxSingleUser.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSingleUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
+            this.textBoxSingleUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(70)))), ((int)(((byte)(139)))));
             this.textBoxSingleUser.Location = new System.Drawing.Point(319, 4);
             this.textBoxSingleUser.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSingleUser.Name = "textBoxSingleUser";
@@ -427,8 +427,8 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(740, 47);
             this.Name = "LockFolder";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Lock Folder";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Encrypt Data";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LockFolder_FormClosing);
             this.contextMenuStrip.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
