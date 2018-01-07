@@ -278,7 +278,7 @@ namespace Encryptior
 
         private void buttonQR_Click(object sender, EventArgs e)
         {
-            Form qr = new AddressQR("0xNopeNotForTheTestVersionAccounts");
+            Form qr = new AddressQR(Program.ActiveAddress);
             qr.ShowDialog();
         }
 
