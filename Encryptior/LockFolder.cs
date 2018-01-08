@@ -49,6 +49,11 @@ namespace Encryptior
             {
                 try
                 {
+                    if (listViewFiles.Items.Count <= 0)
+                    {
+                        throw new Exception("No files are selected for locking!");
+                    }
+
                     saveFileDialog.FileName = Path.GetFileName(textBoxProjectName.Text) + ".encrypted.zip";
                     if (saveFileDialog.ShowDialog() == DialogResult.OK)
                     {
@@ -210,6 +215,7 @@ namespace Encryptior
                 textBoxCost.Enabled = state;
                 textBoxProjectName.Enabled = state;
                 buttonLock.Enabled = state;
+                FilesToEncrypt.Clear();
             }
             catch //exception, someone closed
             {
