@@ -92,6 +92,7 @@
             this.textBoxCost.TabIndex = 28;
             this.textBoxCost.Text = "10.00";
             this.textBoxCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBoxCost.TextChanged += textBoxCost_TextChanged;
             // 
             // label10
             // 

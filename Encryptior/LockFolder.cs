@@ -37,13 +37,23 @@ namespace Encryptior
             textBoxProjectName.SelectAll();
         }
 
+        private bool IsValidCost(double _cost)
+        {
+            return (_cost >= 0);
+        }
+
         private void buttonLock_Click(object sender, EventArgs e)
         {
             double cost;
-            if (double.TryParse(textBoxCost.Text, out cost))
+            if (double.TryParse(textBoxCost.Text, out cost) && IsValidCost(cost))
             {
                 try
                 {
+                    if (listViewFiles.Items.Count <= 0)
+                    {
+                        throw new Exception("No files are selected for locking!");
+                    }
+
                     saveFileDialog.FileName = Path.GetFileName(textBoxProjectName.Text) + ".encrypted.zip";
                     if (saveFileDialog.ShowDialog() == DialogResult.OK)
                     {
@@ -166,6 +176,7 @@ namespace Encryptior
                 Owner = Program.ActiveAddress,
                 Password = password
             };
+
             Program.apiWorker.NewFile(newFile);
         }
 
@@ -204,6 +215,7 @@ namespace Encryptior
                 textBoxCost.Enabled = state;
                 textBoxProjectName.Enabled = state;
                 buttonLock.Enabled = state;
+                FilesToEncrypt.Clear();
             }
             catch //exception, someone closed
             {
@@ -214,7 +226,14 @@ namespace Encryptior
 
         private void textBoxCost_TextChanged(object sender, EventArgs e)
         {
-            textBoxCost.ForeColor = Color.Black;
+            double cost;
+            if (double.TryParse(textBoxCost.Text, out cost) && IsValidCost(cost))
+            {               
+                textBoxCost.ForeColor = Color.Black;
+            } else
+            {
+                textBoxCost.ForeColor = Color.Red;
+            }
         }
 
 
