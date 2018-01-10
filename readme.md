@@ -5,13 +5,13 @@ It contains of the app source code.
 
 ### Prerequisites
 
-.NET Framework 4.5.2
+.NET Framework 4.5  
 Project was built with VS2015. You'd probably need that version or higher.
 
 
 ### Installing
 
-Once you start the solution, you need to download packages... In theory just building the application should download everything and start the app.
+Once you start the solution, you need to download packages... In theory just building the application should download everything and start the app.  
 If this doesn't work then install them manually, or by using "nuget.restore".
 
 ## Running the tests
