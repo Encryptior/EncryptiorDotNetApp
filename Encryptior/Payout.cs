@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using Nethereum.Hex.HexConvertors.Extensions;
 using System.Numerics;
 using System.Diagnostics;
+using System.Globalization;
 
 namespace Encryptior
 {
@@ -27,7 +28,7 @@ namespace Encryptior
             try
             {
                 double amount;
-                if (double.TryParse(textBoxAmount.Text, out amount))
+                if (double.TryParse(textBoxAmount.Text, NumberStyles.Float, CultureInfo.InvariantCulture, out amount) && IsValidCost(amount))
                 {
                     string fileName = Properties.Settings.Default.DefaultAccount;
                     string json = File.ReadAllText(fileName);
@@ -70,7 +71,15 @@ namespace Encryptior
 
         private void textBoxAmount_TextChanged(object sender, EventArgs e)
         {
-            textBoxAmount.ForeColor = Color.Black;
+            double amount;
+            if (double.TryParse(textBoxAmount.Text, NumberStyles.Float, CultureInfo.InvariantCulture, out amount) && IsValidCost(amount))
+            {
+                textBoxAmount.ForeColor = Color.Black;
+            }
+            else
+            {
+                textBoxAmount.ForeColor = Color.Red;
+            }
         }
 
         private void buttonGas_Click(object sender, EventArgs e)
@@ -85,6 +94,11 @@ namespace Encryptior
             var stream = File.OpenWrite(@"C:\Users\stevan\Desktop\icon.ico");
             Icon.Save(stream);
             stream.Close();
+        }
+
+        private bool IsValidCost(double _cost)
+        {
+            return (_cost >= 0);
         }
     }
 }

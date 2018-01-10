@@ -79,6 +79,8 @@ namespace Encryptior
         {
             if (listView1.SelectedItems.Count != 0)
                 UnlockAccount();
+            else
+                MessageBox.Show("Please select a wallet from the list", "No wallet selected", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void listView1_DoubleClick(object sender, EventArgs e)

@@ -45,7 +45,7 @@ namespace Encryptior
         private void buttonLock_Click(object sender, EventArgs e)
         {
             double cost;
-            if (double.TryParse(textBoxCost.Text, out cost) && IsValidCost(cost))
+            if (double.TryParse(textBoxCost.Text, NumberStyles.Float, CultureInfo.InvariantCulture, out cost) && IsValidCost(cost))
             {
                 try
                 {
@@ -227,8 +227,8 @@ namespace Encryptior
         private void textBoxCost_TextChanged(object sender, EventArgs e)
         {
             double cost;
-            if (double.TryParse(textBoxCost.Text, out cost) && IsValidCost(cost))
-            {               
+            if (double.TryParse(textBoxCost.Text, NumberStyles.Float, CultureInfo.InvariantCulture, out cost) && IsValidCost(cost))
+            {
                 textBoxCost.ForeColor = Color.Black;
             } else
             {

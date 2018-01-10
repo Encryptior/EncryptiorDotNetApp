@@ -46,28 +46,28 @@ namespace Encryptior
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.linkLabelEthAddr = new System.Windows.Forms.LinkLabel();
-            this.pictureBoxIdenticon = new System.Windows.Forms.PictureBox();
-            this.buttonQR = new System.Windows.Forms.Button();
-            this.buttonCopy = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelVersion = new System.Windows.Forms.Label();
             this.linkNewVersionInstall = new System.Windows.Forms.LinkLabel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.timerRefresh = new System.Windows.Forms.Timer(this.components);
+            this.readBalance = new System.ComponentModel.BackgroundWorker();
+            this.pictureBoxIdenticon = new System.Windows.Forms.PictureBox();
+            this.buttonQR = new System.Windows.Forms.Button();
+            this.buttonCopy = new System.Windows.Forms.Button();
             this.buttonLockData = new System.Windows.Forms.Button();
             this.buttonTransfer = new System.Windows.Forms.Button();
             this.buttonTransactions = new System.Windows.Forms.Button();
             this.buttonFaucet = new System.Windows.Forms.Button();
             this.buttonChangeWallet = new System.Windows.Forms.Button();
             this.buttonOpenEncrypted = new System.Windows.Forms.Button();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.timerRefresh = new System.Windows.Forms.Timer(this.components);
-            this.readBalance = new System.ComponentModel.BackgroundWorker();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIdenticon)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIdenticon)).BeginInit();
             this.SuspendLayout();
             // 
             // imageListTabs
@@ -204,61 +204,6 @@ namespace Encryptior
             this.linkLabelEthAddr.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.linkLabelEthAddr.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelEthAddr_LinkClicked);
             // 
-            // pictureBoxIdenticon
-            // 
-            this.pictureBoxIdenticon.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBoxIdenticon.Location = new System.Drawing.Point(485, 7);
-            this.pictureBoxIdenticon.Margin = new System.Windows.Forms.Padding(5);
-            this.pictureBoxIdenticon.Name = "pictureBoxIdenticon";
-            this.pictureBoxIdenticon.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxIdenticon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxIdenticon.TabIndex = 16;
-            this.pictureBoxIdenticon.TabStop = false;
-            // 
-            // buttonQR
-            // 
-            this.buttonQR.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.buttonQR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonQR.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonQR.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.buttonQR.FlatAppearance.BorderSize = 3;
-            this.buttonQR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.AliceBlue;
-            this.buttonQR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
-            this.buttonQR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonQR.Font = new System.Drawing.Font("Calibri Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonQR.ForeColor = System.Drawing.Color.Black;
-            this.buttonQR.Image = global::Encryptior.Properties.Resources.icons8_QR_Code_32px;
-            this.buttonQR.Location = new System.Drawing.Point(534, 2);
-            this.buttonQR.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.buttonQR.Name = "buttonQR";
-            this.buttonQR.Size = new System.Drawing.Size(50, 50);
-            this.buttonQR.TabIndex = 30;
-            this.buttonQR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonQR.UseVisualStyleBackColor = true;
-            this.buttonQR.Click += new System.EventHandler(this.buttonQR_Click);
-            // 
-            // buttonCopy
-            // 
-            this.buttonCopy.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.buttonCopy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonCopy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonCopy.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.buttonCopy.FlatAppearance.BorderSize = 3;
-            this.buttonCopy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.AliceBlue;
-            this.buttonCopy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
-            this.buttonCopy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCopy.Font = new System.Drawing.Font("Calibri Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCopy.ForeColor = System.Drawing.Color.Black;
-            this.buttonCopy.Image = global::Encryptior.Properties.Resources.icons8_Copy_32px;
-            this.buttonCopy.Location = new System.Drawing.Point(592, 2);
-            this.buttonCopy.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.buttonCopy.Name = "buttonCopy";
-            this.buttonCopy.Size = new System.Drawing.Size(50, 50);
-            this.buttonCopy.TabIndex = 31;
-            this.buttonCopy.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonCopy.UseVisualStyleBackColor = true;
-            this.buttonCopy.Click += new System.EventHandler(this.button2_Click);
-            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
@@ -318,6 +263,87 @@ namespace Encryptior
             this.linkNewVersionInstall.Text = "New version available";
             this.linkNewVersionInstall.Visible = false;
             this.linkNewVersionInstall.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkNewVersionInstall_LinkClicked);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.Red;
+            this.linkLabel1.Location = new System.Drawing.Point(651, 2);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(171, 20);
+            this.linkLabel1.TabIndex = 18;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Alpha - TestNet (About)!";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // timerRefresh
+            // 
+            this.timerRefresh.Enabled = true;
+            this.timerRefresh.Interval = 10000;
+            this.timerRefresh.Tick += new System.EventHandler(this.timerRefresh_Tick);
+            // 
+            // readBalance
+            // 
+            this.readBalance.DoWork += new System.ComponentModel.DoWorkEventHandler(this.readBalance_DoWork);
+            this.readBalance.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.logAndReadBalance_RunWorkerCompleted);
+            // 
+            // pictureBoxIdenticon
+            // 
+            this.pictureBoxIdenticon.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBoxIdenticon.Location = new System.Drawing.Point(485, 7);
+            this.pictureBoxIdenticon.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBoxIdenticon.Name = "pictureBoxIdenticon";
+            this.pictureBoxIdenticon.Size = new System.Drawing.Size(40, 40);
+            this.pictureBoxIdenticon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxIdenticon.TabIndex = 16;
+            this.pictureBoxIdenticon.TabStop = false;
+            // 
+            // buttonQR
+            // 
+            this.buttonQR.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.buttonQR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonQR.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonQR.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonQR.FlatAppearance.BorderSize = 3;
+            this.buttonQR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.AliceBlue;
+            this.buttonQR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonQR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonQR.Font = new System.Drawing.Font("Calibri Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonQR.ForeColor = System.Drawing.Color.Black;
+            this.buttonQR.Image = global::Encryptior.Properties.Resources.icons8_QR_Code_32px;
+            this.buttonQR.Location = new System.Drawing.Point(534, 2);
+            this.buttonQR.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.buttonQR.Name = "buttonQR";
+            this.buttonQR.Size = new System.Drawing.Size(50, 50);
+            this.buttonQR.TabIndex = 30;
+            this.buttonQR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonQR.UseVisualStyleBackColor = true;
+            this.buttonQR.Click += new System.EventHandler(this.buttonQR_Click);
+            // 
+            // buttonCopy
+            // 
+            this.buttonCopy.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.buttonCopy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonCopy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonCopy.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonCopy.FlatAppearance.BorderSize = 3;
+            this.buttonCopy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.AliceBlue;
+            this.buttonCopy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonCopy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCopy.Font = new System.Drawing.Font("Calibri Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCopy.ForeColor = System.Drawing.Color.Black;
+            this.buttonCopy.Image = global::Encryptior.Properties.Resources.icons8_Copy_32px;
+            this.buttonCopy.Location = new System.Drawing.Point(592, 2);
+            this.buttonCopy.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.buttonCopy.Name = "buttonCopy";
+            this.buttonCopy.Size = new System.Drawing.Size(50, 50);
+            this.buttonCopy.TabIndex = 31;
+            this.buttonCopy.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonCopy.UseVisualStyleBackColor = true;
+            this.buttonCopy.Click += new System.EventHandler(this.button2_Click);
             // 
             // buttonLockData
             // 
@@ -386,7 +412,7 @@ namespace Encryptior
             this.buttonTransactions.Name = "buttonTransactions";
             this.buttonTransactions.Size = new System.Drawing.Size(188, 150);
             this.buttonTransactions.TabIndex = 28;
-            this.buttonTransactions.Text = "My Transactions";
+            this.buttonTransactions.Text = "Transaction List\r\n(Opens in Browser)";
             this.buttonTransactions.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonTransactions.UseVisualStyleBackColor = true;
             this.buttonTransactions.Click += new System.EventHandler(this.buttonTransactions_Click);
@@ -463,32 +489,6 @@ namespace Encryptior
             this.buttonOpenEncrypted.UseVisualStyleBackColor = true;
             this.buttonOpenEncrypted.Click += new System.EventHandler(this.buttonOpenEncrypted_Click);
             // 
-            // linkLabel1
-            // 
-            this.linkLabel1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.Red;
-            this.linkLabel1.Location = new System.Drawing.Point(651, 2);
-            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(171, 20);
-            this.linkLabel1.TabIndex = 18;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Alpha - TestNet (About)!";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // timerRefresh
-            // 
-            this.timerRefresh.Enabled = true;
-            this.timerRefresh.Interval = 10000;
-            this.timerRefresh.Tick += new System.EventHandler(this.timerRefresh_Tick);
-            // 
-            // readBalance
-            // 
-            this.readBalance.DoWork += new System.ComponentModel.DoWorkEventHandler(this.readBalance_DoWork);
-            this.readBalance.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.logAndReadBalance_RunWorkerCompleted);
-            // 
             // EncryptiorMainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -508,10 +508,10 @@ namespace Encryptior
             this.tableLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIdenticon)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIdenticon)).EndInit();
             this.ResumeLayout(false);
 
         }

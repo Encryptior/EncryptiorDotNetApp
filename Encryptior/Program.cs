@@ -5,9 +5,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Threading;
+using System.Net;
 
 namespace Encryptior
-{
+{   
     static class Program
     {
         public static string WalletPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + "/Encryptior Wallet/";
@@ -21,10 +22,17 @@ namespace Encryptior
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.ThreadException += new ThreadExceptionEventHandler(ExceptionHandler);
-            Application.Run(new EncryptiorMainPage());
+            if (CheckInternetConnection())
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.ThreadException += new ThreadExceptionEventHandler(ExceptionHandler);
+                Application.Run(new EncryptiorMainPage());
+            }
+            else
+            {
+                MessageBox.Show("You need an active internet connection to use this application.", "Application problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         static void ExceptionHandler(object sender, ThreadExceptionEventArgs e)
@@ -38,6 +46,24 @@ namespace Encryptior
             dialogType.GetProperty("Details").SetValue(dialog, e.Exception.Message + "\n" + e.Exception.StackTrace, null);
             dialogType.GetProperty("Message").SetValue(dialog, "Unhandled error had happened. Click details for details", null);
             var result = dialog.ShowDialog();
+        }
+
+        public static bool CheckInternetConnection()
+        {
+            try
+            {
+                using (var client = new WebClient())
+                {
+                    using (client.OpenRead("http://clients3.google.com/generate_204"))
+                    {
+                        return true;
+                    }
+                }
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }
