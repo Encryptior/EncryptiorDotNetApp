@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Nethereum.Hex.HexConvertors.Extensions;
 using Newtonsoft.Json.Linq;
+using System.Diagnostics;
 
 // Set the TextBox's PasswordChar property
 // to X or something at design time.
@@ -20,9 +21,12 @@ namespace Encryptior
     {
         private string Json;
         public string PrivateKey;
+        public string Password;
+        private bool Decrypt;
 
-        public PasswordForm(string fileName, string address)
+        public PasswordForm(string fileName, string address, bool decrypt = true)
         {
+            Decrypt = decrypt;
             Json = File.ReadAllText(fileName);
             InitializeComponent();
             labelAddress.Text = address;
@@ -39,8 +43,15 @@ namespace Encryptior
             buttonCancel.Enabled = false;
             buttonOK.Enabled = false;
             labelinfo.Visible = true;
-            string password = txtPassword.Text;
-            backgroundWorker1.RunWorkerAsync(password);
+            Password = txtPassword.Text;
+            if (Decrypt)
+            {
+                backgroundWorker1.RunWorkerAsync(Password);
+            }
+            else
+            {
+                this.DialogResult = DialogResult.OK;
+            }
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)
@@ -87,6 +98,11 @@ namespace Encryptior
         private void PasswordForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonHelp_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.encryptior.com/#about");
         }
     }
 }

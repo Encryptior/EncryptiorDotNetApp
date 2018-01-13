@@ -27,41 +27,58 @@ namespace Encryptior
         {
             try
             {
-                double amount;
-                if (double.TryParse(textBoxAmount.Text, NumberStyles.Float, CultureInfo.InvariantCulture, out amount) && IsValidCost(amount))
+                if ((textBoxAddress.Text.HexToByteArray().Length == 20) && (textBoxAddress.Text.Length == 42))
                 {
-                    string fileName = Properties.Settings.Default.DefaultAccount;
-                    string json = File.ReadAllText(fileName);
-                    Nethereum.KeyStore.KeyStoreService KeyStore = new Nethereum.KeyStore.KeyStoreService();
-                    string address = KeyStore.GetAddressFromKeyStore(json);
-                    Form credentials = new PasswordForm(fileName, address);
-                    if (credentials.ShowDialog() == DialogResult.OK)
+                    double amount;
+                    if (double.TryParse(textBoxAmount.Text, NumberStyles.Float, CultureInfo.InvariantCulture, out amount) && IsValidCost(amount))
                     {
-                        Form transfer = new TransferForm(amount, textBoxAddress.Text);
-                        this.DialogResult = transfer.ShowDialog();
+                        string fileName = Properties.Settings.Default.DefaultAccount;
+                        string json = File.ReadAllText(fileName);
+                        Nethereum.KeyStore.KeyStoreService KeyStore = new Nethereum.KeyStore.KeyStoreService();
+                        string address = KeyStore.GetAddressFromKeyStore(json);
+                        Form credentials = new PasswordForm(fileName, address);
+                        if (credentials.ShowDialog() == DialogResult.OK)
+                        {
+                            Form transfer = new TransferForm(amount, textBoxAddress.Text);
+                            this.DialogResult = transfer.ShowDialog();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Bad Password");
+                            this.DialogResult = DialogResult.Abort;
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Bad Password");
-                        this.DialogResult = DialogResult.Abort;
+                        textBoxAmount.ForeColor = Color.Red;
                     }
-                }
-                else
-                {
-                    textBoxAmount.ForeColor = Color.Red;
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-                this.DialogResult = DialogResult.Abort;
             }
         }
 
         private void textBoxAddress_TextChanged(object sender, EventArgs e)
         {
-            Identicon identicon = new Identicon(textBoxAddress.Text, 8);
-            pictureBoxIdenticon.Image = identicon.GetBitmap(128);
+            try
+            {
+                if ((textBoxAddress.Text.HexToByteArray().Length == 20)&&(textBoxAddress.Text.Length == 42))
+                {
+                    Identicon identicon = new Identicon(textBoxAddress.Text, 8);
+                    pictureBoxIdenticon.Image = identicon.GetBitmap(128);
+                    textBoxAddress.ForeColor = Color.Black;
+                }
+                else
+                {
+                    textBoxAddress.ForeColor = Color.Red;
+                }
+            }
+            catch
+            {
+                textBoxAddress.ForeColor = Color.Red;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -99,6 +116,11 @@ namespace Encryptior
         private bool IsValidCost(double _cost)
         {
             return (_cost >= 0);
+        }
+
+        private void buttonHelp_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.encryptior.com/Documentation/Seller");
         }
     }
 }

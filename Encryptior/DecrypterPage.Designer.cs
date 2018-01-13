@@ -38,7 +38,6 @@
             this.linkLabelTransHash = new System.Windows.Forms.LinkLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.linkLabelTransStatus = new System.Windows.Forms.LinkLabel();
-            this.pictureBoxLoadingTransaction = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBoxPass = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,55 +47,57 @@
             this.linkLabelFilename = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBoxIdenticonOwner = new System.Windows.Forms.PictureBox();
             this.linkLabelOwner = new System.Windows.Forms.LinkLabel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.labelCost = new System.Windows.Forms.Label();
-            this.buttonBuy = new System.Windows.Forms.Button();
             this.groupBoxTransaction = new System.Windows.Forms.GroupBox();
             this.timerTransactionChecker = new System.Windows.Forms.Timer(this.components);
             this.backgroundWorkerHash = new System.ComponentModel.BackgroundWorker();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBoxLoading = new System.Windows.Forms.PictureBox();
             this.labelStatus = new System.Windows.Forms.Label();
             this.backgroundWorkerTransaction = new System.ComponentModel.BackgroundWorker();
             this.flowLayoutPanelTStatus = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.backgroundWorkerStatus = new System.ComponentModel.BackgroundWorker();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.labelTitle = new System.Windows.Forms.Label();
             this.groupBoxPassword = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.buttonUnlockFile = new System.Windows.Forms.Button();
             this.flowLayoutPanelUnzip = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBoxUnzipStatus = new System.Windows.Forms.PictureBox();
             this.labelUnzipStatus = new System.Windows.Forms.Label();
             this.groupBoxUnzipped = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.buttonOpenFiles = new System.Windows.Forms.Button();
             this.backgroundDecompressor = new System.ComponentModel.BackgroundWorker();
             this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
+            this.pictureBoxLoading = new System.Windows.Forms.PictureBox();
+            this.pictureBoxIdenticonOwner = new System.Windows.Forms.PictureBox();
+            this.buttonBuy = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLoadingTransaction = new System.Windows.Forms.PictureBox();
+            this.buttonUnlockFile = new System.Windows.Forms.Button();
+            this.pictureBoxUnzipStatus = new System.Windows.Forms.PictureBox();
+            this.buttonOpenFiles = new System.Windows.Forms.Button();
+            this.buttonHelp = new System.Windows.Forms.Button();
             this.tableLayoutPanel4.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoadingTransaction)).BeginInit();
             this.groupBoxFileDetails.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIdenticonOwner)).BeginInit();
             this.flowLayoutPanel3.SuspendLayout();
             this.groupBoxTransaction.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoading)).BeginInit();
             this.flowLayoutPanelTStatus.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
             this.groupBoxPassword.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
             this.flowLayoutPanelUnzip.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnzipStatus)).BeginInit();
             this.groupBoxUnzipped.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoading)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIdenticonOwner)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoadingTransaction)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnzipStatus)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel4
@@ -113,7 +114,7 @@
             this.tableLayoutPanel4.Controls.Add(this.panel1, 1, 2);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(4, 26);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 3;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -192,7 +193,7 @@
             this.panel1.Controls.Add(this.pictureBoxLoadingTransaction);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(125, 111);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(776, 44);
             this.panel1.TabIndex = 44;
@@ -211,19 +212,6 @@
             this.linkLabelTransStatus.TabStop = true;
             this.linkLabelTransStatus.Text = "No Payment";
             this.linkLabelTransStatus.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelTransStatus_LinkClicked);
-            // 
-            // pictureBoxLoadingTransaction
-            // 
-            this.pictureBoxLoadingTransaction.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBoxLoadingTransaction.Image = global::Encryptior.Properties.Resources._25;
-            this.pictureBoxLoadingTransaction.Location = new System.Drawing.Point(109, 5);
-            this.pictureBoxLoadingTransaction.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.pictureBoxLoadingTransaction.Name = "pictureBoxLoadingTransaction";
-            this.pictureBoxLoadingTransaction.Size = new System.Drawing.Size(32, 32);
-            this.pictureBoxLoadingTransaction.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxLoadingTransaction.TabIndex = 42;
-            this.pictureBoxLoadingTransaction.TabStop = false;
-            this.pictureBoxLoadingTransaction.Visible = false;
             // 
             // label9
             // 
@@ -244,10 +232,10 @@
             this.textBoxPass.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(70)))), ((int)(((byte)(139)))));
             this.textBoxPass.Location = new System.Drawing.Point(131, 22);
-            this.textBoxPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxPass.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPass.Name = "textBoxPass";
             this.textBoxPass.ReadOnly = true;
-            this.textBoxPass.Size = new System.Drawing.Size(493, 29);
+            this.textBoxPass.Size = new System.Drawing.Size(490, 29);
             this.textBoxPass.TabIndex = 28;
             this.textBoxPass.Text = "pass";
             // 
@@ -267,10 +255,10 @@
             // 
             this.groupBoxFileDetails.Controls.Add(this.tableLayoutPanel1);
             this.groupBoxFileDetails.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxFileDetails.Location = new System.Drawing.Point(4, 86);
-            this.groupBoxFileDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxFileDetails.Location = new System.Drawing.Point(4, 95);
+            this.groupBoxFileDetails.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxFileDetails.Name = "groupBoxFileDetails";
-            this.groupBoxFileDetails.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxFileDetails.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxFileDetails.Size = new System.Drawing.Size(914, 202);
             this.groupBoxFileDetails.TabIndex = 0;
             this.groupBoxFileDetails.TabStop = false;
@@ -291,7 +279,7 @@
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel3, 1, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 26);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
@@ -355,17 +343,6 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(778, 50);
             this.tableLayoutPanel2.TabIndex = 37;
             // 
-            // pictureBoxIdenticonOwner
-            // 
-            this.pictureBoxIdenticonOwner.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBoxIdenticonOwner.Location = new System.Drawing.Point(11, 5);
-            this.pictureBoxIdenticonOwner.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.pictureBoxIdenticonOwner.Name = "pictureBoxIdenticonOwner";
-            this.pictureBoxIdenticonOwner.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxIdenticonOwner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxIdenticonOwner.TabIndex = 34;
-            this.pictureBoxIdenticonOwner.TabStop = false;
-            // 
             // linkLabelOwner
             // 
             this.linkLabelOwner.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -387,7 +364,7 @@
             this.flowLayoutPanel3.Controls.Add(this.labelCost);
             this.flowLayoutPanel3.Controls.Add(this.buttonBuy);
             this.flowLayoutPanel3.Location = new System.Drawing.Point(131, 103);
-            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             this.flowLayoutPanel3.Size = new System.Drawing.Size(770, 56);
             this.flowLayoutPanel3.TabIndex = 38;
@@ -405,6 +382,232 @@
             this.labelCost.TabIndex = 26;
             this.labelCost.Text = "100$";
             this.labelCost.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // groupBoxTransaction
+            // 
+            this.groupBoxTransaction.Controls.Add(this.tableLayoutPanel4);
+            this.groupBoxTransaction.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxTransaction.Location = new System.Drawing.Point(4, 355);
+            this.groupBoxTransaction.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBoxTransaction.Name = "groupBoxTransaction";
+            this.groupBoxTransaction.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBoxTransaction.Size = new System.Drawing.Size(914, 190);
+            this.groupBoxTransaction.TabIndex = 1;
+            this.groupBoxTransaction.TabStop = false;
+            this.groupBoxTransaction.Text = "Transaction Details";
+            this.groupBoxTransaction.Visible = false;
+            // 
+            // timerTransactionChecker
+            // 
+            this.timerTransactionChecker.Interval = 1000;
+            this.timerTransactionChecker.Tick += new System.EventHandler(this.timerTransactionChecker_Tick);
+            // 
+            // backgroundWorkerHash
+            // 
+            this.backgroundWorkerHash.WorkerReportsProgress = true;
+            this.backgroundWorkerHash.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorkerHash_DoWork);
+            this.backgroundWorkerHash.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorkerHash_ProgressChanged);
+            this.backgroundWorkerHash.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorkerHash_RunWorkerCompleted);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.pictureBoxLoading);
+            this.flowLayoutPanel1.Controls.Add(this.labelStatus);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(4, 45);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(905, 42);
+            this.flowLayoutPanel1.TabIndex = 44;
+            // 
+            // labelStatus
+            // 
+            this.labelStatus.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.labelStatus.AutoSize = true;
+            this.labelStatus.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStatus.Location = new System.Drawing.Point(46, 9);
+            this.labelStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelStatus.Name = "labelStatus";
+            this.labelStatus.Size = new System.Drawing.Size(220, 23);
+            this.labelStatus.TabIndex = 44;
+            this.labelStatus.Text = "Generating File Checksum...";
+            // 
+            // backgroundWorkerTransaction
+            // 
+            this.backgroundWorkerTransaction.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorkerTransaction_DoWork);
+            this.backgroundWorkerTransaction.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorkerTransaction_RunWorkerCompleted);
+            // 
+            // flowLayoutPanelTStatus
+            // 
+            this.flowLayoutPanelTStatus.Controls.Add(this.pictureBox1);
+            this.flowLayoutPanelTStatus.Controls.Add(this.label3);
+            this.flowLayoutPanelTStatus.Location = new System.Drawing.Point(4, 305);
+            this.flowLayoutPanelTStatus.Margin = new System.Windows.Forms.Padding(4);
+            this.flowLayoutPanelTStatus.Name = "flowLayoutPanelTStatus";
+            this.flowLayoutPanelTStatus.Size = new System.Drawing.Size(905, 42);
+            this.flowLayoutPanelTStatus.TabIndex = 45;
+            this.flowLayoutPanelTStatus.Visible = false;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(46, 9);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(283, 23);
+            this.label3.TabIndex = 44;
+            this.label3.Text = "Looking if you already own the file...";
+            // 
+            // backgroundWorkerStatus
+            // 
+            this.backgroundWorkerStatus.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorkerStatus_DoWork);
+            this.backgroundWorkerStatus.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorkerStatus_RunWorkerCompleted);
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Controls.Add(this.labelTitle);
+            this.flowLayoutPanel2.Controls.Add(this.buttonHelp);
+            this.flowLayoutPanel2.Controls.Add(this.flowLayoutPanel1);
+            this.flowLayoutPanel2.Controls.Add(this.groupBoxFileDetails);
+            this.flowLayoutPanel2.Controls.Add(this.flowLayoutPanelTStatus);
+            this.flowLayoutPanel2.Controls.Add(this.groupBoxTransaction);
+            this.flowLayoutPanel2.Controls.Add(this.groupBoxPassword);
+            this.flowLayoutPanel2.Controls.Add(this.flowLayoutPanelUnzip);
+            this.flowLayoutPanel2.Controls.Add(this.groupBoxUnzipped);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(15, 15);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(921, 970);
+            this.flowLayoutPanel2.TabIndex = 46;
+            // 
+            // labelTitle
+            // 
+            this.labelTitle.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.ForeColor = System.Drawing.Color.Black;
+            this.labelTitle.Location = new System.Drawing.Point(5, 4);
+            this.labelTitle.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(179, 32);
+            this.labelTitle.TabIndex = 49;
+            this.labelTitle.Text = "Decrypting Data";
+            // 
+            // groupBoxPassword
+            // 
+            this.groupBoxPassword.Controls.Add(this.tableLayoutPanel8);
+            this.groupBoxPassword.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxPassword.Location = new System.Drawing.Point(4, 553);
+            this.groupBoxPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBoxPassword.Name = "groupBoxPassword";
+            this.groupBoxPassword.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBoxPassword.Size = new System.Drawing.Size(910, 104);
+            this.groupBoxPassword.TabIndex = 46;
+            this.groupBoxPassword.TabStop = false;
+            this.groupBoxPassword.Text = "Password";
+            this.groupBoxPassword.Visible = false;
+            // 
+            // tableLayoutPanel8
+            // 
+            this.tableLayoutPanel8.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel8.ColumnCount = 3;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 275F));
+            this.tableLayoutPanel8.Controls.Add(this.label9, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.textBoxPass, 1, 0);
+            this.tableLayoutPanel8.Controls.Add(this.buttonUnlockFile, 2, 0);
+            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(4, 26);
+            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 1;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(902, 74);
+            this.tableLayoutPanel8.TabIndex = 42;
+            // 
+            // flowLayoutPanelUnzip
+            // 
+            this.flowLayoutPanelUnzip.Controls.Add(this.pictureBoxUnzipStatus);
+            this.flowLayoutPanelUnzip.Controls.Add(this.labelUnzipStatus);
+            this.flowLayoutPanelUnzip.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.flowLayoutPanelUnzip.Location = new System.Drawing.Point(4, 665);
+            this.flowLayoutPanelUnzip.Margin = new System.Windows.Forms.Padding(4);
+            this.flowLayoutPanelUnzip.Name = "flowLayoutPanelUnzip";
+            this.flowLayoutPanelUnzip.Size = new System.Drawing.Size(905, 42);
+            this.flowLayoutPanelUnzip.TabIndex = 47;
+            this.flowLayoutPanelUnzip.Visible = false;
+            // 
+            // labelUnzipStatus
+            // 
+            this.labelUnzipStatus.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.labelUnzipStatus.AutoSize = true;
+            this.labelUnzipStatus.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUnzipStatus.Location = new System.Drawing.Point(46, 9);
+            this.labelUnzipStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelUnzipStatus.Name = "labelUnzipStatus";
+            this.labelUnzipStatus.Size = new System.Drawing.Size(118, 23);
+            this.labelUnzipStatus.TabIndex = 44;
+            this.labelUnzipStatus.Text = "Unzipping File";
+            // 
+            // groupBoxUnzipped
+            // 
+            this.groupBoxUnzipped.Controls.Add(this.tableLayoutPanel3);
+            this.groupBoxUnzipped.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxUnzipped.Location = new System.Drawing.Point(4, 715);
+            this.groupBoxUnzipped.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBoxUnzipped.Name = "groupBoxUnzipped";
+            this.groupBoxUnzipped.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBoxUnzipped.Size = new System.Drawing.Size(910, 112);
+            this.groupBoxUnzipped.TabIndex = 48;
+            this.groupBoxUnzipped.TabStop = false;
+            this.groupBoxUnzipped.Text = "Files";
+            this.groupBoxUnzipped.Visible = false;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Controls.Add(this.buttonOpenFiles, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 26);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 97F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(902, 82);
+            this.tableLayoutPanel3.TabIndex = 0;
+            // 
+            // backgroundDecompressor
+            // 
+            this.backgroundDecompressor.WorkerReportsProgress = true;
+            this.backgroundDecompressor.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundDecompressor_DoWork);
+            this.backgroundDecompressor.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundDecompressor_ProgressChanged);
+            this.backgroundDecompressor.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundDecompressor_RunWorkerCompleted);
+            // 
+            // pictureBoxLoading
+            // 
+            this.pictureBoxLoading.Image = global::Encryptior.Properties.Resources._25;
+            this.pictureBoxLoading.Location = new System.Drawing.Point(5, 5);
+            this.pictureBoxLoading.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBoxLoading.Name = "pictureBoxLoading";
+            this.pictureBoxLoading.Size = new System.Drawing.Size(32, 32);
+            this.pictureBoxLoading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxLoading.TabIndex = 43;
+            this.pictureBoxLoading.TabStop = false;
+            // 
+            // pictureBoxIdenticonOwner
+            // 
+            this.pictureBoxIdenticonOwner.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBoxIdenticonOwner.Location = new System.Drawing.Point(11, 5);
+            this.pictureBoxIdenticonOwner.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBoxIdenticonOwner.Name = "pictureBoxIdenticonOwner";
+            this.pictureBoxIdenticonOwner.Size = new System.Drawing.Size(40, 40);
+            this.pictureBoxIdenticonOwner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxIdenticonOwner.TabIndex = 34;
+            this.pictureBoxIdenticonOwner.TabStop = false;
             // 
             // buttonBuy
             // 
@@ -429,171 +632,29 @@
             this.buttonBuy.UseVisualStyleBackColor = true;
             this.buttonBuy.Click += new System.EventHandler(this.buttonBuy_Click);
             // 
-            // groupBoxTransaction
-            // 
-            this.groupBoxTransaction.Controls.Add(this.tableLayoutPanel4);
-            this.groupBoxTransaction.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxTransaction.Location = new System.Drawing.Point(4, 346);
-            this.groupBoxTransaction.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBoxTransaction.Name = "groupBoxTransaction";
-            this.groupBoxTransaction.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBoxTransaction.Size = new System.Drawing.Size(914, 190);
-            this.groupBoxTransaction.TabIndex = 1;
-            this.groupBoxTransaction.TabStop = false;
-            this.groupBoxTransaction.Text = "Transaction Details";
-            this.groupBoxTransaction.Visible = false;
-            // 
-            // timerTransactionChecker
-            // 
-            this.timerTransactionChecker.Interval = 1000;
-            this.timerTransactionChecker.Tick += new System.EventHandler(this.timerTransactionChecker_Tick);
-            // 
-            // backgroundWorkerHash
-            // 
-            this.backgroundWorkerHash.WorkerReportsProgress = true;
-            this.backgroundWorkerHash.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorkerHash_DoWork);
-            this.backgroundWorkerHash.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorkerHash_ProgressChanged);
-            this.backgroundWorkerHash.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorkerHash_RunWorkerCompleted);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.pictureBoxLoading);
-            this.flowLayoutPanel1.Controls.Add(this.labelStatus);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(4, 36);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(905, 42);
-            this.flowLayoutPanel1.TabIndex = 44;
-            // 
-            // pictureBoxLoading
-            // 
-            this.pictureBoxLoading.Image = global::Encryptior.Properties.Resources._25;
-            this.pictureBoxLoading.Location = new System.Drawing.Point(5, 5);
-            this.pictureBoxLoading.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.pictureBoxLoading.Name = "pictureBoxLoading";
-            this.pictureBoxLoading.Size = new System.Drawing.Size(32, 32);
-            this.pictureBoxLoading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxLoading.TabIndex = 43;
-            this.pictureBoxLoading.TabStop = false;
-            // 
-            // labelStatus
-            // 
-            this.labelStatus.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.labelStatus.AutoSize = true;
-            this.labelStatus.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStatus.Location = new System.Drawing.Point(46, 9);
-            this.labelStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelStatus.Name = "labelStatus";
-            this.labelStatus.Size = new System.Drawing.Size(220, 23);
-            this.labelStatus.TabIndex = 44;
-            this.labelStatus.Text = "Generating File Checksum...";
-            // 
-            // backgroundWorkerTransaction
-            // 
-            this.backgroundWorkerTransaction.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorkerTransaction_DoWork);
-            this.backgroundWorkerTransaction.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorkerTransaction_RunWorkerCompleted);
-            // 
-            // flowLayoutPanelTStatus
-            // 
-            this.flowLayoutPanelTStatus.Controls.Add(this.pictureBox1);
-            this.flowLayoutPanelTStatus.Controls.Add(this.label3);
-            this.flowLayoutPanelTStatus.Location = new System.Drawing.Point(4, 296);
-            this.flowLayoutPanelTStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.flowLayoutPanelTStatus.Name = "flowLayoutPanelTStatus";
-            this.flowLayoutPanelTStatus.Size = new System.Drawing.Size(905, 42);
-            this.flowLayoutPanelTStatus.TabIndex = 45;
-            this.flowLayoutPanelTStatus.Visible = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Encryptior.Properties.Resources._25;
             this.pictureBox1.Location = new System.Drawing.Point(5, 5);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 43;
             this.pictureBox1.TabStop = false;
             // 
-            // label3
+            // pictureBoxLoadingTransaction
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(46, 9);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(283, 23);
-            this.label3.TabIndex = 44;
-            this.label3.Text = "Looking if you already own the file...";
-            // 
-            // backgroundWorkerStatus
-            // 
-            this.backgroundWorkerStatus.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorkerStatus_DoWork);
-            this.backgroundWorkerStatus.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorkerStatus_RunWorkerCompleted);
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Controls.Add(this.labelTitle);
-            this.flowLayoutPanel2.Controls.Add(this.flowLayoutPanel1);
-            this.flowLayoutPanel2.Controls.Add(this.groupBoxFileDetails);
-            this.flowLayoutPanel2.Controls.Add(this.flowLayoutPanelTStatus);
-            this.flowLayoutPanel2.Controls.Add(this.groupBoxTransaction);
-            this.flowLayoutPanel2.Controls.Add(this.groupBoxPassword);
-            this.flowLayoutPanel2.Controls.Add(this.flowLayoutPanelUnzip);
-            this.flowLayoutPanel2.Controls.Add(this.groupBoxUnzipped);
-            this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(15, 15);
-            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(921, 970);
-            this.flowLayoutPanel2.TabIndex = 46;
-            // 
-            // labelTitle
-            // 
-            this.labelTitle.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.labelTitle.AutoSize = true;
-            this.labelTitle.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitle.ForeColor = System.Drawing.Color.Black;
-            this.labelTitle.Location = new System.Drawing.Point(5, 0);
-            this.labelTitle.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(179, 32);
-            this.labelTitle.TabIndex = 49;
-            this.labelTitle.Text = "Decrypting Data";
-            // 
-            // groupBoxPassword
-            // 
-            this.groupBoxPassword.Controls.Add(this.tableLayoutPanel8);
-            this.groupBoxPassword.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxPassword.Location = new System.Drawing.Point(4, 544);
-            this.groupBoxPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBoxPassword.Name = "groupBoxPassword";
-            this.groupBoxPassword.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBoxPassword.Size = new System.Drawing.Size(910, 104);
-            this.groupBoxPassword.TabIndex = 46;
-            this.groupBoxPassword.TabStop = false;
-            this.groupBoxPassword.Text = "Password";
-            this.groupBoxPassword.Visible = false;
-            // 
-            // tableLayoutPanel8
-            // 
-            this.tableLayoutPanel8.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableLayoutPanel8.ColumnCount = 3;
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 272F));
-            this.tableLayoutPanel8.Controls.Add(this.label9, 0, 0);
-            this.tableLayoutPanel8.Controls.Add(this.textBoxPass, 1, 0);
-            this.tableLayoutPanel8.Controls.Add(this.buttonUnlockFile, 2, 0);
-            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(4, 26);
-            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
-            this.tableLayoutPanel8.RowCount = 1;
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(902, 74);
-            this.tableLayoutPanel8.TabIndex = 42;
+            this.pictureBoxLoadingTransaction.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBoxLoadingTransaction.Image = global::Encryptior.Properties.Resources._25;
+            this.pictureBoxLoadingTransaction.Location = new System.Drawing.Point(109, 5);
+            this.pictureBoxLoadingTransaction.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBoxLoadingTransaction.Name = "pictureBoxLoadingTransaction";
+            this.pictureBoxLoadingTransaction.Size = new System.Drawing.Size(32, 32);
+            this.pictureBoxLoadingTransaction.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxLoadingTransaction.TabIndex = 42;
+            this.pictureBoxLoadingTransaction.TabStop = false;
+            this.pictureBoxLoadingTransaction.Visible = false;
             // 
             // buttonUnlockFile
             // 
@@ -609,7 +670,7 @@
             this.buttonUnlockFile.ForeColor = System.Drawing.Color.Black;
             this.buttonUnlockFile.Image = global::Encryptior.Properties.Resources.icons8_Unlock_2_32px_1;
             this.buttonUnlockFile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonUnlockFile.Location = new System.Drawing.Point(633, 12);
+            this.buttonUnlockFile.Location = new System.Drawing.Point(630, 12);
             this.buttonUnlockFile.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.buttonUnlockFile.Name = "buttonUnlockFile";
             this.buttonUnlockFile.Size = new System.Drawing.Size(120, 50);
@@ -619,69 +680,16 @@
             this.buttonUnlockFile.UseVisualStyleBackColor = true;
             this.buttonUnlockFile.Click += new System.EventHandler(this.buttonUnlockFile_Click);
             // 
-            // flowLayoutPanelUnzip
-            // 
-            this.flowLayoutPanelUnzip.Controls.Add(this.pictureBoxUnzipStatus);
-            this.flowLayoutPanelUnzip.Controls.Add(this.labelUnzipStatus);
-            this.flowLayoutPanelUnzip.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.flowLayoutPanelUnzip.Location = new System.Drawing.Point(4, 656);
-            this.flowLayoutPanelUnzip.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.flowLayoutPanelUnzip.Name = "flowLayoutPanelUnzip";
-            this.flowLayoutPanelUnzip.Size = new System.Drawing.Size(905, 42);
-            this.flowLayoutPanelUnzip.TabIndex = 47;
-            this.flowLayoutPanelUnzip.Visible = false;
-            // 
             // pictureBoxUnzipStatus
             // 
             this.pictureBoxUnzipStatus.Image = global::Encryptior.Properties.Resources._25;
             this.pictureBoxUnzipStatus.Location = new System.Drawing.Point(5, 5);
-            this.pictureBoxUnzipStatus.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBoxUnzipStatus.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBoxUnzipStatus.Name = "pictureBoxUnzipStatus";
             this.pictureBoxUnzipStatus.Size = new System.Drawing.Size(32, 32);
             this.pictureBoxUnzipStatus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBoxUnzipStatus.TabIndex = 43;
             this.pictureBoxUnzipStatus.TabStop = false;
-            // 
-            // labelUnzipStatus
-            // 
-            this.labelUnzipStatus.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.labelUnzipStatus.AutoSize = true;
-            this.labelUnzipStatus.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUnzipStatus.Location = new System.Drawing.Point(46, 9);
-            this.labelUnzipStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelUnzipStatus.Name = "labelUnzipStatus";
-            this.labelUnzipStatus.Size = new System.Drawing.Size(118, 23);
-            this.labelUnzipStatus.TabIndex = 44;
-            this.labelUnzipStatus.Text = "Unzipping File";
-            // 
-            // groupBoxUnzipped
-            // 
-            this.groupBoxUnzipped.Controls.Add(this.tableLayoutPanel3);
-            this.groupBoxUnzipped.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxUnzipped.Location = new System.Drawing.Point(4, 706);
-            this.groupBoxUnzipped.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBoxUnzipped.Name = "groupBoxUnzipped";
-            this.groupBoxUnzipped.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBoxUnzipped.Size = new System.Drawing.Size(910, 112);
-            this.groupBoxUnzipped.TabIndex = 48;
-            this.groupBoxUnzipped.TabStop = false;
-            this.groupBoxUnzipped.Text = "Files";
-            this.groupBoxUnzipped.Visible = false;
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableLayoutPanel3.ColumnCount = 1;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Controls.Add(this.buttonOpenFiles, 0, 0);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 26);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(902, 82);
-            this.tableLayoutPanel3.TabIndex = 0;
             // 
             // buttonOpenFiles
             // 
@@ -697,7 +705,7 @@
             this.buttonOpenFiles.ForeColor = System.Drawing.Color.Black;
             this.buttonOpenFiles.Image = global::Encryptior.Properties.Resources.icons8_Open_32px;
             this.buttonOpenFiles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonOpenFiles.Location = new System.Drawing.Point(5, 23);
+            this.buttonOpenFiles.Location = new System.Drawing.Point(5, 24);
             this.buttonOpenFiles.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.buttonOpenFiles.Name = "buttonOpenFiles";
             this.buttonOpenFiles.Size = new System.Drawing.Size(171, 50);
@@ -707,12 +715,23 @@
             this.buttonOpenFiles.UseVisualStyleBackColor = true;
             this.buttonOpenFiles.Click += new System.EventHandler(this.buttonOpenFiles_Click);
             // 
-            // backgroundDecompressor
+            // buttonHelp
             // 
-            this.backgroundDecompressor.WorkerReportsProgress = true;
-            this.backgroundDecompressor.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundDecompressor_DoWork);
-            this.backgroundDecompressor.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundDecompressor_ProgressChanged);
-            this.backgroundDecompressor.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundDecompressor_RunWorkerCompleted);
+            this.buttonHelp.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.buttonHelp.BackgroundImage = global::Encryptior.Properties.Resources.icons8_Help_32px;
+            this.buttonHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonHelp.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonHelp.FlatAppearance.BorderSize = 0;
+            this.buttonHelp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.AliceBlue;
+            this.buttonHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHelp.ForeColor = System.Drawing.Color.Transparent;
+            this.buttonHelp.Location = new System.Drawing.Point(192, 3);
+            this.buttonHelp.Name = "buttonHelp";
+            this.buttonHelp.Size = new System.Drawing.Size(35, 35);
+            this.buttonHelp.TabIndex = 48;
+            this.buttonHelp.UseVisualStyleBackColor = true;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
             // 
             // DecrypterPage
             // 
@@ -722,7 +741,7 @@
             this.ClientSize = new System.Drawing.Size(950, 855);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(963, 47);
             this.Name = "DecrypterPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -731,22 +750,18 @@
             this.tableLayoutPanel4.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoadingTransaction)).EndInit();
             this.groupBoxFileDetails.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIdenticonOwner)).EndInit();
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel3.PerformLayout();
             this.groupBoxTransaction.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoading)).EndInit();
             this.flowLayoutPanelTStatus.ResumeLayout(false);
             this.flowLayoutPanelTStatus.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
             this.groupBoxPassword.ResumeLayout(false);
@@ -754,9 +769,13 @@
             this.tableLayoutPanel8.PerformLayout();
             this.flowLayoutPanelUnzip.ResumeLayout(false);
             this.flowLayoutPanelUnzip.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnzipStatus)).EndInit();
             this.groupBoxUnzipped.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoading)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIdenticonOwner)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoadingTransaction)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnzipStatus)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -809,5 +828,6 @@
         private System.Windows.Forms.Button buttonBuy;
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button buttonHelp;
     }
 }

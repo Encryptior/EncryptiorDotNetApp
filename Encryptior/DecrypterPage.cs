@@ -303,5 +303,10 @@ namespace Encryptior
         {
             Process.Start(unzipFolder);
         }
+
+        private void buttonHelp_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.encryptior.com/Documentation/Buyer");
+        }
     }
 }

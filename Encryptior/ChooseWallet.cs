@@ -16,9 +16,13 @@ namespace Encryptior
     public partial class ChooseWallet : Form
     {
         public static string[] Wallets;
+        public string Filename;
+        public string Address;
+        private bool Decrypt;
 
-        public ChooseWallet()
+        public ChooseWallet(bool decrypt = true)
         {
+            Decrypt = decrypt;
             InitializeComponent();
             refreshWalletList();
         }
@@ -90,23 +94,30 @@ namespace Encryptior
 
         void UnlockAccount()
         {
-            string filename = listView1.SelectedItems[0].Name;
-            string address = listView1.SelectedItems[0].Text;
-            using (PasswordForm credentials = new PasswordForm(filename, address))
+            Filename = listView1.SelectedItems[0].Name;
+            Address = listView1.SelectedItems[0].Text;
+            if (Decrypt)
             {
-                var result = credentials.ShowDialog();
-                if (result == DialogResult.OK)
+                using (PasswordForm credentials = new PasswordForm(Filename, Address))
                 {
-                    Program.PrivateKey = credentials.PrivateKey;
-                    Program.ActiveAddress = address;
-                    Properties.Settings.Default.DefaultAccount = filename;
-                    Properties.Settings.Default.Save();
-                    this.DialogResult = DialogResult.OK;
+                    var result = credentials.ShowDialog();
+                    if (result == DialogResult.OK)
+                    {
+                        Program.PrivateKey = credentials.PrivateKey;
+                        Program.ActiveAddress = Address;
+                        Properties.Settings.Default.DefaultAccount = Filename;
+                        Properties.Settings.Default.Save();
+                        this.DialogResult = DialogResult.OK;
+                    }
+                    else if (result == DialogResult.Abort)
+                    {
+                        MessageBox.Show("Bad Password", "Password Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-                else if (result == DialogResult.Abort)
-                {
-                    MessageBox.Show("Bad Password", "Password Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+            }
+            else
+            {
+                this.DialogResult = DialogResult.OK;
             }
         }
 
@@ -118,6 +129,11 @@ namespace Encryptior
         private void buttonOpenFiles_Click(object sender, EventArgs e)
         {
             Process.Start(Program.WalletPath);
+        }
+
+        private void buttonHelp_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.encryptior.com/#about");
         }
     }
 }

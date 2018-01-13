@@ -36,9 +36,10 @@
             this.buttonConfirm = new System.Windows.Forms.Button();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.button1 = new System.Windows.Forms.Button();
+            this.buttonOpenFiles = new System.Windows.Forms.Button();
             this.buttonCreateWallet = new System.Windows.Forms.Button();
             this.buttonImport = new System.Windows.Forms.Button();
-            this.buttonOpenFiles = new System.Windows.Forms.Button();
+            this.buttonHelp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listView1
@@ -106,6 +107,30 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // buttonOpenFiles
+            // 
+            this.buttonOpenFiles.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonOpenFiles.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonOpenFiles.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonOpenFiles.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonOpenFiles.FlatAppearance.BorderSize = 3;
+            this.buttonOpenFiles.FlatAppearance.MouseDownBackColor = System.Drawing.Color.AliceBlue;
+            this.buttonOpenFiles.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonOpenFiles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonOpenFiles.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonOpenFiles.ForeColor = System.Drawing.Color.Black;
+            this.buttonOpenFiles.Image = global::Encryptior.Properties.Resources.icons8_Open_32px;
+            this.buttonOpenFiles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonOpenFiles.Location = new System.Drawing.Point(15, 411);
+            this.buttonOpenFiles.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.buttonOpenFiles.Name = "buttonOpenFiles";
+            this.buttonOpenFiles.Size = new System.Drawing.Size(165, 50);
+            this.buttonOpenFiles.TabIndex = 38;
+            this.buttonOpenFiles.Text = "Open Folder";
+            this.buttonOpenFiles.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonOpenFiles.UseVisualStyleBackColor = true;
+            this.buttonOpenFiles.Click += new System.EventHandler(this.buttonOpenFiles_Click);
+            // 
             // buttonCreateWallet
             // 
             this.buttonCreateWallet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -152,29 +177,23 @@
             this.buttonImport.UseVisualStyleBackColor = true;
             this.buttonImport.Click += new System.EventHandler(this.buttonImport_Click);
             // 
-            // buttonOpenFiles
+            // buttonHelp
             // 
-            this.buttonOpenFiles.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonOpenFiles.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonOpenFiles.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonOpenFiles.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.buttonOpenFiles.FlatAppearance.BorderSize = 3;
-            this.buttonOpenFiles.FlatAppearance.MouseDownBackColor = System.Drawing.Color.AliceBlue;
-            this.buttonOpenFiles.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
-            this.buttonOpenFiles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonOpenFiles.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonOpenFiles.ForeColor = System.Drawing.Color.Black;
-            this.buttonOpenFiles.Image = global::Encryptior.Properties.Resources.icons8_Open_32px;
-            this.buttonOpenFiles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonOpenFiles.Location = new System.Drawing.Point(15, 411);
-            this.buttonOpenFiles.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.buttonOpenFiles.Name = "buttonOpenFiles";
-            this.buttonOpenFiles.Size = new System.Drawing.Size(165, 50);
-            this.buttonOpenFiles.TabIndex = 38;
-            this.buttonOpenFiles.Text = "Open Folder";
-            this.buttonOpenFiles.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonOpenFiles.UseVisualStyleBackColor = true;
-            this.buttonOpenFiles.Click += new System.EventHandler(this.buttonOpenFiles_Click);
+            this.buttonHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonHelp.BackgroundImage = global::Encryptior.Properties.Resources.icons8_Help_32px;
+            this.buttonHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonHelp.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonHelp.FlatAppearance.BorderSize = 0;
+            this.buttonHelp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.AliceBlue;
+            this.buttonHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHelp.ForeColor = System.Drawing.Color.Transparent;
+            this.buttonHelp.Location = new System.Drawing.Point(558, 14);
+            this.buttonHelp.Name = "buttonHelp";
+            this.buttonHelp.Size = new System.Drawing.Size(35, 35);
+            this.buttonHelp.TabIndex = 49;
+            this.buttonHelp.UseVisualStyleBackColor = true;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
             // 
             // ChooseWallet
             // 
@@ -182,6 +201,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(608, 477);
+            this.Controls.Add(this.buttonHelp);
             this.Controls.Add(this.buttonOpenFiles);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonConfirm);
@@ -209,5 +229,6 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button buttonOpenFiles;
+        private System.Windows.Forms.Button buttonHelp;
     }
 }

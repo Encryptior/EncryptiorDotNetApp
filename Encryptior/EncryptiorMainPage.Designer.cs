@@ -53,6 +53,7 @@ namespace Encryptior
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.timerRefresh = new System.Windows.Forms.Timer(this.components);
             this.readBalance = new System.ComponentModel.BackgroundWorker();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBoxIdenticon = new System.Windows.Forms.PictureBox();
             this.buttonQR = new System.Windows.Forms.Button();
             this.buttonCopy = new System.Windows.Forms.Button();
@@ -62,11 +63,13 @@ namespace Encryptior
             this.buttonFaucet = new System.Windows.Forms.Button();
             this.buttonChangeWallet = new System.Windows.Forms.Button();
             this.buttonOpenEncrypted = new System.Windows.Forms.Button();
+            this.buttonHelp = new System.Windows.Forms.Button();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIdenticon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,7 +89,7 @@ namespace Encryptior
             this.labelUsd.AutoSize = true;
             this.labelUsd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUsd.ForeColor = System.Drawing.Color.Black;
-            this.labelUsd.Location = new System.Drawing.Point(4, 199);
+            this.labelUsd.Location = new System.Drawing.Point(4, 195);
             this.labelUsd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelUsd.Name = "labelUsd";
             this.labelUsd.Size = new System.Drawing.Size(818, 51);
@@ -100,7 +103,7 @@ namespace Encryptior
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Segoe UI Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(4, 50);
+            this.label3.Location = new System.Drawing.Point(4, 46);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(818, 75);
@@ -138,22 +141,22 @@ namespace Encryptior
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.labelUsd, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel1, 0, 5);
-            this.tableLayoutPanel2.Controls.Add(this.label3, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.linkLabel1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.labelUsd, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel1, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.label3, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.panel2, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 6;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel2.RowCount = 5;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 74F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(826, 739);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
@@ -166,7 +169,7 @@ namespace Encryptior
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel3.Controls.Add(this.flowLayoutPanel1, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 129);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 125);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
@@ -212,12 +215,12 @@ namespace Encryptior
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 254);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 250);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(818, 481);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(818, 485);
             this.tableLayoutPanel1.TabIndex = 21;
             // 
             // panel1
@@ -234,7 +237,7 @@ namespace Encryptior
             this.panel1.Location = new System.Drawing.Point(-28, 4);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(874, 473);
+            this.panel1.Size = new System.Drawing.Size(874, 477);
             this.panel1.TabIndex = 0;
             // 
             // labelVersion
@@ -266,11 +269,11 @@ namespace Encryptior
             // 
             // linkLabel1
             // 
-            this.linkLabel1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Red;
-            this.linkLabel1.Location = new System.Drawing.Point(651, 2);
+            this.linkLabel1.Location = new System.Drawing.Point(598, 9);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(171, 20);
@@ -289,6 +292,16 @@ namespace Encryptior
             // 
             this.readBalance.DoWork += new System.ComponentModel.DoWorkEventHandler(this.readBalance_DoWork);
             this.readBalance.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.logAndReadBalance_RunWorkerCompleted);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.buttonHelp);
+            this.panel2.Controls.Add(this.linkLabel1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(820, 40);
+            this.panel2.TabIndex = 22;
             // 
             // pictureBoxIdenticon
             // 
@@ -489,6 +502,24 @@ namespace Encryptior
             this.buttonOpenEncrypted.UseVisualStyleBackColor = true;
             this.buttonOpenEncrypted.Click += new System.EventHandler(this.buttonOpenEncrypted_Click);
             // 
+            // buttonHelp
+            // 
+            this.buttonHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonHelp.BackgroundImage = global::Encryptior.Properties.Resources.icons8_Help_32px;
+            this.buttonHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonHelp.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonHelp.FlatAppearance.BorderSize = 0;
+            this.buttonHelp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.AliceBlue;
+            this.buttonHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHelp.ForeColor = System.Drawing.Color.Transparent;
+            this.buttonHelp.Location = new System.Drawing.Point(776, 2);
+            this.buttonHelp.Name = "buttonHelp";
+            this.buttonHelp.Size = new System.Drawing.Size(35, 35);
+            this.buttonHelp.TabIndex = 49;
+            this.buttonHelp.UseVisualStyleBackColor = true;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
+            // 
             // EncryptiorMainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -511,6 +542,8 @@ namespace Encryptior
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIdenticon)).EndInit();
             this.ResumeLayout(false);
 
@@ -546,6 +579,8 @@ namespace Encryptior
         private Button buttonLockData;
         private LinkLabel linkNewVersionInstall;
         private Label labelVersion;
+        private Panel panel2;
+        private Button buttonHelp;
     }
 }
 
