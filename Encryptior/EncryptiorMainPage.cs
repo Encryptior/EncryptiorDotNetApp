@@ -31,78 +31,35 @@ namespace Encryptior
         public EncryptiorMainPage()
         {
             InitializeComponent();
-            System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
-            FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
-            string version = fvi.FileVersion;
-            labelVersion.Text = "Version: " + version;
-            try
+        }
+
+        private void EncryptiorMainPage_Load(object sender, EventArgs e)
+        {
+            var init = new StartScreen();
+            if (init.ShowDialog() != DialogResult.OK)
             {
-                activeVersion = Program.apiWorker.GetAppVersion();
+                this.Close();
+            }
+            else
+            {
+                string version = init.Version;
+                labelVersion.Text = "Version: " + version;
+                activeVersion = init.ActiveVersion;
                 if (activeVersion.Version != version)
                 {
                     linkNewVersionInstall.Visible = true;
                     linkNewVersionInstall.Text = "Version " + activeVersion.Version + " available. Click to Download.";
                 }
+                linkLabelEthAddr.Text = Program.ActiveAddress;
+                Identicon identicon = new Identicon(linkLabelEthAddr.Text, 8);
+                var balance = init.Balance;
+                string balanceeth = balance.BalanceETH.ToString("0.0000");
+                string balanceusd = balance.BalanceUSD.ToString("0.00");
+                labelUsd.Text = balance.BalanceETH.ToString("0.0000") + "eth  " + balance.BalanceUSD.ToString("0.00") + "$";
             }
-            catch { }
+            this.TopMost = true;
+            this.TopMost = false;
         }
-
-        private void EncryptiorMainPage_Load(object sender, EventArgs e)
-        {
-            if (!unlockDefaultWallet())
-                this.Close();
-        }
-
-        bool unlockDefaultWallet()
-        {
-            try
-            {
-                string fileName = Properties.Settings.Default.DefaultAccount;
-                string json = File.ReadAllText(fileName);
-                Nethereum.KeyStore.KeyStoreService KeyStore = new Nethereum.KeyStore.KeyStoreService();
-                string address = KeyStore.GetAddressFromKeyStore(json);
-                using (PasswordForm credentials = new PasswordForm(fileName, address))
-                {
-                    var result = credentials.ShowDialog();
-                    if (result == DialogResult.OK)
-                    {
-                        Program.PrivateKey = credentials.PrivateKey;
-                        Program.ActiveAddress = address;
-                        linkLabelEthAddr.Text = Program.ActiveAddress;
-                        pictureBoxIdenticon.Image = Properties.Resources._25;
-                        logAndReadBalance.RunWorkerAsync();
-                        Identicon identicon = new Identicon(linkLabelEthAddr.Text, 8);
-                        return true;
-                    }
-                    else 
-                    {
-                        MessageBox.Show("Bad Password", "Password Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return false;
-                    }
-                }
-            }
-            catch
-            {
-                using (ChooseWallet makeChoose = new ChooseWallet())
-                {
-                    makeChoose.ShowDialog();
-                    if (makeChoose.DialogResult == DialogResult.OK)
-                    {
-                        linkLabelEthAddr.Text = Program.ActiveAddress;
-                        pictureBoxIdenticon.Image = Properties.Resources._25;
-                        logAndReadBalance.RunWorkerAsync();
-                        return true;
-                    }
-                    else
-                    {
-                        MessageBox.Show("You need to unlock an active account to use this application", "Application error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return false;
-                    }
-                }
-            }
-        }
-
-
 
         #region ApiAuthenticator
         private void logAndReadBalance_DoWork(object sender, DoWorkEventArgs e)
@@ -309,6 +266,11 @@ namespace Encryptior
                 Process.Start(activeVersion.DownloadLink);
                 this.Close();
             }
+        }
+
+        private void buttonHelp_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.encryptior.com");
         }
     }
 }

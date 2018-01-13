@@ -58,6 +58,8 @@
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonLock = new System.Windows.Forms.Button();
             this.pictureBoxLoading = new System.Windows.Forms.PictureBox();
+            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
+            this.buttonHelp = new System.Windows.Forms.Button();
             this.contextMenuStrip.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -65,6 +67,7 @@
             this.flowLayoutPanel3.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoading)).BeginInit();
+            this.flowLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelTitle
@@ -73,7 +76,7 @@
             this.labelTitle.AutoSize = true;
             this.labelTitle.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitle.ForeColor = System.Drawing.Color.Black;
-            this.labelTitle.Location = new System.Drawing.Point(4, 9);
+            this.labelTitle.Location = new System.Drawing.Point(4, 4);
             this.labelTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(176, 32);
@@ -206,9 +209,9 @@
             this.tableLayoutPanel1.Controls.Add(this.listViewFiles, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel2, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.labelTitle, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel3, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel4, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel5, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
@@ -220,6 +223,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 66F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(920, 765);
             this.tableLayoutPanel1.TabIndex = 41;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
@@ -419,6 +423,34 @@
             this.pictureBoxLoading.TabStop = false;
             this.pictureBoxLoading.Visible = false;
             // 
+            // flowLayoutPanel5
+            // 
+            this.flowLayoutPanel5.Controls.Add(this.labelTitle);
+            this.flowLayoutPanel5.Controls.Add(this.buttonHelp);
+            this.flowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(914, 45);
+            this.flowLayoutPanel5.TabIndex = 42;
+            // 
+            // buttonHelp
+            // 
+            this.buttonHelp.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.buttonHelp.BackgroundImage = global::Encryptior.Properties.Resources.icons8_Help_32px;
+            this.buttonHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonHelp.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonHelp.FlatAppearance.BorderSize = 0;
+            this.buttonHelp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.AliceBlue;
+            this.buttonHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHelp.ForeColor = System.Drawing.Color.Transparent;
+            this.buttonHelp.Location = new System.Drawing.Point(187, 3);
+            this.buttonHelp.Name = "buttonHelp";
+            this.buttonHelp.Size = new System.Drawing.Size(35, 35);
+            this.buttonHelp.TabIndex = 49;
+            this.buttonHelp.UseVisualStyleBackColor = true;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
+            // 
             // LockFolder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -435,7 +467,6 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LockFolder_FormClosing);
             this.contextMenuStrip.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
@@ -444,6 +475,8 @@
             this.flowLayoutPanel4.ResumeLayout(false);
             this.flowLayoutPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoading)).EndInit();
+            this.flowLayoutPanel5.ResumeLayout(false);
+            this.flowLayoutPanel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -478,5 +511,7 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.CheckBox checkBoxSingleUser;
         private System.Windows.Forms.TextBox textBoxSingleUser;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
+        private System.Windows.Forms.Button buttonHelp;
     }
 }

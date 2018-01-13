@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.IO;
 using Nethereum.Hex.HexConvertors.Extensions;
 using Newtonsoft.Json.Linq;
+using System.Diagnostics;
 
 namespace Encryptior
 {
@@ -86,6 +87,11 @@ namespace Encryptior
             labelAddress.Text = ecKey.GetPublicAddress();
             Identicon identicon = new Identicon(labelAddress.Text, 8);
             pictureBoxIdenticon.Image = identicon.GetBitmap(128);
+        }
+
+        private void buttonHelp_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.encryptior.com/#about");
         }
     }
 }

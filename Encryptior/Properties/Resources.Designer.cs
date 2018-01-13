@@ -143,6 +143,16 @@ namespace Encryptior.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_Close_Window_32px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_Close_Window_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_Copy_32px {
             get {
                 object obj = ResourceManager.GetObject("icons8_Copy_32px", resourceCulture);
@@ -166,6 +176,16 @@ namespace Encryptior.Properties {
         internal static System.Drawing.Bitmap icons8_Delete_File_32px {
             get {
                 object obj = ResourceManager.GetObject("icons8_Delete_File_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_Help_32px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_Help_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

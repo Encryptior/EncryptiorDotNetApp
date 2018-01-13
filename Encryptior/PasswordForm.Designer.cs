@@ -37,6 +37,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.pictureBoxIdenticon = new System.Windows.Forms.PictureBox();
             this.buttonCancel = new System.Windows.Forms.Button();
+            this.buttonHelp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIdenticon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,9 +74,9 @@
             this.labelAddress.Location = new System.Drawing.Point(177, 18);
             this.labelAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelAddress.Name = "labelAddress";
-            this.labelAddress.Size = new System.Drawing.Size(477, 25);
+            this.labelAddress.Size = new System.Drawing.Size(424, 25);
             this.labelAddress.TabIndex = 14;
-            this.labelAddress.Text = "0xABCD1234ef98";
+            this.labelAddress.Text = "0x02e7D46D7cC791823e10d5B0f67636595a464256";
             this.labelAddress.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelinfo
@@ -139,12 +140,31 @@
             this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
+            // buttonHelp
+            // 
+            this.buttonHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonHelp.BackgroundImage = global::Encryptior.Properties.Resources.icons8_Help_32px;
+            this.buttonHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonHelp.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonHelp.FlatAppearance.BorderSize = 0;
+            this.buttonHelp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.AliceBlue;
+            this.buttonHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHelp.ForeColor = System.Drawing.Color.Transparent;
+            this.buttonHelp.Location = new System.Drawing.Point(608, 8);
+            this.buttonHelp.Name = "buttonHelp";
+            this.buttonHelp.Size = new System.Drawing.Size(35, 35);
+            this.buttonHelp.TabIndex = 49;
+            this.buttonHelp.UseVisualStyleBackColor = true;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
+            // 
             // PasswordForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(655, 195);
+            this.Controls.Add(this.buttonHelp);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.pictureBoxIdenticon);
             this.Controls.Add(this.buttonOK);
@@ -176,5 +196,6 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.PictureBox pictureBoxIdenticon;
         private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.Button buttonHelp;
     }
 }

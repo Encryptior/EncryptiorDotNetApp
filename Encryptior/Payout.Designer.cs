@@ -38,6 +38,7 @@
             this.labelMyFunds = new System.Windows.Forms.Label();
             this.labelAddress = new System.Windows.Forms.Label();
             this.pictureBoxIdenticon = new System.Windows.Forms.PictureBox();
+            this.buttonHelp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIdenticon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,9 +52,9 @@
             this.label1.Location = new System.Drawing.Point(180, 52);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 23);
+            this.label1.Size = new System.Drawing.Size(350, 23);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Recipient Address:";
+            this.label1.Text = "Recipient Address (with 0x at the beginning):";
             // 
             // textBoxAddress
             // 
@@ -62,6 +63,7 @@
             this.textBoxAddress.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxAddress.Location = new System.Drawing.Point(184, 81);
             this.textBoxAddress.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxAddress.MaxLength = 42;
             this.textBoxAddress.Name = "textBoxAddress";
             this.textBoxAddress.Size = new System.Drawing.Size(432, 27);
             this.textBoxAddress.TabIndex = 1;
@@ -163,12 +165,31 @@
             this.pictureBoxIdenticon.TabIndex = 39;
             this.pictureBoxIdenticon.TabStop = false;
             // 
+            // buttonHelp
+            // 
+            this.buttonHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonHelp.BackgroundImage = global::Encryptior.Properties.Resources.icons8_Help_32px;
+            this.buttonHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonHelp.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonHelp.FlatAppearance.BorderSize = 0;
+            this.buttonHelp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.AliceBlue;
+            this.buttonHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHelp.ForeColor = System.Drawing.Color.Transparent;
+            this.buttonHelp.Location = new System.Drawing.Point(586, 12);
+            this.buttonHelp.Name = "buttonHelp";
+            this.buttonHelp.Size = new System.Drawing.Size(35, 35);
+            this.buttonHelp.TabIndex = 50;
+            this.buttonHelp.UseVisualStyleBackColor = true;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
+            // 
             // Payout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(633, 225);
+            this.Controls.Add(this.buttonHelp);
             this.Controls.Add(this.labelAddress);
             this.Controls.Add(this.pictureBoxIdenticon);
             this.Controls.Add(this.labelMyFunds);
@@ -203,5 +224,6 @@
         private System.Windows.Forms.Label labelMyFunds;
         private System.Windows.Forms.PictureBox pictureBoxIdenticon;
         private System.Windows.Forms.Label labelAddress;
+        private System.Windows.Forms.Button buttonHelp;
     }
 }

@@ -337,5 +337,10 @@ namespace Encryptior
                 textBoxSingleUser.Visible = false;
             }
         }
+
+        private void buttonHelp_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.encryptior.com/Documentation/Seller");
+        }
     }
 }
