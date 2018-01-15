@@ -54,6 +54,9 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Encryptior";
             this.label3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.label3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.StartScreen_MouseDown);
+            this.label3.MouseMove += new System.Windows.Forms.MouseEventHandler(this.StartScreen_MouseMove);
+            this.label3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.StartScreen_MouseUp);
             // 
             // labelVersion
             // 
@@ -65,6 +68,9 @@
             this.labelVersion.TabIndex = 34;
             this.labelVersion.Text = "Version 1.0.1.0";
             this.labelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelVersion.MouseDown += new System.Windows.Forms.MouseEventHandler(this.StartScreen_MouseDown);
+            this.labelVersion.MouseMove += new System.Windows.Forms.MouseEventHandler(this.StartScreen_MouseMove);
+            this.labelVersion.MouseUp += new System.Windows.Forms.MouseEventHandler(this.StartScreen_MouseUp);
             // 
             // labelLoading
             // 
@@ -76,6 +82,9 @@
             this.labelLoading.TabIndex = 36;
             this.labelLoading.Text = "Checking Connection...";
             this.labelLoading.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelLoading.MouseDown += new System.Windows.Forms.MouseEventHandler(this.StartScreen_MouseDown);
+            this.labelLoading.MouseMove += new System.Windows.Forms.MouseEventHandler(this.StartScreen_MouseMove);
+            this.labelLoading.MouseUp += new System.Windows.Forms.MouseEventHandler(this.StartScreen_MouseUp);
             // 
             // timerStall
             // 
@@ -94,36 +103,41 @@
             // 
             this.pictureBoxIdenticon.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxIdenticon.Location = new System.Drawing.Point(144, 246);
-            this.pictureBoxIdenticon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxIdenticon.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxIdenticon.Name = "pictureBoxIdenticon";
             this.pictureBoxIdenticon.Size = new System.Drawing.Size(32, 32);
             this.pictureBoxIdenticon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBoxIdenticon.TabIndex = 35;
             this.pictureBoxIdenticon.TabStop = false;
+            this.pictureBoxIdenticon.MouseDown += new System.Windows.Forms.MouseEventHandler(this.StartScreen_MouseDown);
+            this.pictureBoxIdenticon.MouseMove += new System.Windows.Forms.MouseEventHandler(this.StartScreen_MouseMove);
+            this.pictureBoxIdenticon.MouseUp += new System.Windows.Forms.MouseEventHandler(this.StartScreen_MouseUp);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Encryptior.Properties.Resources.EncryptiorTheProtector200;
             this.pictureBox1.Location = new System.Drawing.Point(80, 16);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(160, 160);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.StartScreen_MouseDown);
+            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.StartScreen_MouseMove);
+            this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.StartScreen_MouseUp);
             // 
             // closeBox
             // 
             this.closeBox.Image = global::Encryptior.Properties.Resources.icons8_Close_Window_32px;
             this.closeBox.Location = new System.Drawing.Point(294, 1);
-            this.closeBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.closeBox.Margin = new System.Windows.Forms.Padding(2);
             this.closeBox.Name = "closeBox";
             this.closeBox.Size = new System.Drawing.Size(26, 26);
             this.closeBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.closeBox.TabIndex = 51;
             this.closeBox.TabStop = false;
             this.closeBox.Click += new System.EventHandler(this.closeBox_Click);
-            this.closeBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.closeBox_MouseDown);
             this.closeBox.MouseEnter += new System.EventHandler(this.closeBox_MouseEnter);
             this.closeBox.MouseLeave += new System.EventHandler(this.closeBox_MouseLeave);
             // 
@@ -141,13 +155,16 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "StartScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StartScreen";
             this.Load += new System.EventHandler(this.StartScreen_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.StartScreen_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.StartScreen_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.StartScreen_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIdenticon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeBox)).EndInit();

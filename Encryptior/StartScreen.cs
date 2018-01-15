@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Encryptior
 {
     public partial class StartScreen : Form
@@ -136,6 +137,7 @@ namespace Encryptior
             if (e.ProgressPercentage > 0)
             {
                 this.TopMost = true;
+                this.TopMost = false;
             }
         }
 
@@ -225,6 +227,32 @@ namespace Encryptior
         private void closeBox_MouseDown(object sender, MouseEventArgs e)
         {
             closeBox.BackColor = Color.IndianRed;
+        }
+
+
+        private bool mouseDown;
+        private Point lastLocation;
+
+        private void StartScreen_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+            lastLocation = e.Location;
+        }
+
+        private void StartScreen_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDown)
+            {
+                this.Location = new Point(
+                    (this.Location.X - lastLocation.X) + e.X, (this.Location.Y - lastLocation.Y) + e.Y);
+
+                this.Update();
+            }
+        }
+
+        private void StartScreen_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
         }
     }
 }

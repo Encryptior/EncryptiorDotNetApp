@@ -371,6 +371,7 @@
     <Content Include="mainIcon.ico" />
     <None Include="Resources\icons8_Help_32px.png" />
     <None Include="Resources\icons8_Close_Window_32px.png" />
+    <None Include="Resources\icons8_Help_28px.png" />
     <Content Include="Resources\mainIcon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

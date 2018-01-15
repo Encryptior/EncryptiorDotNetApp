@@ -46,31 +46,31 @@ namespace Encryptior
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.linkLabelEthAddr = new System.Windows.Forms.LinkLabel();
+            this.pictureBoxIdenticon = new System.Windows.Forms.PictureBox();
+            this.buttonQR = new System.Windows.Forms.Button();
+            this.buttonCopy = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelVersion = new System.Windows.Forms.Label();
             this.linkNewVersionInstall = new System.Windows.Forms.LinkLabel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.timerRefresh = new System.Windows.Forms.Timer(this.components);
-            this.readBalance = new System.ComponentModel.BackgroundWorker();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBoxIdenticon = new System.Windows.Forms.PictureBox();
-            this.buttonQR = new System.Windows.Forms.Button();
-            this.buttonCopy = new System.Windows.Forms.Button();
             this.buttonLockData = new System.Windows.Forms.Button();
             this.buttonTransfer = new System.Windows.Forms.Button();
             this.buttonTransactions = new System.Windows.Forms.Button();
             this.buttonFaucet = new System.Windows.Forms.Button();
             this.buttonChangeWallet = new System.Windows.Forms.Button();
             this.buttonOpenEncrypted = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.buttonHelp = new System.Windows.Forms.Button();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.timerRefresh = new System.Windows.Forms.Timer(this.components);
+            this.readBalance = new System.ComponentModel.BackgroundWorker();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIdenticon)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIdenticon)).BeginInit();
             this.SuspendLayout();
             // 
             // imageListTabs
@@ -89,10 +89,9 @@ namespace Encryptior
             this.labelUsd.AutoSize = true;
             this.labelUsd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUsd.ForeColor = System.Drawing.Color.Black;
-            this.labelUsd.Location = new System.Drawing.Point(4, 195);
-            this.labelUsd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelUsd.Location = new System.Drawing.Point(3, 156);
             this.labelUsd.Name = "labelUsd";
-            this.labelUsd.Size = new System.Drawing.Size(818, 51);
+            this.labelUsd.Size = new System.Drawing.Size(655, 41);
             this.labelUsd.TabIndex = 10;
             this.labelUsd.Text = "Hello";
             this.labelUsd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -103,10 +102,9 @@ namespace Encryptior
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Segoe UI Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(4, 46);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(3, 37);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(818, 75);
+            this.label3.Size = new System.Drawing.Size(655, 60);
             this.label3.TabIndex = 1;
             this.label3.Text = "Account Overview";
             this.label3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -148,33 +146,31 @@ namespace Encryptior
             this.tableLayoutPanel2.Controls.Add(this.panel2, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 5;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 74F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(826, 739);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(661, 591);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 3;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 664F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 531F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.Controls.Add(this.flowLayoutPanel1, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 125);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 100);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(818, 66);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(655, 53);
             this.tableLayoutPanel3.TabIndex = 20;
             // 
             // flowLayoutPanel1
@@ -184,10 +180,9 @@ namespace Encryptior
             this.flowLayoutPanel1.Controls.Add(this.buttonQR);
             this.flowLayoutPanel1.Controls.Add(this.buttonCopy);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(81, 4);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(65, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(656, 58);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(525, 47);
             this.flowLayoutPanel1.TabIndex = 18;
             // 
             // linkLabelEthAddr
@@ -197,119 +192,22 @@ namespace Encryptior
             this.linkLabelEthAddr.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabelEthAddr.ForeColor = System.Drawing.Color.Blue;
             this.linkLabelEthAddr.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(70)))), ((int)(((byte)(139)))));
-            this.linkLabelEthAddr.Location = new System.Drawing.Point(4, 15);
-            this.linkLabelEthAddr.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabelEthAddr.Location = new System.Drawing.Point(3, 12);
             this.linkLabelEthAddr.Name = "linkLabelEthAddr";
-            this.linkLabelEthAddr.Size = new System.Drawing.Size(472, 23);
+            this.linkLabelEthAddr.Size = new System.Drawing.Size(387, 19);
             this.linkLabelEthAddr.TabIndex = 17;
             this.linkLabelEthAddr.TabStop = true;
             this.linkLabelEthAddr.Text = "0x942766be6F3171A4D5c0257a3869233b501175e1";
             this.linkLabelEthAddr.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.linkLabelEthAddr.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelEthAddr_LinkClicked);
             // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 882F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 250);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(818, 485);
-            this.tableLayoutPanel1.TabIndex = 21;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.labelVersion);
-            this.panel1.Controls.Add(this.linkNewVersionInstall);
-            this.panel1.Controls.Add(this.buttonLockData);
-            this.panel1.Controls.Add(this.buttonTransfer);
-            this.panel1.Controls.Add(this.buttonTransactions);
-            this.panel1.Controls.Add(this.buttonFaucet);
-            this.panel1.Controls.Add(this.buttonChangeWallet);
-            this.panel1.Controls.Add(this.buttonOpenEncrypted);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(-28, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(874, 477);
-            this.panel1.TabIndex = 0;
-            // 
-            // labelVersion
-            // 
-            this.labelVersion.AutoSize = true;
-            this.labelVersion.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVersion.ForeColor = System.Drawing.Color.DimGray;
-            this.labelVersion.Location = new System.Drawing.Point(141, 310);
-            this.labelVersion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelVersion.Name = "labelVersion";
-            this.labelVersion.Size = new System.Drawing.Size(99, 19);
-            this.labelVersion.TabIndex = 33;
-            this.labelVersion.Text = "Version 1.0.1.0";
-            // 
-            // linkNewVersionInstall
-            // 
-            this.linkNewVersionInstall.AutoSize = true;
-            this.linkNewVersionInstall.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkNewVersionInstall.LinkColor = System.Drawing.Color.Red;
-            this.linkNewVersionInstall.Location = new System.Drawing.Point(141, 326);
-            this.linkNewVersionInstall.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.linkNewVersionInstall.Name = "linkNewVersionInstall";
-            this.linkNewVersionInstall.Size = new System.Drawing.Size(154, 20);
-            this.linkNewVersionInstall.TabIndex = 32;
-            this.linkNewVersionInstall.TabStop = true;
-            this.linkNewVersionInstall.Text = "New version available";
-            this.linkNewVersionInstall.Visible = false;
-            this.linkNewVersionInstall.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkNewVersionInstall_LinkClicked);
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.Red;
-            this.linkLabel1.Location = new System.Drawing.Point(598, 9);
-            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(171, 20);
-            this.linkLabel1.TabIndex = 18;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Alpha - TestNet (About)!";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // timerRefresh
-            // 
-            this.timerRefresh.Enabled = true;
-            this.timerRefresh.Interval = 10000;
-            this.timerRefresh.Tick += new System.EventHandler(this.timerRefresh_Tick);
-            // 
-            // readBalance
-            // 
-            this.readBalance.DoWork += new System.ComponentModel.DoWorkEventHandler(this.readBalance_DoWork);
-            this.readBalance.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.logAndReadBalance_RunWorkerCompleted);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.buttonHelp);
-            this.panel2.Controls.Add(this.linkLabel1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(820, 40);
-            this.panel2.TabIndex = 22;
-            // 
             // pictureBoxIdenticon
             // 
             this.pictureBoxIdenticon.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBoxIdenticon.Location = new System.Drawing.Point(485, 7);
-            this.pictureBoxIdenticon.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBoxIdenticon.Location = new System.Drawing.Point(397, 6);
+            this.pictureBoxIdenticon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxIdenticon.Name = "pictureBoxIdenticon";
-            this.pictureBoxIdenticon.Size = new System.Drawing.Size(40, 40);
+            this.pictureBoxIdenticon.Size = new System.Drawing.Size(32, 32);
             this.pictureBoxIdenticon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBoxIdenticon.TabIndex = 16;
             this.pictureBoxIdenticon.TabStop = false;
@@ -327,10 +225,10 @@ namespace Encryptior
             this.buttonQR.Font = new System.Drawing.Font("Calibri Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonQR.ForeColor = System.Drawing.Color.Black;
             this.buttonQR.Image = global::Encryptior.Properties.Resources.icons8_QR_Code_32px;
-            this.buttonQR.Location = new System.Drawing.Point(534, 2);
-            this.buttonQR.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.buttonQR.Location = new System.Drawing.Point(436, 2);
+            this.buttonQR.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonQR.Name = "buttonQR";
-            this.buttonQR.Size = new System.Drawing.Size(50, 50);
+            this.buttonQR.Size = new System.Drawing.Size(40, 40);
             this.buttonQR.TabIndex = 30;
             this.buttonQR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonQR.UseVisualStyleBackColor = true;
@@ -349,14 +247,70 @@ namespace Encryptior
             this.buttonCopy.Font = new System.Drawing.Font("Calibri Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCopy.ForeColor = System.Drawing.Color.Black;
             this.buttonCopy.Image = global::Encryptior.Properties.Resources.icons8_Copy_32px;
-            this.buttonCopy.Location = new System.Drawing.Point(592, 2);
-            this.buttonCopy.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.buttonCopy.Location = new System.Drawing.Point(482, 2);
+            this.buttonCopy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonCopy.Name = "buttonCopy";
-            this.buttonCopy.Size = new System.Drawing.Size(50, 50);
+            this.buttonCopy.Size = new System.Drawing.Size(40, 40);
             this.buttonCopy.TabIndex = 31;
             this.buttonCopy.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonCopy.UseVisualStyleBackColor = true;
             this.buttonCopy.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 706F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 200);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(655, 388);
+            this.tableLayoutPanel1.TabIndex = 21;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.labelVersion);
+            this.panel1.Controls.Add(this.linkNewVersionInstall);
+            this.panel1.Controls.Add(this.buttonLockData);
+            this.panel1.Controls.Add(this.buttonTransfer);
+            this.panel1.Controls.Add(this.buttonTransactions);
+            this.panel1.Controls.Add(this.buttonFaucet);
+            this.panel1.Controls.Add(this.buttonChangeWallet);
+            this.panel1.Controls.Add(this.buttonOpenEncrypted);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(-22, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(700, 382);
+            this.panel1.TabIndex = 0;
+            // 
+            // labelVersion
+            // 
+            this.labelVersion.AutoSize = true;
+            this.labelVersion.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelVersion.ForeColor = System.Drawing.Color.DimGray;
+            this.labelVersion.Location = new System.Drawing.Point(113, 248);
+            this.labelVersion.Name = "labelVersion";
+            this.labelVersion.Size = new System.Drawing.Size(81, 13);
+            this.labelVersion.TabIndex = 33;
+            this.labelVersion.Text = "Version 1.0.1.0";
+            // 
+            // linkNewVersionInstall
+            // 
+            this.linkNewVersionInstall.AutoSize = true;
+            this.linkNewVersionInstall.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkNewVersionInstall.LinkColor = System.Drawing.Color.Red;
+            this.linkNewVersionInstall.Location = new System.Drawing.Point(113, 261);
+            this.linkNewVersionInstall.Name = "linkNewVersionInstall";
+            this.linkNewVersionInstall.Size = new System.Drawing.Size(121, 15);
+            this.linkNewVersionInstall.TabIndex = 32;
+            this.linkNewVersionInstall.TabStop = true;
+            this.linkNewVersionInstall.Text = "New version available";
+            this.linkNewVersionInstall.Visible = false;
+            this.linkNewVersionInstall.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkNewVersionInstall_LinkClicked);
             // 
             // buttonLockData
             // 
@@ -372,10 +326,10 @@ namespace Encryptior
             this.buttonLockData.ForeColor = System.Drawing.Color.Black;
             this.buttonLockData.Image = global::Encryptior.Properties.Resources.icons8_Lock_64px;
             this.buttonLockData.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonLockData.Location = new System.Drawing.Point(340, 2);
-            this.buttonLockData.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.buttonLockData.Location = new System.Drawing.Point(273, 2);
+            this.buttonLockData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonLockData.Name = "buttonLockData";
-            this.buttonLockData.Size = new System.Drawing.Size(188, 150);
+            this.buttonLockData.Size = new System.Drawing.Size(150, 120);
             this.buttonLockData.TabIndex = 30;
             this.buttonLockData.Text = "Lock Data";
             this.buttonLockData.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -396,10 +350,10 @@ namespace Encryptior
             this.buttonTransfer.ForeColor = System.Drawing.Color.Black;
             this.buttonTransfer.Image = global::Encryptior.Properties.Resources.icons8_Request_Money_64px;
             this.buttonTransfer.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonTransfer.Location = new System.Drawing.Point(145, 158);
-            this.buttonTransfer.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.buttonTransfer.Location = new System.Drawing.Point(117, 126);
+            this.buttonTransfer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonTransfer.Name = "buttonTransfer";
-            this.buttonTransfer.Size = new System.Drawing.Size(188, 150);
+            this.buttonTransfer.Size = new System.Drawing.Size(150, 120);
             this.buttonTransfer.TabIndex = 29;
             this.buttonTransfer.Text = "Withdraw\r\nTransfer Money";
             this.buttonTransfer.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -420,10 +374,10 @@ namespace Encryptior
             this.buttonTransactions.ForeColor = System.Drawing.Color.Black;
             this.buttonTransactions.Image = global::Encryptior.Properties.Resources.icons8_Transaction_64px;
             this.buttonTransactions.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonTransactions.Location = new System.Drawing.Point(340, 158);
-            this.buttonTransactions.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.buttonTransactions.Location = new System.Drawing.Point(273, 126);
+            this.buttonTransactions.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonTransactions.Name = "buttonTransactions";
-            this.buttonTransactions.Size = new System.Drawing.Size(188, 150);
+            this.buttonTransactions.Size = new System.Drawing.Size(150, 120);
             this.buttonTransactions.TabIndex = 28;
             this.buttonTransactions.Text = "Transaction List\r\n(Opens in Browser)";
             this.buttonTransactions.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -444,10 +398,10 @@ namespace Encryptior
             this.buttonFaucet.ForeColor = System.Drawing.Color.Black;
             this.buttonFaucet.Image = global::Encryptior.Properties.Resources.icons8_Cash_in_Hand_64px;
             this.buttonFaucet.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonFaucet.Location = new System.Drawing.Point(535, 158);
-            this.buttonFaucet.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.buttonFaucet.Location = new System.Drawing.Point(429, 126);
+            this.buttonFaucet.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonFaucet.Name = "buttonFaucet";
-            this.buttonFaucet.Size = new System.Drawing.Size(188, 150);
+            this.buttonFaucet.Size = new System.Drawing.Size(150, 120);
             this.buttonFaucet.TabIndex = 27;
             this.buttonFaucet.Text = "Gimme Monopoly\r\nMoney (Alpha)";
             this.buttonFaucet.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -468,10 +422,10 @@ namespace Encryptior
             this.buttonChangeWallet.ForeColor = System.Drawing.Color.Black;
             this.buttonChangeWallet.Image = global::Encryptior.Properties.Resources.icons8_Wallet_64px;
             this.buttonChangeWallet.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonChangeWallet.Location = new System.Drawing.Point(145, 2);
-            this.buttonChangeWallet.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.buttonChangeWallet.Location = new System.Drawing.Point(117, 2);
+            this.buttonChangeWallet.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonChangeWallet.Name = "buttonChangeWallet";
-            this.buttonChangeWallet.Size = new System.Drawing.Size(188, 150);
+            this.buttonChangeWallet.Size = new System.Drawing.Size(150, 120);
             this.buttonChangeWallet.TabIndex = 26;
             this.buttonChangeWallet.Text = "Change Main Wallet";
             this.buttonChangeWallet.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -492,15 +446,26 @@ namespace Encryptior
             this.buttonOpenEncrypted.ForeColor = System.Drawing.Color.Black;
             this.buttonOpenEncrypted.Image = global::Encryptior.Properties.Resources.icons8_Unlock_2_64px;
             this.buttonOpenEncrypted.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonOpenEncrypted.Location = new System.Drawing.Point(535, 2);
-            this.buttonOpenEncrypted.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.buttonOpenEncrypted.Location = new System.Drawing.Point(429, 2);
+            this.buttonOpenEncrypted.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonOpenEncrypted.Name = "buttonOpenEncrypted";
-            this.buttonOpenEncrypted.Size = new System.Drawing.Size(188, 150);
+            this.buttonOpenEncrypted.Size = new System.Drawing.Size(150, 120);
             this.buttonOpenEncrypted.TabIndex = 25;
             this.buttonOpenEncrypted.Text = "Unlock Data";
             this.buttonOpenEncrypted.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonOpenEncrypted.UseVisualStyleBackColor = true;
             this.buttonOpenEncrypted.Click += new System.EventHandler(this.buttonOpenEncrypted_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.buttonHelp);
+            this.panel2.Controls.Add(this.linkLabel1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(657, 33);
+            this.panel2.TabIndex = 22;
             // 
             // buttonHelp
             // 
@@ -513,23 +478,49 @@ namespace Encryptior
             this.buttonHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.buttonHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonHelp.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonHelp.Location = new System.Drawing.Point(776, 2);
+            this.buttonHelp.Location = new System.Drawing.Point(622, 2);
+            this.buttonHelp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonHelp.Name = "buttonHelp";
-            this.buttonHelp.Size = new System.Drawing.Size(35, 35);
+            this.buttonHelp.Size = new System.Drawing.Size(28, 28);
             this.buttonHelp.TabIndex = 49;
             this.buttonHelp.UseVisualStyleBackColor = true;
             this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.Red;
+            this.linkLabel1.Location = new System.Drawing.Point(479, 7);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(136, 15);
+            this.linkLabel1.TabIndex = 18;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Alpha - TestNet (About)!";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // timerRefresh
+            // 
+            this.timerRefresh.Enabled = true;
+            this.timerRefresh.Interval = 10000;
+            this.timerRefresh.Tick += new System.EventHandler(this.timerRefresh_Tick);
+            // 
+            // readBalance
+            // 
+            this.readBalance.DoWork += new System.ComponentModel.DoWorkEventHandler(this.readBalance_DoWork);
+            this.readBalance.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.logAndReadBalance_RunWorkerCompleted);
+            // 
             // EncryptiorMainPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(826, 739);
+            this.ClientSize = new System.Drawing.Size(661, 591);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.MinimumSize = new System.Drawing.Size(746, 47);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimumSize = new System.Drawing.Size(600, 45);
             this.Name = "EncryptiorMainPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Encryptior Wallet";
@@ -539,12 +530,12 @@ namespace Encryptior
             this.tableLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIdenticon)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIdenticon)).EndInit();
             this.ResumeLayout(false);
 
         }
