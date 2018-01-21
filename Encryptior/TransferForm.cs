@@ -103,6 +103,7 @@ namespace Encryptior
             else
             {
                 buttonConfirm.Enabled = true;
+                labelNotEnough.Visible = false;
             }
         }
 
@@ -119,6 +120,7 @@ namespace Encryptior
             else
             {
                 buttonConfirm.Enabled = true;
+                labelNotEnough.Visible = false;
             }
         }
 

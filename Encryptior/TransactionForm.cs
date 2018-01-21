@@ -129,15 +129,6 @@ namespace Encryptior
             textBoxTransFee.Text = (transFee * transaction.ETH2USD).ToString("0.00") + " $";
             textBoxTotalEther.Text = Convert.ToString(transaction.CostETH + transFee) + " ETH";
             textBoxTotalUsd.Text = ((transaction.CostETH + transFee) * transaction.ETH2USD).ToString("0.00") + " $";
-            if (transaction.CostETH + transFee > Balance.BalanceETH)
-            {
-                buttonConfirm.Enabled = false;
-                labelExpiredNotification.Text = "Not enough funds to make a transaction";
-            }
-            else
-            {
-                buttonConfirm.Enabled = true;
-            }
         }
 
 
