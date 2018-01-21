@@ -163,6 +163,16 @@ namespace Encryptior.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_Cycling_28px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_Cycling_28px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_Delete_32px {
             get {
                 object obj = ResourceManager.GetObject("icons8_Delete_32px", resourceCulture);
@@ -293,6 +303,26 @@ namespace Encryptior.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_Running_28px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_Running_28px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_Running_Rabbit_28px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_Running_Rabbit_28px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_Transaction_64px {
             get {
                 object obj = ResourceManager.GetObject("icons8_Transaction_64px", resourceCulture);
@@ -313,6 +343,16 @@ namespace Encryptior.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_Turtle_28px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_Turtle_28px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_Unlock_2_32px_1 {
             get {
                 object obj = ResourceManager.GetObject("icons8_Unlock_2_32px_1", resourceCulture);
@@ -326,6 +366,16 @@ namespace Encryptior.Properties {
         internal static System.Drawing.Bitmap icons8_Unlock_2_64px {
             get {
                 object obj = ResourceManager.GetObject("icons8_Unlock_2_64px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_Walking_28px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_Walking_28px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

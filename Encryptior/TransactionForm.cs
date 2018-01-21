@@ -14,7 +14,7 @@ namespace Encryptior
     public partial class TransactionForm : Form
     {
         private int expiry = 59;
-        public Models.Balance Balance; 
+        public Models.Balance Balance;
         public Models.TransactionInput transaction;
         public Models.TransactionResult TransResult;
 
@@ -65,18 +65,39 @@ namespace Encryptior
             Balance = Program.apiWorker.GetBalance();
         }
 
+ 
+        private string number2time(double minutes)
+        {
+            TimeSpan span = TimeSpan.FromMinutes(minutes);
+            string formatted = string.Format("{0}",
+                span.Duration().Minutes > 0 ? string.Format("{0:0} min{1}, ", span.Minutes+1, span.Minutes+1 == 1 ? String.Empty : "s") : string.Empty
+                );
+
+            if (formatted.EndsWith(", ")) formatted = formatted.Substring(0, formatted.Length - 2);
+
+            if (string.IsNullOrEmpty(formatted)) formatted = "1 min";
+
+            return formatted;
+        } 
+
         private void backgroundWorkerTransaction_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            var transactionCost = transaction.GasLimit * transaction.GasPrice;
+            transaction.SelectedGasPrice = transaction.GasPrice.MediumPrice;
+            var transactionCost = transaction.GasLimit * transaction.SelectedGasPrice;
             double transFee = (double)transactionCost / 1000000000000000000;
-
+            groupBoxConfTime.Enabled = true;
             textBoxFileCostUsd.Text = transaction.CostUSD.ToString() + " $";
             textBoxFileCostEth.Text = transaction.CostETH.ToString() + " ETH";
-            textBoxTransFee.Text = transFee.ToString() + " ETH";
+            textBoxTransFee.Text = (transFee * transaction.ETH2USD).ToString("0.00") + " $";
             textBoxTotalEther.Text = Convert.ToString(transaction.CostETH + transFee) + " ETH";
             textBoxTotalUsd.Text = ((transaction.CostETH + transFee) * transaction.ETH2USD).ToString("0.00") + " $";
             textBoxCourse.Text = "(@ " + transaction.ETH2USD + " $/ETH)";
             labelFunds.Text = "My Account: " + Balance.BalanceETH + " ETH";
+
+            labelSlow.Text = number2time(transaction.GasPrice.LowPriceWait);
+            labelMedium.Text = number2time(transaction.GasPrice.MediumPriceWait);
+            labelFast.Text = number2time(transaction.GasPrice.HighPriceWait);
+
             if (transaction.CostETH + transFee > Balance.BalanceETH)
             {
                 buttonConfirm.Enabled = false;
@@ -98,6 +119,49 @@ namespace Encryptior
         private void backgroundWorkerPay_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             this.DialogResult = DialogResult.OK;
+        }
+
+        private void changeFee(BigInteger GasPrice)
+        {
+            var transactionCost = transaction.GasLimit * GasPrice;
+            double transFee = (double)transactionCost / 1000000000000000000;
+            textBoxFileCostEth.Text = transaction.CostETH.ToString() + " ETH";
+            textBoxTransFee.Text = (transFee * transaction.ETH2USD).ToString("0.00") + " $";
+            textBoxTotalEther.Text = Convert.ToString(transaction.CostETH + transFee) + " ETH";
+            textBoxTotalUsd.Text = ((transaction.CostETH + transFee) * transaction.ETH2USD).ToString("0.00") + " $";
+            if (transaction.CostETH + transFee > Balance.BalanceETH)
+            {
+                buttonConfirm.Enabled = false;
+                labelExpiredNotification.Text = "Not enough funds to make a transaction";
+            }
+            else
+            {
+                buttonConfirm.Enabled = true;
+            }
+        }
+
+
+        private void radioButtonSlow_CheckedChanged(object sender, EventArgs e)
+        {
+            transaction.SelectedGasPrice = transaction.GasPrice.LowPrice;
+            changeFee(transaction.GasPrice.LowPrice);
+        }
+
+        private void radioButtonMed_CheckedChanged(object sender, EventArgs e)
+        {
+            transaction.SelectedGasPrice = transaction.GasPrice.MediumPrice;
+            changeFee(transaction.GasPrice.MediumPrice);
+        }
+
+        private void radioButtonFast_CheckedChanged(object sender, EventArgs e)
+        {
+            transaction.SelectedGasPrice = transaction.GasPrice.HighPrice;
+            changeFee(transaction.GasPrice.HighPrice);
+        }
+
+        private void buttonHelp_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("In order to execute ether transaction, a certain fee is added to the basic transaction cost. Value of this fee determines probable execution time - if the network is congested, miners will request higher fees and confirmation times will be longer.\n\nValues for the transaction confirmation time provided here are just indicative (averages), and real transaction may take shorter or longer - we have no control over this.\n\nSource: https://ethgasstation.info/", "Confirmation Time", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

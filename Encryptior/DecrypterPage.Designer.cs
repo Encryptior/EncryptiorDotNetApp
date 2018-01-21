@@ -38,6 +38,7 @@
             this.linkLabelTransHash = new System.Windows.Forms.LinkLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.linkLabelTransStatus = new System.Windows.Forms.LinkLabel();
+            this.pictureBoxLoadingTransaction = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBoxPass = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,57 +48,56 @@
             this.linkLabelFilename = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBoxIdenticonOwner = new System.Windows.Forms.PictureBox();
             this.linkLabelOwner = new System.Windows.Forms.LinkLabel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.labelCost = new System.Windows.Forms.Label();
+            this.buttonBuy = new System.Windows.Forms.Button();
             this.groupBoxTransaction = new System.Windows.Forms.GroupBox();
             this.timerTransactionChecker = new System.Windows.Forms.Timer(this.components);
             this.backgroundWorkerHash = new System.ComponentModel.BackgroundWorker();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBoxLoading = new System.Windows.Forms.PictureBox();
             this.labelStatus = new System.Windows.Forms.Label();
             this.backgroundWorkerTransaction = new System.ComponentModel.BackgroundWorker();
             this.flowLayoutPanelTStatus = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.backgroundWorkerStatus = new System.ComponentModel.BackgroundWorker();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.labelTitle = new System.Windows.Forms.Label();
+            this.buttonHelp = new System.Windows.Forms.Button();
             this.groupBoxPassword = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.buttonUnlockFile = new System.Windows.Forms.Button();
             this.flowLayoutPanelUnzip = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBoxUnzipStatus = new System.Windows.Forms.PictureBox();
             this.labelUnzipStatus = new System.Windows.Forms.Label();
             this.groupBoxUnzipped = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.buttonOpenFiles = new System.Windows.Forms.Button();
             this.backgroundDecompressor = new System.ComponentModel.BackgroundWorker();
             this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
-            this.pictureBoxLoading = new System.Windows.Forms.PictureBox();
-            this.pictureBoxIdenticonOwner = new System.Windows.Forms.PictureBox();
-            this.buttonBuy = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxLoadingTransaction = new System.Windows.Forms.PictureBox();
-            this.buttonUnlockFile = new System.Windows.Forms.Button();
-            this.pictureBoxUnzipStatus = new System.Windows.Forms.PictureBox();
-            this.buttonOpenFiles = new System.Windows.Forms.Button();
-            this.buttonHelp = new System.Windows.Forms.Button();
             this.tableLayoutPanel4.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoadingTransaction)).BeginInit();
             this.groupBoxFileDetails.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIdenticonOwner)).BeginInit();
             this.flowLayoutPanel3.SuspendLayout();
             this.groupBoxTransaction.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoading)).BeginInit();
             this.flowLayoutPanelTStatus.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
             this.groupBoxPassword.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
             this.flowLayoutPanelUnzip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnzipStatus)).BeginInit();
             this.groupBoxUnzipped.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoading)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIdenticonOwner)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoadingTransaction)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnzipStatus)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel4
@@ -213,6 +213,19 @@
             this.linkLabelTransStatus.Text = "No Payment";
             this.linkLabelTransStatus.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelTransStatus_LinkClicked);
             // 
+            // pictureBoxLoadingTransaction
+            // 
+            this.pictureBoxLoadingTransaction.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBoxLoadingTransaction.Image = global::Encryptior.Properties.Resources._25;
+            this.pictureBoxLoadingTransaction.Location = new System.Drawing.Point(109, 5);
+            this.pictureBoxLoadingTransaction.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBoxLoadingTransaction.Name = "pictureBoxLoadingTransaction";
+            this.pictureBoxLoadingTransaction.Size = new System.Drawing.Size(32, 32);
+            this.pictureBoxLoadingTransaction.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxLoadingTransaction.TabIndex = 42;
+            this.pictureBoxLoadingTransaction.TabStop = false;
+            this.pictureBoxLoadingTransaction.Visible = false;
+            // 
             // label9
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -235,7 +248,7 @@
             this.textBoxPass.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPass.Name = "textBoxPass";
             this.textBoxPass.ReadOnly = true;
-            this.textBoxPass.Size = new System.Drawing.Size(490, 29);
+            this.textBoxPass.Size = new System.Drawing.Size(489, 29);
             this.textBoxPass.TabIndex = 28;
             this.textBoxPass.Text = "pass";
             // 
@@ -343,6 +356,17 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(778, 50);
             this.tableLayoutPanel2.TabIndex = 37;
             // 
+            // pictureBoxIdenticonOwner
+            // 
+            this.pictureBoxIdenticonOwner.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBoxIdenticonOwner.Location = new System.Drawing.Point(11, 5);
+            this.pictureBoxIdenticonOwner.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBoxIdenticonOwner.Name = "pictureBoxIdenticonOwner";
+            this.pictureBoxIdenticonOwner.Size = new System.Drawing.Size(40, 40);
+            this.pictureBoxIdenticonOwner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxIdenticonOwner.TabIndex = 34;
+            this.pictureBoxIdenticonOwner.TabStop = false;
+            // 
             // linkLabelOwner
             // 
             this.linkLabelOwner.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -383,6 +407,29 @@
             this.labelCost.Text = "100$";
             this.labelCost.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // buttonBuy
+            // 
+            this.buttonBuy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonBuy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonBuy.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonBuy.FlatAppearance.BorderSize = 3;
+            this.buttonBuy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.AliceBlue;
+            this.buttonBuy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonBuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBuy.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBuy.ForeColor = System.Drawing.Color.Black;
+            this.buttonBuy.Image = global::Encryptior.Properties.Resources.icons8_Buy_32px;
+            this.buttonBuy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonBuy.Location = new System.Drawing.Point(60, 2);
+            this.buttonBuy.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.buttonBuy.Name = "buttonBuy";
+            this.buttonBuy.Size = new System.Drawing.Size(104, 50);
+            this.buttonBuy.TabIndex = 27;
+            this.buttonBuy.Text = "Buy";
+            this.buttonBuy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonBuy.UseVisualStyleBackColor = true;
+            this.buttonBuy.Click += new System.EventHandler(this.buttonBuy_Click);
+            // 
             // groupBoxTransaction
             // 
             this.groupBoxTransaction.Controls.Add(this.tableLayoutPanel4);
@@ -419,6 +466,17 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(905, 42);
             this.flowLayoutPanel1.TabIndex = 44;
             // 
+            // pictureBoxLoading
+            // 
+            this.pictureBoxLoading.Image = global::Encryptior.Properties.Resources._25;
+            this.pictureBoxLoading.Location = new System.Drawing.Point(5, 5);
+            this.pictureBoxLoading.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBoxLoading.Name = "pictureBoxLoading";
+            this.pictureBoxLoading.Size = new System.Drawing.Size(32, 32);
+            this.pictureBoxLoading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxLoading.TabIndex = 43;
+            this.pictureBoxLoading.TabStop = false;
+            // 
             // labelStatus
             // 
             this.labelStatus.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -446,6 +504,17 @@
             this.flowLayoutPanelTStatus.Size = new System.Drawing.Size(905, 42);
             this.flowLayoutPanelTStatus.TabIndex = 45;
             this.flowLayoutPanelTStatus.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Encryptior.Properties.Resources._25;
+            this.pictureBox1.Location = new System.Drawing.Point(5, 5);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 43;
+            this.pictureBox1.TabStop = false;
             // 
             // label3
             // 
@@ -494,6 +563,24 @@
             this.labelTitle.TabIndex = 49;
             this.labelTitle.Text = "Decrypting Data";
             // 
+            // buttonHelp
+            // 
+            this.buttonHelp.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.buttonHelp.BackgroundImage = global::Encryptior.Properties.Resources.icons8_Help_32px;
+            this.buttonHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonHelp.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonHelp.FlatAppearance.BorderSize = 0;
+            this.buttonHelp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.AliceBlue;
+            this.buttonHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHelp.ForeColor = System.Drawing.Color.Transparent;
+            this.buttonHelp.Location = new System.Drawing.Point(192, 3);
+            this.buttonHelp.Name = "buttonHelp";
+            this.buttonHelp.Size = new System.Drawing.Size(35, 35);
+            this.buttonHelp.TabIndex = 48;
+            this.buttonHelp.UseVisualStyleBackColor = true;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
+            // 
             // groupBoxPassword
             // 
             this.groupBoxPassword.Controls.Add(this.tableLayoutPanel8);
@@ -514,7 +601,7 @@
             this.tableLayoutPanel8.ColumnCount = 3;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 275F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 276F));
             this.tableLayoutPanel8.Controls.Add(this.label9, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.textBoxPass, 1, 0);
             this.tableLayoutPanel8.Controls.Add(this.buttonUnlockFile, 2, 0);
@@ -527,6 +614,30 @@
             this.tableLayoutPanel8.Size = new System.Drawing.Size(902, 74);
             this.tableLayoutPanel8.TabIndex = 42;
             // 
+            // buttonUnlockFile
+            // 
+            this.buttonUnlockFile.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.buttonUnlockFile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonUnlockFile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonUnlockFile.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonUnlockFile.FlatAppearance.BorderSize = 3;
+            this.buttonUnlockFile.FlatAppearance.MouseDownBackColor = System.Drawing.Color.AliceBlue;
+            this.buttonUnlockFile.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonUnlockFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonUnlockFile.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUnlockFile.ForeColor = System.Drawing.Color.Black;
+            this.buttonUnlockFile.Image = global::Encryptior.Properties.Resources.icons8_Unlock_2_32px_1;
+            this.buttonUnlockFile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonUnlockFile.Location = new System.Drawing.Point(629, 12);
+            this.buttonUnlockFile.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.buttonUnlockFile.Name = "buttonUnlockFile";
+            this.buttonUnlockFile.Size = new System.Drawing.Size(120, 50);
+            this.buttonUnlockFile.TabIndex = 27;
+            this.buttonUnlockFile.Text = "Unlock";
+            this.buttonUnlockFile.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonUnlockFile.UseVisualStyleBackColor = true;
+            this.buttonUnlockFile.Click += new System.EventHandler(this.buttonUnlockFile_Click);
+            // 
             // flowLayoutPanelUnzip
             // 
             this.flowLayoutPanelUnzip.Controls.Add(this.pictureBoxUnzipStatus);
@@ -538,6 +649,17 @@
             this.flowLayoutPanelUnzip.Size = new System.Drawing.Size(905, 42);
             this.flowLayoutPanelUnzip.TabIndex = 47;
             this.flowLayoutPanelUnzip.Visible = false;
+            // 
+            // pictureBoxUnzipStatus
+            // 
+            this.pictureBoxUnzipStatus.Image = global::Encryptior.Properties.Resources._25;
+            this.pictureBoxUnzipStatus.Location = new System.Drawing.Point(5, 5);
+            this.pictureBoxUnzipStatus.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBoxUnzipStatus.Name = "pictureBoxUnzipStatus";
+            this.pictureBoxUnzipStatus.Size = new System.Drawing.Size(32, 32);
+            this.pictureBoxUnzipStatus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxUnzipStatus.TabIndex = 43;
+            this.pictureBoxUnzipStatus.TabStop = false;
             // 
             // labelUnzipStatus
             // 
@@ -576,120 +698,9 @@
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 97F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 98F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(902, 82);
             this.tableLayoutPanel3.TabIndex = 0;
-            // 
-            // backgroundDecompressor
-            // 
-            this.backgroundDecompressor.WorkerReportsProgress = true;
-            this.backgroundDecompressor.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundDecompressor_DoWork);
-            this.backgroundDecompressor.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundDecompressor_ProgressChanged);
-            this.backgroundDecompressor.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundDecompressor_RunWorkerCompleted);
-            // 
-            // pictureBoxLoading
-            // 
-            this.pictureBoxLoading.Image = global::Encryptior.Properties.Resources._25;
-            this.pictureBoxLoading.Location = new System.Drawing.Point(5, 5);
-            this.pictureBoxLoading.Margin = new System.Windows.Forms.Padding(5);
-            this.pictureBoxLoading.Name = "pictureBoxLoading";
-            this.pictureBoxLoading.Size = new System.Drawing.Size(32, 32);
-            this.pictureBoxLoading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxLoading.TabIndex = 43;
-            this.pictureBoxLoading.TabStop = false;
-            // 
-            // pictureBoxIdenticonOwner
-            // 
-            this.pictureBoxIdenticonOwner.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBoxIdenticonOwner.Location = new System.Drawing.Point(11, 5);
-            this.pictureBoxIdenticonOwner.Margin = new System.Windows.Forms.Padding(5);
-            this.pictureBoxIdenticonOwner.Name = "pictureBoxIdenticonOwner";
-            this.pictureBoxIdenticonOwner.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxIdenticonOwner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxIdenticonOwner.TabIndex = 34;
-            this.pictureBoxIdenticonOwner.TabStop = false;
-            // 
-            // buttonBuy
-            // 
-            this.buttonBuy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonBuy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonBuy.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.buttonBuy.FlatAppearance.BorderSize = 3;
-            this.buttonBuy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.AliceBlue;
-            this.buttonBuy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
-            this.buttonBuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBuy.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBuy.ForeColor = System.Drawing.Color.Black;
-            this.buttonBuy.Image = global::Encryptior.Properties.Resources.icons8_Buy_32px;
-            this.buttonBuy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonBuy.Location = new System.Drawing.Point(60, 2);
-            this.buttonBuy.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.buttonBuy.Name = "buttonBuy";
-            this.buttonBuy.Size = new System.Drawing.Size(104, 50);
-            this.buttonBuy.TabIndex = 27;
-            this.buttonBuy.Text = "Buy";
-            this.buttonBuy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonBuy.UseVisualStyleBackColor = true;
-            this.buttonBuy.Click += new System.EventHandler(this.buttonBuy_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Encryptior.Properties.Resources._25;
-            this.pictureBox1.Location = new System.Drawing.Point(5, 5);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 43;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBoxLoadingTransaction
-            // 
-            this.pictureBoxLoadingTransaction.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBoxLoadingTransaction.Image = global::Encryptior.Properties.Resources._25;
-            this.pictureBoxLoadingTransaction.Location = new System.Drawing.Point(109, 5);
-            this.pictureBoxLoadingTransaction.Margin = new System.Windows.Forms.Padding(5);
-            this.pictureBoxLoadingTransaction.Name = "pictureBoxLoadingTransaction";
-            this.pictureBoxLoadingTransaction.Size = new System.Drawing.Size(32, 32);
-            this.pictureBoxLoadingTransaction.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxLoadingTransaction.TabIndex = 42;
-            this.pictureBoxLoadingTransaction.TabStop = false;
-            this.pictureBoxLoadingTransaction.Visible = false;
-            // 
-            // buttonUnlockFile
-            // 
-            this.buttonUnlockFile.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.buttonUnlockFile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonUnlockFile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonUnlockFile.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.buttonUnlockFile.FlatAppearance.BorderSize = 3;
-            this.buttonUnlockFile.FlatAppearance.MouseDownBackColor = System.Drawing.Color.AliceBlue;
-            this.buttonUnlockFile.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
-            this.buttonUnlockFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonUnlockFile.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUnlockFile.ForeColor = System.Drawing.Color.Black;
-            this.buttonUnlockFile.Image = global::Encryptior.Properties.Resources.icons8_Unlock_2_32px_1;
-            this.buttonUnlockFile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonUnlockFile.Location = new System.Drawing.Point(630, 12);
-            this.buttonUnlockFile.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.buttonUnlockFile.Name = "buttonUnlockFile";
-            this.buttonUnlockFile.Size = new System.Drawing.Size(120, 50);
-            this.buttonUnlockFile.TabIndex = 27;
-            this.buttonUnlockFile.Text = "Unlock";
-            this.buttonUnlockFile.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonUnlockFile.UseVisualStyleBackColor = true;
-            this.buttonUnlockFile.Click += new System.EventHandler(this.buttonUnlockFile_Click);
-            // 
-            // pictureBoxUnzipStatus
-            // 
-            this.pictureBoxUnzipStatus.Image = global::Encryptior.Properties.Resources._25;
-            this.pictureBoxUnzipStatus.Location = new System.Drawing.Point(5, 5);
-            this.pictureBoxUnzipStatus.Margin = new System.Windows.Forms.Padding(5);
-            this.pictureBoxUnzipStatus.Name = "pictureBoxUnzipStatus";
-            this.pictureBoxUnzipStatus.Size = new System.Drawing.Size(32, 32);
-            this.pictureBoxUnzipStatus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxUnzipStatus.TabIndex = 43;
-            this.pictureBoxUnzipStatus.TabStop = false;
             // 
             // buttonOpenFiles
             // 
@@ -705,7 +716,7 @@
             this.buttonOpenFiles.ForeColor = System.Drawing.Color.Black;
             this.buttonOpenFiles.Image = global::Encryptior.Properties.Resources.icons8_Open_32px;
             this.buttonOpenFiles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonOpenFiles.Location = new System.Drawing.Point(5, 24);
+            this.buttonOpenFiles.Location = new System.Drawing.Point(5, 25);
             this.buttonOpenFiles.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.buttonOpenFiles.Name = "buttonOpenFiles";
             this.buttonOpenFiles.Size = new System.Drawing.Size(171, 50);
@@ -715,23 +726,12 @@
             this.buttonOpenFiles.UseVisualStyleBackColor = true;
             this.buttonOpenFiles.Click += new System.EventHandler(this.buttonOpenFiles_Click);
             // 
-            // buttonHelp
+            // backgroundDecompressor
             // 
-            this.buttonHelp.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.buttonHelp.BackgroundImage = global::Encryptior.Properties.Resources.icons8_Help_32px;
-            this.buttonHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonHelp.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.buttonHelp.FlatAppearance.BorderSize = 0;
-            this.buttonHelp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.AliceBlue;
-            this.buttonHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
-            this.buttonHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonHelp.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonHelp.Location = new System.Drawing.Point(192, 3);
-            this.buttonHelp.Name = "buttonHelp";
-            this.buttonHelp.Size = new System.Drawing.Size(35, 35);
-            this.buttonHelp.TabIndex = 48;
-            this.buttonHelp.UseVisualStyleBackColor = true;
-            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
+            this.backgroundDecompressor.WorkerReportsProgress = true;
+            this.backgroundDecompressor.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundDecompressor_DoWork);
+            this.backgroundDecompressor.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundDecompressor_ProgressChanged);
+            this.backgroundDecompressor.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundDecompressor_RunWorkerCompleted);
             // 
             // DecrypterPage
             // 
@@ -750,18 +750,22 @@
             this.tableLayoutPanel4.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoadingTransaction)).EndInit();
             this.groupBoxFileDetails.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIdenticonOwner)).EndInit();
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel3.PerformLayout();
             this.groupBoxTransaction.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoading)).EndInit();
             this.flowLayoutPanelTStatus.ResumeLayout(false);
             this.flowLayoutPanelTStatus.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
             this.groupBoxPassword.ResumeLayout(false);
@@ -769,13 +773,9 @@
             this.tableLayoutPanel8.PerformLayout();
             this.flowLayoutPanelUnzip.ResumeLayout(false);
             this.flowLayoutPanelUnzip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnzipStatus)).EndInit();
             this.groupBoxUnzipped.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoading)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIdenticonOwner)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoadingTransaction)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnzipStatus)).EndInit();
             this.ResumeLayout(false);
 
         }

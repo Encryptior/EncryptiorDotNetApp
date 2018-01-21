@@ -16,6 +16,7 @@ namespace Encryptior
         public string AccessToken;
 
         private const string ApiPath = @"https://www.encryptior.com/ropsten/api/";
+
         private string GetRequest(string url, string token)
         {
             string answer;
@@ -153,7 +154,7 @@ namespace Encryptior
             if (AccessToken == null)
                 return null;
             Nethereum.Signer.EthECKey PrivateKey = new Nethereum.Signer.EthECKey(PrivateKeyString);
-            Nethereum.Signer.Transaction rawTrans = new Nethereum.Signer.Transaction(transaction.ByteCode.HexToByteArray());
+            Nethereum.Signer.Transaction rawTrans = new Nethereum.Signer.Transaction(transaction.ContractAddress, transaction.CostWei, transaction.Nonce, transaction.SelectedGasPrice, transaction.GasLimit, transaction.ByteCode);
             rawTrans.Sign(PrivateKey);
             string signed = rawTrans.GetRLPEncoded().ToHex(true);
             string json = PostRequestAuth(ApiPath + "transaction/pay/" + transaction.Timestamp, AccessToken, new Dictionary<string, string>()

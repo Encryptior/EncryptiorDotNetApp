@@ -42,8 +42,12 @@ namespace Encryptior
             public double CostETH { get; set; }
             public BigInteger CostWei { get; set; }
             public string ByteCode { get; set; }
-            public BigInteger GasPrice { get; set; }
+            public GasPrice GasPrice { get; set; }
             public BigInteger GasLimit { get; set; }
+            public string ContractAddress { get; set; }
+            public string PayTo { get; set; }
+            public BigInteger Nonce { get; set; }
+            public BigInteger SelectedGasPrice { get; set; }
         }
 
         public class TransactionEntry
@@ -68,7 +72,12 @@ namespace Encryptior
 
         public class GasPrice
         {
-            public BigInteger Price { get; set; }
+            public BigInteger LowPrice { get; set; }
+            public BigInteger MediumPrice { get; set; }
+            public BigInteger HighPrice { get; set; }
+            public double LowPriceWait { get; set; }
+            public double MediumPriceWait { get; set; }
+            public double HighPriceWait { get; set; }
         }
 
         public class CurrentVersion

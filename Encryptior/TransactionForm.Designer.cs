@@ -39,7 +39,6 @@
             this.textBoxFileCostUsd = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxFileCostEth = new System.Windows.Forms.TextBox();
-            this.textBoxTransFee = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxTotalEther = new System.Windows.Forms.TextBox();
@@ -50,10 +49,20 @@
             this.backgroundWorkerTransaction = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorkerPay = new System.ComponentModel.BackgroundWorker();
             this.labelFunds = new System.Windows.Forms.Label();
+            this.groupBoxConfTime = new System.Windows.Forms.GroupBox();
+            this.buttonHelp = new System.Windows.Forms.Button();
+            this.labelFast = new System.Windows.Forms.Label();
+            this.labelMedium = new System.Windows.Forms.Label();
+            this.labelSlow = new System.Windows.Forms.Label();
+            this.radioButtonSlow = new System.Windows.Forms.RadioButton();
+            this.radioButtonFast = new System.Windows.Forms.RadioButton();
+            this.radioButtonMed = new System.Windows.Forms.RadioButton();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBoxTransFee = new System.Windows.Forms.TextBox();
+            this.groupBoxConfTime.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -67,7 +76,7 @@
             this.buttonConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonConfirm.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonConfirm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(70)))), ((int)(((byte)(139)))));
-            this.buttonConfirm.Location = new System.Drawing.Point(548, 299);
+            this.buttonConfirm.Location = new System.Drawing.Point(548, 447);
             this.buttonConfirm.Margin = new System.Windows.Forms.Padding(5);
             this.buttonConfirm.Name = "buttonConfirm";
             this.buttonConfirm.Size = new System.Drawing.Size(125, 40);
@@ -83,7 +92,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(413, 299);
+            this.button1.Location = new System.Drawing.Point(413, 447);
             this.button1.Margin = new System.Windows.Forms.Padding(5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 40);
@@ -192,21 +201,6 @@
             this.textBoxFileCostEth.Text = "one moment...";
             this.textBoxFileCostEth.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBoxTransFee
-            // 
-            this.textBoxTransFee.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTransFee.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxTransFee.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTransFee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(70)))), ((int)(((byte)(139)))));
-            this.textBoxTransFee.Location = new System.Drawing.Point(382, 159);
-            this.textBoxTransFee.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxTransFee.Name = "textBoxTransFee";
-            this.textBoxTransFee.Size = new System.Drawing.Size(292, 22);
-            this.textBoxTransFee.TabIndex = 47;
-            this.textBoxTransFee.Text = "one moment...";
-            this.textBoxTransFee.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // label5
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -214,12 +208,12 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(70)))), ((int)(((byte)(139)))));
-            this.label5.Location = new System.Drawing.Point(173, 159);
+            this.label5.Location = new System.Drawing.Point(175, 308);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(187, 23);
+            this.label5.Size = new System.Drawing.Size(156, 23);
             this.label5.TabIndex = 45;
-            this.label5.Text = "Transaction Fee (ether):";
+            this.label5.Text = "Transaction Fee ($):";
             // 
             // label6
             // 
@@ -228,7 +222,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(173, 200);
+            this.label6.Location = new System.Drawing.Point(173, 349);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(124, 23);
@@ -242,7 +236,7 @@
             this.textBoxTotalEther.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxTotalEther.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTotalEther.ForeColor = System.Drawing.Color.Black;
-            this.textBoxTotalEther.Location = new System.Drawing.Point(299, 196);
+            this.textBoxTotalEther.Location = new System.Drawing.Point(299, 345);
             this.textBoxTotalEther.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTotalEther.Name = "textBoxTotalEther";
             this.textBoxTotalEther.Size = new System.Drawing.Size(375, 27);
@@ -257,7 +251,7 @@
             this.textBoxTotalUsd.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxTotalUsd.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTotalUsd.ForeColor = System.Drawing.Color.Black;
-            this.textBoxTotalUsd.Location = new System.Drawing.Point(300, 231);
+            this.textBoxTotalUsd.Location = new System.Drawing.Point(300, 380);
             this.textBoxTotalUsd.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTotalUsd.Name = "textBoxTotalUsd";
             this.textBoxTotalUsd.Size = new System.Drawing.Size(374, 27);
@@ -272,7 +266,7 @@
             this.textBoxCourse.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxCourse.Font = new System.Drawing.Font("Segoe UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCourse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(70)))), ((int)(((byte)(139)))));
-            this.textBoxCourse.Location = new System.Drawing.Point(299, 266);
+            this.textBoxCourse.Location = new System.Drawing.Point(299, 415);
             this.textBoxCourse.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxCourse.Name = "textBoxCourse";
             this.textBoxCourse.Size = new System.Drawing.Size(375, 22);
@@ -286,7 +280,7 @@
             this.labelExpiredNotification.AutoSize = true;
             this.labelExpiredNotification.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelExpiredNotification.ForeColor = System.Drawing.Color.Red;
-            this.labelExpiredNotification.Location = new System.Drawing.Point(10, 314);
+            this.labelExpiredNotification.Location = new System.Drawing.Point(10, 462);
             this.labelExpiredNotification.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelExpiredNotification.Name = "labelExpiredNotification";
             this.labelExpiredNotification.Size = new System.Drawing.Size(183, 23);
@@ -314,19 +308,134 @@
             this.labelFunds.AutoSize = true;
             this.labelFunds.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFunds.ForeColor = System.Drawing.Color.Black;
-            this.labelFunds.Location = new System.Drawing.Point(9, 286);
+            this.labelFunds.Location = new System.Drawing.Point(9, 434);
             this.labelFunds.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelFunds.Name = "labelFunds";
             this.labelFunds.Size = new System.Drawing.Size(265, 28);
             this.labelFunds.TabIndex = 54;
             this.labelFunds.Text = "My Account: one moment...";
             // 
+            // groupBoxConfTime
+            // 
+            this.groupBoxConfTime.Controls.Add(this.buttonHelp);
+            this.groupBoxConfTime.Controls.Add(this.labelFast);
+            this.groupBoxConfTime.Controls.Add(this.labelMedium);
+            this.groupBoxConfTime.Controls.Add(this.labelSlow);
+            this.groupBoxConfTime.Controls.Add(this.radioButtonSlow);
+            this.groupBoxConfTime.Controls.Add(this.radioButtonFast);
+            this.groupBoxConfTime.Controls.Add(this.radioButtonMed);
+            this.groupBoxConfTime.Enabled = false;
+            this.groupBoxConfTime.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxConfTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(70)))), ((int)(((byte)(139)))));
+            this.groupBoxConfTime.Location = new System.Drawing.Point(174, 162);
+            this.groupBoxConfTime.Name = "groupBoxConfTime";
+            this.groupBoxConfTime.Size = new System.Drawing.Size(499, 137);
+            this.groupBoxConfTime.TabIndex = 58;
+            this.groupBoxConfTime.TabStop = false;
+            this.groupBoxConfTime.Text = "Choose average confirmation time:";
+            // 
+            // buttonHelp
+            // 
+            this.buttonHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonHelp.BackgroundImage = global::Encryptior.Properties.Resources.icons8_Help_32px;
+            this.buttonHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonHelp.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonHelp.FlatAppearance.BorderSize = 0;
+            this.buttonHelp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.AliceBlue;
+            this.buttonHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHelp.ForeColor = System.Drawing.Color.Transparent;
+            this.buttonHelp.Location = new System.Drawing.Point(459, 22);
+            this.buttonHelp.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonHelp.Name = "buttonHelp";
+            this.buttonHelp.Size = new System.Drawing.Size(35, 35);
+            this.buttonHelp.TabIndex = 61;
+            this.buttonHelp.UseVisualStyleBackColor = true;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
+            // 
+            // labelFast
+            // 
+            this.labelFast.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelFast.AutoSize = true;
+            this.labelFast.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFast.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(70)))), ((int)(((byte)(139)))));
+            this.labelFast.Location = new System.Drawing.Point(58, 106);
+            this.labelFast.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelFast.Name = "labelFast";
+            this.labelFast.Size = new System.Drawing.Size(39, 23);
+            this.labelFast.TabIndex = 60;
+            this.labelFast.Text = "Fast";
+            // 
+            // labelMedium
+            // 
+            this.labelMedium.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelMedium.AutoSize = true;
+            this.labelMedium.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMedium.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(70)))), ((int)(((byte)(139)))));
+            this.labelMedium.Location = new System.Drawing.Point(58, 70);
+            this.labelMedium.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelMedium.Name = "labelMedium";
+            this.labelMedium.Size = new System.Drawing.Size(73, 23);
+            this.labelMedium.TabIndex = 59;
+            this.labelMedium.Text = "Medium";
+            // 
+            // labelSlow
+            // 
+            this.labelSlow.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelSlow.AutoSize = true;
+            this.labelSlow.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSlow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(70)))), ((int)(((byte)(139)))));
+            this.labelSlow.Location = new System.Drawing.Point(58, 34);
+            this.labelSlow.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelSlow.Name = "labelSlow";
+            this.labelSlow.Size = new System.Drawing.Size(45, 23);
+            this.labelSlow.TabIndex = 58;
+            this.labelSlow.Text = "Slow";
+            // 
+            // radioButtonSlow
+            // 
+            this.radioButtonSlow.Image = global::Encryptior.Properties.Resources.icons8_Turtle_28px;
+            this.radioButtonSlow.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.radioButtonSlow.Location = new System.Drawing.Point(7, 29);
+            this.radioButtonSlow.Name = "radioButtonSlow";
+            this.radioButtonSlow.Size = new System.Drawing.Size(100, 30);
+            this.radioButtonSlow.TabIndex = 55;
+            this.radioButtonSlow.UseVisualStyleBackColor = true;
+            this.radioButtonSlow.CheckedChanged += new System.EventHandler(this.radioButtonSlow_CheckedChanged);
+            // 
+            // radioButtonFast
+            // 
+            this.radioButtonFast.Image = global::Encryptior.Properties.Resources.icons8_Running_Rabbit_28px;
+            this.radioButtonFast.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.radioButtonFast.Location = new System.Drawing.Point(7, 101);
+            this.radioButtonFast.Name = "radioButtonFast";
+            this.radioButtonFast.Size = new System.Drawing.Size(100, 30);
+            this.radioButtonFast.TabIndex = 57;
+            this.radioButtonFast.UseVisualStyleBackColor = true;
+            this.radioButtonFast.CheckedChanged += new System.EventHandler(this.radioButtonFast_CheckedChanged);
+            // 
+            // radioButtonMed
+            // 
+            this.radioButtonMed.Checked = true;
+            this.radioButtonMed.Image = global::Encryptior.Properties.Resources.icons8_Running_28px;
+            this.radioButtonMed.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.radioButtonMed.Location = new System.Drawing.Point(7, 65);
+            this.radioButtonMed.Name = "radioButtonMed";
+            this.radioButtonMed.Size = new System.Drawing.Size(100, 30);
+            this.radioButtonMed.TabIndex = 56;
+            this.radioButtonMed.TabStop = true;
+            this.radioButtonMed.UseVisualStyleBackColor = true;
+            this.radioButtonMed.CheckedChanged += new System.EventHandler(this.radioButtonMed_CheckedChanged);
+            // 
             // pictureBox4
             // 
             this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox4.BackColor = System.Drawing.Color.RoyalBlue;
-            this.pictureBox4.Location = new System.Drawing.Point(174, 186);
+            this.pictureBox4.Location = new System.Drawing.Point(174, 335);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(500, 2);
@@ -368,21 +477,37 @@
             this.pictureBox1.TabIndex = 32;
             this.pictureBox1.TabStop = false;
             // 
+            // textBoxTransFee
+            // 
+            this.textBoxTransFee.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxTransFee.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxTransFee.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTransFee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(70)))), ((int)(((byte)(139)))));
+            this.textBoxTransFee.Location = new System.Drawing.Point(556, 308);
+            this.textBoxTransFee.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxTransFee.Name = "textBoxTransFee";
+            this.textBoxTransFee.Size = new System.Drawing.Size(118, 22);
+            this.textBoxTransFee.TabIndex = 59;
+            this.textBoxTransFee.Text = "one moment...";
+            this.textBoxTransFee.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // TransactionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(687, 353);
+            this.ClientSize = new System.Drawing.Size(687, 501);
+            this.Controls.Add(this.textBoxTransFee);
+            this.Controls.Add(this.groupBoxConfTime);
             this.Controls.Add(this.labelFunds);
             this.Controls.Add(this.labelExpiredNotification);
             this.Controls.Add(this.textBoxCourse);
             this.Controls.Add(this.textBoxTotalUsd);
             this.Controls.Add(this.textBoxTotalEther);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBoxTransFee);
-            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.textBoxFileCostEth);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label4);
@@ -402,6 +527,8 @@
             this.Name = "TransactionForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "New Transaction";
+            this.groupBoxConfTime.ResumeLayout(false);
+            this.groupBoxConfTime.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -424,7 +551,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox textBoxFileCostEth;
-        private System.Windows.Forms.TextBox textBoxTransFee;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -436,5 +562,14 @@
         private System.ComponentModel.BackgroundWorker backgroundWorkerTransaction;
         private System.ComponentModel.BackgroundWorker backgroundWorkerPay;
         private System.Windows.Forms.Label labelFunds;
+        private System.Windows.Forms.RadioButton radioButtonSlow;
+        private System.Windows.Forms.RadioButton radioButtonFast;
+        private System.Windows.Forms.GroupBox groupBoxConfTime;
+        private System.Windows.Forms.RadioButton radioButtonMed;
+        private System.Windows.Forms.Label labelFast;
+        private System.Windows.Forms.Label labelMedium;
+        private System.Windows.Forms.Label labelSlow;
+        private System.Windows.Forms.TextBox textBoxTransFee;
+        private System.Windows.Forms.Button buttonHelp;
     }
 }

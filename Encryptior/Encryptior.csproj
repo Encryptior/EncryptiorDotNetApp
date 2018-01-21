@@ -372,6 +372,11 @@
     <None Include="Resources\icons8_Help_32px.png" />
     <None Include="Resources\icons8_Close_Window_32px.png" />
     <None Include="Resources\icons8_Help_28px.png" />
+    <None Include="Resources\icons8_Turtle_28px.png" />
+    <None Include="Resources\icons8_Running_28px.png" />
+    <None Include="Resources\icons8_Running_Rabbit_28px.png" />
+    <None Include="Resources\icons8_Walking_28px.png" />
+    <None Include="Resources\icons8_Cycling_28px.png" />
     <Content Include="Resources\mainIcon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
